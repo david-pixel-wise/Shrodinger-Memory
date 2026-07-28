@@ -1,0 +1,29 @@
+[project]
+name = "SchrodingerMemory"
+version = "0.1.0"
+dependencies = [
+  "pyqt6",
+  "pyqt6-tools",
+  "qiskit-aer",
+]
+description = "The goal of this project is to create a simple version of memory game using qubit and the entanglement state."
+requires-python = "~=3.9.0"
+authors = ["David Giovannini <david.giovannini@pixelwise.it>"]
+readme = "README.md"
+license = "MIT"
+keywords = [
+  "qubit",
+  "entanglement",
+  "python",
+  "qt",
+  "memory",
+  "game",
+  "schrodinger",
+]
+
+[project.urls]
+Homepage = "https://www.pixelwise.it"
+Repository = "https://codeberg.org/david.giovannini/SchrodingerMemory/"
+Documentation = "https://codeberg.org/david.giovannini/SchrodingerMemory/README.md"
+Issues = "https://codeberg.org/david.giovannini/SchrodingerMemory/issues"
+Changelog = "https://codeberg.org/david.giovannini/SchrodingerMemory/blob/main/CHANGELOG.md"

@@ -1,0 +1,27 @@
+#------------------------------------------------------------------------------
+# HOW TO DEPLOY SCHRODINGER MEMORY GAME IN LINUX
+#------------------------------------------------------------------------------
+
+# Install uv module mananger
+pipx install uv
+
+# Create virtual environment
+cd ~/Nextcloud/Documents/Personal\ Data/uni/Tesi\ 2026/
+uv init Shrodinger\ Memory && cd ./Shrodinger\ Memory
+uv venv --python 3.9 .venv
+source .venv/bin/activate
+uv pip install --upgrade pip setuptools wheel
+
+# Install QT6 designer
+uv pip install pyqt6 pyqt6-tools notebook
+
+# Init the environment with the correct paths
+export PATH="$PWD/.venv/bin:$PWD/.venv/lib/python3.9/site-packages/qt6_applications/Qt/bin/:$PATH"
+alias designer='designer -platform xcb'
+designer
+
+# Install QISKIT
+uv pip install qiskit-aer matplotlib
+
+# Run the init to export automatically PATH
+source init.sh
