@@ -178,12 +178,12 @@ customHeadersFooters
 \color #008000
 \end_index
 \leftmargin 1.5cm
-\topmargin 1.5cm
+\topmargin 3cm
 \rightmargin 1.5cm
 \bottommargin 3cm
 \headheight 1.5cm
 \headsep 1.5cm
-\footskip 1cm
+\footskip 1.5cm
 \secnumdepth 3
 \tocdepth 2
 \paragraph_separation skip
@@ -312,7 +312,7 @@ David José Giovannini
 \begin_layout Date
 2026 - Epoch
 \begin_inset Nomenclature
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -384,6 +384,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename ../img/ShrodingerCat_2100x1700.jpg
 	lyxscale 7
@@ -929,6 +930,48 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch chapter-2
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter_3.lyx"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch chapter-2
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter_4.lyx"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage cleardoublepage
 \end_inset
 
@@ -940,12 +983,12 @@ literal "true"
 status open
 
 \begin_layout Plain Layout
-
+Acknowledgments
 \end_layout
 
 \end_inset
 
-Acknowledgments
+
 \begin_inset Note Note
 status collapsed
 
@@ -1021,7 +1064,7 @@ literal "true"
 \begin_layout Standard
 \begin_inset Branch Appendix
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \start_of_appendix
@@ -1039,7 +1082,7 @@ literal "true"
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Appendix is of course optional
@@ -1052,7 +1095,7 @@ Appendix is of course optional
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 The bibliography and nomenclature are in an own sub-document,

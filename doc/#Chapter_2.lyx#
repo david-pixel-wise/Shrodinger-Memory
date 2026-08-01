@@ -319,7 +319,7 @@ Quantum entanglement and memory game
 \end_layout
 
 \begin_layout Section
-Overview
+Memory rules
 \end_layout
 
 \begin_layout Standard
@@ -327,19 +327,11 @@ bla bla bla.
 \end_layout
 
 \begin_layout Section
-Memory rules
-\end_layout
-
-\begin_layout Section
 Quantum circuit
 \end_layout
 
-\begin_layout Section
-Tiles are ebit (
-\emph on
-entangled qubit
-\emph default
-)
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard

@@ -2445,6 +2445,21 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 In the next chapter we will see how all these concepts will be used to create an educational and interactive game in which the concept of fun is oriented towards learning through programming.
 \end_layout
 

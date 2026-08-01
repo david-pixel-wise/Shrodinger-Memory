@@ -3,7 +3,7 @@
 \begin_document
 \begin_header
 \save_transient_properties true
-\origin /systemlyxdir/templates/Theses/PhD_Thesis/
+\origin unavailable
 \textclass scrbook
 \begin_preamble
 % in case somebody want to have the label "Equation"
@@ -62,7 +62,7 @@
 \end_preamble
 \options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage
 \use_default_options true
-\master Main_File.lyx
+\master /usr/share/lyx/templates/Theses/PhD_Thesis/Main_File.lyx
 \begin_modules
 customHeadersFooters
 \end_modules
@@ -323,69 +323,7 @@ Overview
 \end_layout
 
 \begin_layout Standard
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla roughness parameter 
-\begin_inset Formula $R_{a}$
-\end_inset
-
-
-\begin_inset Nomenclature
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-$R_a$
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument post:1
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-arithmetic average roughness
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-For nomenclature entries with indices one need to enclose the expression with $-signs.
- (This creates a formula.)
-\end_layout
-
-\end_inset
-
- bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla,
- see 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "ISO10780"
-literal "true"
-
-\end_inset
-
-.
+bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
 \end_layout
 
 \begin_layout Section
@@ -395,11 +333,11 @@ The next section
 \begin_layout Standard
 \begin_inset Branch Standalone
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 The contents of this branch is only output if this chapter is processed on its own,

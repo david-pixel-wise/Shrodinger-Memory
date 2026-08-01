@@ -1255,7 +1255,7 @@ hspace{1mm}
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $P(0)=\mid\frac{1}{\sqrt[]{2}}\mid^{2}=\frac{1}{2}\qquad P(1)=\mid\frac{1}{\sqrt[]{2}}\mid=\frac{1}{2}$
+\begin_inset Formula $P(0)=\mid\frac{1}{\sqrt{2}}\mid^{2}=\frac{1}{2}\qquad P(1)=\mid\frac{1}{\sqrt{2}}\mid=\frac{1}{2}$
 \end_inset
 
 
@@ -2075,9 +2075,9 @@ literal "false"
 \begin_layout Standard
 All the lessons are enriched with interactive files that can be downloaded and edited using 
 \series bold
-Jupyter Notebooks
+Jupyter
 \series default
-
+ Notebooks
 \begin_inset Nomenclature
 status collapsed
 
@@ -2096,7 +2096,7 @@ status collapsed
 \uwave off
 \noun off
 \color none
-Jupyter Notebooks
+Jupyter
 \family default
 \series bold
 \shape default

@@ -315,7 +315,7 @@ thepage
 \end_layout
 
 \begin_layout Chapter
-Quantum entanglement and memory game
+Title of next chapter
 \end_layout
 
 \begin_layout Section
@@ -327,25 +327,13 @@ bla bla bla.
 \end_layout
 
 \begin_layout Section
-Memory rules
-\end_layout
-
-\begin_layout Section
-Quantum circuit
-\end_layout
-
-\begin_layout Section
-Tiles are ebit (
-\emph on
-entangled qubit
-\emph default
-)
+The next section
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch Standalone
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Note Note
