@@ -112,7 +112,7 @@ customHeadersFooters
 \pdf_pdfusetitle true
 \pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
 \papersize a4
-\use_geometry false
+\use_geometry true
 \use_package amsmath 2
 \use_package amssymb 2
 \use_package cancel 1
@@ -180,7 +180,10 @@ customHeadersFooters
 \leftmargin 1.5cm
 \topmargin 1.5cm
 \rightmargin 1.5cm
-\bottommargin 1.5cm
+\bottommargin 3cm
+\headheight 1.5cm
+\headsep 1.5cm
+\footskip 1cm
 \secnumdepth 3
 \tocdepth 2
 \paragraph_separation skip
@@ -383,7 +386,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../img/ShrodingerCat_2100x1700.jpg
-	lyxscale 10
+	lyxscale 7
 	scale 7
 	rotateOrigin center
 
