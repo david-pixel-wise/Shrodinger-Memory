@@ -186,7 +186,7 @@ The name “
 \shape italic
 Schrödinger Memory
 \shape default
-” has been chosen because the one of the most important experiment designed by the physicist 
+” has been chosen because one of the most important experiment designed by the physicist 
 \series bold
 Erwin Schrödinger
 \series default
@@ -201,7 +201,7 @@ Since I love cats,
 superposition
 \series default
  of quantum bits could be a good exercise to better learn how is moving the reality of quantum computing.
- Another point of interest for this thesis is the comparison of computing powewr also with more popular technologies based on 
+ Another point of interest for this thesis is the comparison of computing power with the most popular technologies based on 
 \series bold
 CPU
 \series default
@@ -319,7 +319,8 @@ classical computers
 \series bold
 entanglement
 \series default
- state with different numbers of 
+ state,
+ with different numbers of 
 \series bold
 qubits
 \series default
@@ -327,7 +328,8 @@ qubits
 \end_layout
 
 \begin_layout Standard
-The development of this game give me also the possibility to improve my programming skills with the creation of a source code that respect the vision about 
+The development of this game give me also,
+ the possibility to improve my programming skills with the creation of a source code that respect the vision about 
 \series bold
 freedom in technology
 \series default
