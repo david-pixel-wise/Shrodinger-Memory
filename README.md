@@ -16,10 +16,10 @@ The development of this game give me also the possibility to improve my programm
 
 To realize the source code I have used only **free** and **open source software**, because the technology that we are creating have to consider ethical and philosophical values that grant everyone the utilization, analysis and modification of the code realized with this experiments; like the *four freedoms* of **FOSS**:
 
-*Freedom 0: The freedom to run the program as you wish.*
-*Freedom 1: The freedom to study how the program works.*
-*Freedom 2: The freedom to redistribute copies so you can help others.*
-*Freedom 3: The freedom to distribute copies of your modified versions to others.*
+*Freedom 0: The freedom to run the program as you wish.*<br>
+*Freedom 1: The freedom to study how the program works.*<br>
+*Freedom 2: The freedom to redistribute copies so you can help others.*<br>
+*Freedom 3: The freedom to distribute copies of your modified versions to others.*<br>
 
 The new paradigm of using computers include AI, and for this reason I have used an AI in **oversight mode**, because it is the best way to solve problems avoiding humans and machines errors; this way to work gave me the ability to speedup the development of code, giving me more time to: read new articles, follow quantum courses or fixing **bgus**.
 
