@@ -608,7 +608,7 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/ColorDepth_2_bit_300x225.png
+	filename ../img/ColorDepth_2_bit_300x225.png
 	lyxscale 30
 	scale 30
 
@@ -624,7 +624,7 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/ColorDepth_8_bit_300x225.png
+	filename ../img/ColorDepth_8_bit_300x225.png
 	lyxscale 30
 	scale 30
 
@@ -640,7 +640,7 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/ColorDepth_24_bit_300x225.png
+	filename ../img/ColorDepth_24_bit_300x225.png
 	lyxscale 30
 	scale 30
 
@@ -1068,7 +1068,7 @@ Gaussian distribution
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/plt/HeadTail_Plot1.png
+	filename ../plt/HeadTail_Plot1.png
 	lyxscale 50
 	scale 50
 
@@ -1084,7 +1084,7 @@ Gaussian distribution
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/plt/HeadTail_Plot2.png
+	filename ../plt/HeadTail_Plot2.png
 	lyxscale 50
 	scale 50
 
@@ -1355,7 +1355,7 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/Schrodinger-Wave-Equation-scaled.jpg.webp
+	filename ../img/Schrodinger-Wave-Equation-scaled.jpg.webp
 	lyxscale 10
 	scale 10
 
@@ -1395,7 +1395,7 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/planewave2-3d-0.png
+	filename ../img/planewave2-3d-0.png
 	lyxscale 25
 	scale 25
 
@@ -1775,7 +1775,7 @@ hspace{1mm}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/McCoy,_Kirk_and_Spock_in_the_transporter_room.png
+	filename ../img/McCoy,_Kirk_and_Spock_in_the_transporter_room.png
 	lyxscale 25
 	scale 25
 
@@ -2422,7 +2422,7 @@ hspace{1mm}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/11128_2020_2712_Fig3_HTML.webp
+	filename ../img/11128_2020_2712_Fig3_HTML.webp
 	lyxscale 30
 	scale 30
 
