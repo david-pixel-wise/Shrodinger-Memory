@@ -323,7 +323,42 @@ Overview
 \end_layout
 
 \begin_layout Standard
-bla bla bla.
+A good way to improve my development skills and learn new concepts in a fun way,
+ was to create a simple video game in Python to test the capabilities of quantum computers in a creative way.
+ To create something interesting and educational,
+ I thought to a simple game that could best express the concept of quantum entanglement.
+\end_layout
+
+\begin_layout Standard
+Thinking more to the properties of quantum entanglement I have found that a good example to show the properties of 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+connections
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ between two qubits,
+ could be the 
+\emph on
+memory game
+\emph default
+.
+ A traditional game that everyone have played in the childhood and that improve the memory of the player to remember couples of pieces with the same image;
+ in my case the game has been revisited with a touch of quantum computing to better understand the properties behind this new technology.
+\end_layout
+
+\begin_layout Standard
+In my version of memory game the pieces represented by virtual pieces with pairs of emojis that in reality are represented by qubits.
+ At the startup of the game all the pieces are associated to qubits and the connection between them is realized by the entanglement state.
+\end_layout
+
+\begin_layout Standard
+To represent a matrix of 
 \end_layout
 
 \begin_layout Section

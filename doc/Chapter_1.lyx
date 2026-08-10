@@ -330,7 +330,7 @@ name "sec:Overview"
 \end_layout
 
 \begin_layout Standard
-The game that I have realized is using some fundamentals notions of math that must be understand to learn how the quantum computers are working.
+The game that I have realized is using some fundamentals notions of math that must be understood to learn how the quantum computers are working.
  The first concept that we have to familiarize to is the 
 \emph on
 quantum bit
@@ -389,7 +389,8 @@ The computers of this times are using bits elevated to base two,
 \end_layout
 
 \begin_layout Standard
-For instance that we 2
+For instance,
+ with 2
 \begin_inset Formula $^{8}$
 \end_inset
 
@@ -571,7 +572,7 @@ This 256 combinations associated to colors could represent the shapes of gray of
 \series bold
 quantization
 \series default
- that we are apply to the colors of a picture can give us an idea on how many data we have to process with computers.
+ that we are applying to the colors of a picture can give us an idea on how many data we have to process with computers.
  
 \end_layout
 
@@ -830,8 +831,8 @@ Also if this numbers are out the imagination of a common person;
 \end_layout
 
 \begin_layout Standard
-The quantum computing seem give us access to a new scale of magnitudes of computational power,
- that could grant us the solutions of more complex kind of problems that current CPU or GPU are not able to do.
+The quantum computing seems give us access to a new scale of magnitudes of computational power,
+ that could grant us the solutions for more complex kind of problems that current CPU or GPU are not able to do.
 \end_layout
 
 \begin_layout Standard

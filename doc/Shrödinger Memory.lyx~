@@ -708,6 +708,12 @@ thepage
 status open
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset ERT
 status collapsed
 
@@ -715,11 +721,6 @@ status collapsed
 
 \backslash
 thepage
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
