@@ -330,7 +330,7 @@ name "sec:Overview"
 \end_layout
 
 \begin_layout Standard
-The game that I have realized is using some fundamentals notions of math that must be understand to learn how the quantum computers are working.
+The game that I have realized is using some fundamentals notions of math that must be understood to learn how the quantum computers are working.
  The first concept that we have to familiarize to is the 
 \emph on
 quantum bit
@@ -389,7 +389,8 @@ The computers of this times are using bits elevated to base two,
 \end_layout
 
 \begin_layout Standard
-For instance that we 2
+For instance,
+ with 2
 \begin_inset Formula $^{8}$
 \end_inset
 
@@ -571,7 +572,7 @@ This 256 combinations associated to colors could represent the shapes of gray of
 \series bold
 quantization
 \series default
- that we are apply to the colors of a picture can give us an idea on how many data we have to process with computers.
+ that we are applying to the colors of a picture can give us an idea on how many data we have to process with computers.
  
 \end_layout
 
@@ -608,7 +609,7 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/ColorDepth_2_bit_300x225.png
+	filename ../img/ColorDepth_2_bit_300x225.png
 	lyxscale 30
 	scale 30
 
@@ -624,7 +625,7 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/ColorDepth_8_bit_300x225.png
+	filename ../img/ColorDepth_8_bit_300x225.png
 	lyxscale 30
 	scale 30
 
@@ -640,7 +641,7 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/ColorDepth_24_bit_300x225.png
+	filename ../img/ColorDepth_24_bit_300x225.png
 	lyxscale 30
 	scale 30
 
@@ -830,8 +831,8 @@ Also if this numbers are out the imagination of a common person;
 \end_layout
 
 \begin_layout Standard
-The quantum computing seem give us access to a new scale of magnitudes of computational power,
- that could grant us the solutions of more complex kind of problems that current CPU or GPU are not able to do.
+The quantum computing seems give us access to a new scale of magnitudes of computational power,
+ that could grant us the solutions for more complex kind of problems that current CPU or GPU are not able to do.
 \end_layout
 
 \begin_layout Standard
@@ -1068,7 +1069,7 @@ Gaussian distribution
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/plt/HeadTail_Plot1.png
+	filename ../plt/HeadTail_Plot1.png
 	lyxscale 50
 	scale 50
 
@@ -1084,7 +1085,7 @@ Gaussian distribution
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/plt/HeadTail_Plot2.png
+	filename ../plt/HeadTail_Plot2.png
 	lyxscale 50
 	scale 50
 
@@ -1355,7 +1356,7 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/Schrodinger-Wave-Equation-scaled.jpg.webp
+	filename ../img/Schrodinger-Wave-Equation-scaled.jpg.webp
 	lyxscale 10
 	scale 10
 
@@ -1395,7 +1396,7 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/planewave2-3d-0.png
+	filename ../img/planewave2-3d-0.png
 	lyxscale 25
 	scale 25
 
@@ -1775,7 +1776,7 @@ hspace{1mm}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/McCoy,_Kirk_and_Spock_in_the_transporter_room.png
+	filename ../img/McCoy,_Kirk_and_Spock_in_the_transporter_room.png
 	lyxscale 25
 	scale 25
 
@@ -2422,7 +2423,7 @@ hspace{1mm}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename /home/xrdp/Nextcloud/Documents/Personal Data/uni/Tesi 2026/Shrodinger Memory/img/11128_2020_2712_Fig3_HTML.webp
+	filename ../img/11128_2020_2712_Fig3_HTML.webp
 	lyxscale 30
 	scale 30
 
