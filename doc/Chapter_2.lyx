@@ -324,47 +324,475 @@ Overview
 
 \begin_layout Standard
 A good way to improve my development skills and learn new concepts in a fun way,
- was to create a simple video game in Python to test the capabilities of quantum computers in a creative way.
- To create something interesting and educational,
- I thought to a simple game that could best express the concept of quantum entanglement.
+ has been to write a simple game in Python to test the capabilities of quantum computers.
+ To develop something interesting and educational,
+ I thought that a simple game could have shown,
+ in an interactive way the concept of entanglement.
 \end_layout
 
 \begin_layout Standard
-Thinking more to the properties of quantum entanglement I have found that a good example to show the properties of 
-\begin_inset Quotes eld
-\end_inset
-
-
+Thinking more about the particularities of quantum entanglement I have found that a nice example to show the aspects of 
 \emph on
 connections
 \emph default
-
-\begin_inset Quotes erd
-\end_inset
-
- between two qubits,
- could be the 
+ between qubits,
+ could have been the 
 \emph on
 memory game
 \emph default
 .
- A traditional game that everyone have played in the childhood and that improve the memory of the player to remember couples of pieces with the same image;
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../img/20889_2.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset CommandInset citation
+LatexCommand cite
+after "Memory Ravensburger"
+key "memory-ravensburger"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A traditional common game that a lot of people have experienced in the childhood and that improve the memory of the players,
+ challenging to remember the biggest number of couples of cards with the same images;
  in my case the game has been revisited with a touch of quantum computing to better understand the properties behind this new technology.
 \end_layout
 
 \begin_layout Standard
-In my version of memory game the pieces represented by virtual pieces with pairs of emojis that in reality are represented by qubits.
- At the startup of the game all the pieces are associated to qubits and the connection between them is realized by the entanglement state.
+The experiments that I have done,
+ with the quantum memory game;
+ are showing several versions of entanglement.
+ Using a graphical user interface (later 
+\series bold
+GUI
+\series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+GUI
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Graphical user interface.
 \end_layout
 
-\begin_layout Standard
-To represent a matrix of 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+) written in 
+\series bold
+Qt
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Qt
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Qt is a cross-platform application development framework for creating graphical user interfaces as well as cross-platform applications that run on various software and hardware platforms such as Linux,
+ Windows,
+ macOS,
+ Android or embedded systems with little or no change in the underlying codebase while still being a native application with native capabilities and speed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series default
+ 6 I have realized 16 
+\emph on
+virtual cards
+\emph default
+ with 8 couples of 
+\series bold
+emojis
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Emojis
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+The word emoji comes from Japanese e (X;
+ 
+\begin_inset Quotes eld
+\end_inset
+
+picture
+\begin_inset Quotes erd
+\end_inset
+
+) + moji (XX;
+ 
+\begin_inset Quotes eld
+\end_inset
+
+character
+\begin_inset Quotes erd
+\end_inset
+
+) and originally meant 
+\begin_inset Quotes eld
+\end_inset
+
+pictograph
+\begin_inset Quotes erd
+\end_inset
+
+;
+ the primary function of modern emoji is to fill in emotional cues otherwise missing from typed conversation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series default
+ that are 
+\emph on
+virtually associated
+\emph default
+ to a qubit.
 \end_layout
 
 \begin_layout Section
 Memory rules
 \end_layout
 
+\begin_layout Standard
+The memory game,
+ also known as Concentration,
+ is a simple card-matching game played by one or more players.
+ To set up,
+ all cards are laid face down on the table in a grid.
+ Each card has a matching twin,
+ so the deck contains pairs of identical images.
+\end_layout
+
+\begin_layout Standard
+On each turn,
+ a player flips over two cards of their choice,
+ one at a time.
+ If the two cards match,
+ the player keeps the pair,
+ removes them from the table,
+ and earns another turn.
+ If they do not match,
+ the cards are turned back face down in their original positions,
+ and play passes to the next player.
+\end_layout
+
+\begin_layout Standard
+The key skill is memory:
+ players must remember the position of the cards they have seen before,
+ even after they are flipped back over,
+ so they can later match them.
+\end_layout
+
+\begin_layout Standard
+The game continues until all pairs have been collected.
+ The winner is the player with the most pairs at the end,
+ or the player who collects all pairs when playing alone.
+ The game can also be made easier or harder by adding or removing pairs.
+\end_layout
+
+\begin_layout Standard
+In this version of the game,
+ the player that will find the equal card will visualize a pop up image that will explain the quantum state of the ebit;
+ to be more educational and to investigate deeply on the quantum entanglement I have created 4 version of the game as experiments to run in a first phase as simulation and then to run it on a real quantum computer.
+\end_layout
+
+\begin_layout Standard
+The experiments that I have created with the support of different AI are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\align left
+
+\emph on
+Experiment 1
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align left
+No entanglement,
+ opposite arrows
+\end_layout
+
+\begin_layout Standard
+\align left
+(filename:
+ 
+\family typewriter
+exp1_no_entanglement_random_qubits.py
+\family default
+)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\align left
+
+\emph on
+Experiment 2
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align left
+Random partial entanglement per pair
+\end_layout
+
+\begin_layout Standard
+\align left
+(filename:
+ 
+\family typewriter
+exp2_bell_concurrence.py
+\family default
+)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\align left
+
+\emph on
+Experiment 3
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align left
+All four Bell states
+\end_layout
+
+\begin_layout Standard
+\align left
+(filename:
+ 
+\family typewriter
+exp3_all_bell_states.py
+\family default
+)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\align left
+
+\emph on
+Experiment 4
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align left
+Entanglement that grows with progress
+\end_layout
+
+\begin_layout Standard
+\align left
+(filename:
+ 
+\family typewriter
+exp4_tunable_entanglement.py
+\family default
+)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\align left
+
+\emph on
+Experiment 5
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align left
+Phase-type entanglement,
+ different gate family
+\end_layout
+
+\begin_layout Standard
+\align left
+(filename:
+ 
+\family typewriter
+exp5_phase_equatorial.py
+\family default
+)
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Quantum circuit
 \end_layout

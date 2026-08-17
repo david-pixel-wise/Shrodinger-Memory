@@ -330,7 +330,11 @@ name "sec:Overview"
 \end_layout
 
 \begin_layout Standard
-The game that I have realized is using some fundamentals notions of math that must be understood to learn how the quantum computers are working.
+The 
+\color red
+experiments
+\color inherit
+ that I have realized is using some fundamentals notions of math that must be understood to learn how the quantum computers are working.
  The first concept that we have to familiarize to is the 
 \emph on
 quantum bit
@@ -339,11 +343,116 @@ quantum bit
 \series bold
 qubit
 \series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Qubit
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+A qubit can be physically realized with a two-state (or two-level) quantum-mechanical system,
+ one of the simplest quantum systems displaying the peculiarity of quantum mechanics.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 .
 \end_layout
 
 \begin_layout Standard
-The classical computers are using bits that could be explained like,
+The classical computers are using 
+\series bold
+bits
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Bit
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+The bit is the most basic unit of information in computing and digital communication.
+ The name is a portmanteau of binary digit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series default
+ that could be explained 
+\color red
+as
+\color inherit
  the state assumed by a switch when we want to turn 
 \emph on
 ON
@@ -353,19 +462,41 @@ ON
 OFF
 \emph default
  the light.
- This simple action that we do daily can explain better the state that can assume a 
+ This simple action that we do daily
+\color red
+,
+
+\color inherit
+ explain better the state that can assume a 
 \emph on
 single bit
 \emph default
 .
  Thinking with numbers,
- a single bit can be expressed in terms of electrical tension like +0V or +5V need to give power to the bulb;
+ a single bit can be expressed in terms of electrical tension like 
+\emph on
++0V
+\emph default
+ or 
+\emph on
++5V
+\emph default
+,
+ 
+\color red
+needed
+\color inherit
+ to give power to the bulb;
  but moving to computers the standard way to represent a single bit use the values 0 or 1 that it means presence or absence of voltage.
 \end_layout
 
 \begin_layout Standard
-This kind of data give us the ability to express simple data like the presence or not of electrical tension,
- in the case of the switch,
+This kind of data,
+ give us the ability to express simple 
+\color red
+information
+\color inherit
+ like the presence or not of electrical tension in the case of the switch;
  or 
 \series bold
 true
@@ -378,14 +509,79 @@ false
 \series bold
 boolean logic
 \series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Boolean logic
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Boolean logic is a type of algebra that deals with true and false values,
+ using operators like AND,
+ OR,
+ and NOT to combine these values.
+ It is fundamental in computer science and digital circuit design,
+ allowing for reasoning about binary conditions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 .
 \end_layout
 
 \begin_layout Standard
-The computers of this times are using bits elevated to base two,
+The computers of 
+\color red
+current
+\color inherit
+ times are using bits elevated 
+\color red
+at
+\color inherit
+ base two,
  to make everything;
  from complex calculations to storing data.
- To make it possible we are using several number of bits to try to describe the real world.
+ To make it possible we are using several number of bits to 
+\color red
+trying
+\color inherit
+ to describe the real world.
 \end_layout
 
 \begin_layout Standard
@@ -394,7 +590,15 @@ For instance,
 \begin_inset Formula $^{8}$
 \end_inset
 
- bits we can represent 256 values like in the table below:
+ bits we can 
+\color red
+representing
+\color inherit
+ 256 values 
+\color red
+as better described
+\color inherit
+ in the table below:
 \end_layout
 
 \begin_layout Standard
@@ -571,6 +775,55 @@ This 256 combinations associated to colors could represent the shapes of gray of
  The 
 \series bold
 quantization
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Quantization
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Quantization is the process of mapping input values from a large set (often a continuous set) to output values in a (countable) smaller set,
+ often with a finite number of elements.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \series default
  that we are applying to the colors of a picture can give us an idea on how many data we have to process with computers.
  
@@ -713,11 +966,30 @@ literal "false"
 
 \begin_layout Standard
 If you are not really aware about how many data are needed to represent a photo with colors,
- thing that a common phone camera with 12 megapixel and 24 bit (8 bit for each color RGB) in RAW format (without any compression) can store a bit relative amount of data.
+ 
+\color red
+try to think
+\color inherit
+ that a common phone camera with 12 megapixel and 24 bit (8 bit for each color RGB) in RAW format (without any compression) can store a 
+\color red
+relatively big
+\color inherit
+ amount of data.
 \end_layout
 
 \begin_layout Standard
-Here some calculations to see approximately how many storage we need for a 
+
+\color red
+Usually humans are reasoning using numbers with a scale of 10s till a maximum of 1000s,
+ but in the computer world the impact of a simple file have an amplitude of millions or billions of numbers.
+\end_layout
+
+\begin_layout Standard
+Here some calculations to see approximately how many 
+\color red
+data
+\color inherit
+ storage we need for a 
 \emph on
 simple photo
 \emph default
@@ -785,15 +1057,84 @@ The CPU architectures now days are processing data with 2
 \begin_inset Formula $^{10}$
 \end_inset
 
- bits and can store in registers of 2
+ bits and can store 
+\color red
+it
+\color inherit
+ in registers of 2
 \begin_inset Formula $^{64}$
 \end_inset
 
-bits and in some cases to 2
+ bits and in some cases 
+\color red
+till
+\color inherit
+ to 2
 \begin_inset Formula $^{128}$
 \end_inset
 
- bits for the common general purpose x86_64 computers.
+ bits for the common general purpose 
+\series bold
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+x86_64
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+x86-64 (also known as AMD64,
+ x86_64,
+ x64 and,
+ rarely,
+ Intel 64) [note 1] is a 64-bit extension of the x86 instruction set.
+ It was announced in 1999 and first available in the AMD Opteron family in 2003.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+x86_64
+\series default
+ computers 
+\color red
+architecture
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
@@ -827,7 +1168,221 @@ literal "false"
 \begin_layout Standard
 Also if this numbers are out the imagination of a common person;
  the reality,
- the nature and the chemistry need enormous computing power to process data and to give a simple solution to humans.
+ the nature,
+ 
+\color red
+the engineering and the science needs
+\color inherit
+ enormous computing power to process data to give simple 
+\color red
+answers
+\color inherit
+ to humans.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+“O Deep Thought computer," he said,
+ "the task we have designed you to perform is this.
+ We want you to tell us...." he paused,
+ "The Answer."
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+"The Answer?" said Deep Thought.
+ "The Answer to what?"
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+"Life!" urged Fook.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+"The Universe!" said Lunkwill.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+"Everything!" they said in chorus.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+Deep Thought paused for a moment's reflection.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+"Tricky," he said finally.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+"But can you do it?"
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+Again,
+ a significant pause.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+"Yes," said Deep Thought,
+ "I can do it."
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+"There is an answer?" said Fook with breathless excitement.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+"Yes," said Deep Thought.
+ "Life,
+ the Universe,
+ and Everything.
+ There is an answer.
+ But,
+ I'll have to think about it."
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+[...]
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+Fook glanced impatiently at his watch.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+“How long?” he said.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+“Seven and a half million years,” said Deep Thought.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+[...]
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+"Forty-two," said Deep Thought,
+ with infinite majesty and calm.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset CommandInset citation
+LatexCommand cite
+after "Douglas Adams, The Hitchhiker's Guide to the Galaxy"
+key "Adams_1984"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -874,7 +1429,7 @@ LSP
 status collapsed
 
 \begin_layout Plain Layout
-Large scale problem
+Large scale problem.
 \end_layout
 
 \end_inset
@@ -995,7 +1550,185 @@ With the qubit the new era of quantum computation will give to the human beings 
  math,
  science,
  medicine and knowledge of the universe.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\color red
+Representing a generational advancement in computer science,
+ QPUs are designed to process quantum algorithms better than even the most powerful supercomputers.
+ Optimized for large-scale quantum calculations,
+ QPUs are not intended to replace CPUs.
+ Instead,
+ QPUs are being integrated into high-performance computing (HPC) systems alongside CPUs and graphics processing units (GPUs).
  
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\color red
+In a quantum-centric supercomputer,
+ each type of processor functions differently and is used for processing different types of computations with the ecosystem:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+\color red
+CPUs
+\series default
+:
+ Central processing units (CPUs) process inputs sequentially,
+ performing tasks in a linear fashion and are best suited for high-level control operations,
+ such as managing data across different system components.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+\color red
+GPUs
+\series default
+:
+ Graphics processing units (GPUs) excel at parallel processing large amounts of operations simultaneously.
+ GPUs can potentially be used in quantum systems to offload some amount of the processing workload from QPUs.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+\color red
+NPU
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+NPU
+\family default
+\series bold
+\shape italic
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Neural processing unit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+s
+\series default
+:
+ Neural processing units (NPUs) mimic the function of the human brain and are typically used for tasks involving the specific types of computations used in machine learning (ML) and artificial intelligence (AI).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+\color red
+QPU
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+QPU
+\family default
+\series bold
+\shape italic
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Quantum processing unit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+s
+\series default
+:
+ Quantum processing units (QPUs) process information by using qubits instead of binary bits and are designed to perform complex quantum algorithms.
+ QPUs are best used for certain kinds of highly complicated problems,
+ and many of today’s promising quantum algorithms provide probabilistic solutions instead of precise answers.
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset CommandInset citation
+LatexCommand cite
+after "QPU (Quantum Processing Unit)"
+key "schneider-2026"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1021,7 +1754,16 @@ To do that,
  I know that this can sound weird,
  but it's not a joke!
  Let's go back to the concept of binary value.
- As we said a bit can have 2 simple state,
+ As we said
+\color red
+,
+
+\color inherit
+ a bit can have 2 simple state
+\color red
+;
+
+\color inherit
  usually we think to 0 or 1.
 \end_layout
 
@@ -1134,8 +1876,20 @@ Normal curve
 \end_layout
 
 \begin_layout Standard
-In quantum computers the concept of head tail is a little bit different.
- Going back to the famous experiment of Schrödinger's cat with have to think that the coin will be in both states till we don't look it the palm of our hand.
+In quantum computers the concept of head 
+\color red
+or
+\color inherit
+ tail is a little bit different.
+ Going back to the famous experiment of Schrödinger's cat 
+\color red
+we
+\color inherit
+ have to think that 
+\color red
+a
+\color inherit
+ coin will be in both states till we don't look it the palm of our hand.
  It could sound strange,
  because in our daily life we don't encounter similarities.
 \end_layout
@@ -1143,13 +1897,67 @@ In quantum computers the concept of head tail is a little bit different.
 \begin_layout Standard
 Ideally we can think that while the coin is flipping in the air the coin can assume both states and when the coin is catch and seen by a person the state change definitely in head or tail;
  a quantum bit can exist simultaneously in multiple possible states,
- and only when measurement is performed it define exactly the sate of the bit.
+ and only when measurement is performed it define exactly the 
+\color red
+state
+\color inherit
+ of the bit.
 \end_layout
 
 \begin_layout Standard
 This principle is called 
 \series bold
 superposition
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Superposition
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Superposition is a fundamental principle in physics,
+ particularly in quantum mechanics,
+ stating that a system can exist in multiple states at once until it is measured.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \series default
  and could be expressed mathematically with this formula:
 \end_layout
@@ -1233,8 +2041,62 @@ plus state
 \series bold
 Dirac notation
 \series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Dirac notation
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Dirac notation,
+ also known as bra-ket notation,
+ is a mathematical framework used in quantum mechanics to describe quantum states and operations.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 ;
- explain better the meaning of superposition in a qubit.
+ explain better the 
+\color red
+concept
+\color inherit
+ of superposition in a qubit.
  The qubit can be 0 or 1 with a probability of 50% each.
  Moving the numbers we can obtain an equation in a easier way to understand:
 \end_layout
@@ -1283,8 +2145,20 @@ Now it's clear that the probability (
 P
 \emph default
 ) that a qubit have to be 0 or 1 is equal to 0.5 and it's sum is equal to 1.
- Behind this formula there are other aspects the are going deeper into the quantum mechanics and that are out of scope of this thesis.
- For my purpose the need is simply to understand the behaviors that a qubit can have during the computing phase.
+ Behind this formula there are other aspects 
+\color red
+that
+\color inherit
+ are going deeper into the quantum mechanics and 
+\color red
+that I will not consider for this thesis
+\color inherit
+.
+ For my purpose the need is simply to understand the behaviors that a qubit can 
+\color red
+assume
+\color inherit
+ during the computing phase.
 \end_layout
 
 \begin_layout Standard
@@ -1551,24 +2425,52 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-If we are at a concert and we are listening music the same phenomenon happen also if this case it is not visible at our eyes.
+If we are at a concert and we are listening music,
+ the same phenomenon happen;
+ also if 
+\color red
+in this case we are not able to see it with our eyes
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
-But computers need to process certain data and we can't reasoning for abstractions,
- in computers programming we need to fix and 
+But computers need to process 
+\color red
+precise
+\color inherit
+ data and we can't 
+\color red
+reason
+\color inherit
+ 
+\color red
+per
+\color inherit
+ abstractions,
+ in computers programming we need fix and 
 \series bold
-reproducible results
+reproducible results;
+
 \series default
- the probability assumed by a qubit must be something reproducible without any doubt.
+ the probability assumed by a qubit must be something 
+\color red
+repeatable in time
+\color inherit
+ without any doubt.
 \end_layout
 
 \begin_layout Standard
-The physic behind quantum computing use wave forms that give us the probability to have a qubit in a certain state but when we made a measurements of the qubit the state 
+The physic behind quantum computing use wave forms that give us the probability to have a qubit in a certain state
+\color red
+,
+
+\color inherit
+ but when we made a measurements of the qubit the state 
 \series bold
 collapse
 \series default
- and we obtain with mathematical certain the results of our calculations.
+ and we obtain with mathematical certain the result of our calculations.
 \end_layout
 
 \begin_layout Standard
@@ -1636,8 +2538,16 @@ name "sec:Quantum-teleport"
 \end_layout
 
 \begin_layout Standard
-Quantum computers open the way to another field of research that promise to change completely the world that we know,
- at least for telecommunications.
+Quantum computers open the way to another field of research that promise to change completely the world that we know
+\color red
+;
+
+\color inherit
+ 
+\color red
+in different fields of computers technology
+\color inherit
+.
  Since the early days of modernization,
  the 
 \series bold
@@ -1694,13 +2604,71 @@ Sci-fi is short for science fiction,
 
 
 \series default
- novels and human imaginary was dreaming a way of moving matter so fast that instantaneously move the mass of an object,
+ novels and human imaginary was dreaming a way of moving matter so fast that instantaneously 
+\color red
+can
+\color inherit
+ move the mass of an object,
  from a place A to a place B.
 \end_layout
 
 \begin_layout Standard
-This idea has been extensively developed in our imagination by television series like Star Trek,
- where the crew of an interstellar ship uses what's called a 
+This idea has been extensively developed in our imagination by television series like 
+\series bold
+Star Trek
+\series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Star Trek
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Star Trek is an American science fiction media franchise created by Gene Roddenberry and owned by Paramount,
+ which began with the series of the same name and became a worldwide pop culture phenomenon.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+,
+ where the crew of an interstellar ship uses,
+ what's called a 
 \series bold
 transporter
 \begin_inset Nomenclature
@@ -1835,8 +2803,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-By significantly scaling down the concept of teleportation to today,
- we can see on a smaller scale how the entanglement property of qubits allows information to travel instantaneously,
+By significantly scaling down the concept of teleportation today,
+ we can see on smaller scale how the entanglement property of qubits allows information to travel instantaneously,
  
 \emph on
 without exceeding the speed of light
@@ -1946,62 +2914,23 @@ In Star Trek,
 
 \begin_layout Standard
 Back to reality,
- one way we can experiment with state entanglement and quantum teleportation is to recreate the connection between two qubits using Qiskit
-\begin_inset Nomenclature
-status collapsed
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\nospellcheck off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Qiskit
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\nospellcheck default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
+ one way we can experiment with entanglement 
+\color red
+state
 \color inherit
-
-\begin_inset Argument post:1
-status collapsed
-
-\begin_layout Plain Layout
-Software development kit,
- Python based,
- developed by IBM as high-performance software stack for quantum computing.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-.
+ and quantum teleportation is to recreate the 
+\emph on
+connection
+\emph default
+ between two qubits using Qiskit.
 \end_layout
 
 \begin_layout Standard
-Qiskit is a software development kit (SDK
+Qiskit is a software development kit (
+\color red
+later 
+\color inherit
+SDK
 \begin_inset Nomenclature
 status collapsed
 
@@ -2036,10 +2965,10 @@ SDK
 \color inherit
 
 \begin_inset Argument post:1
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Software development kit
+Software development kit.
 \end_layout
 
 \end_inset
@@ -2051,7 +2980,11 @@ Software development kit
 
 ),
  available through Python modules,
- that allows you to build quantum circuits and algorithms on real quantum computers (typically IBM) or through emulation on your local machine.
+ that allows 
+\color red
+us
+\color inherit
+ to build quantum circuits and algorithms on real quantum computers (typically IBM) or through emulation on your local machine.
 \end_layout
 
 \begin_layout Standard
@@ -2153,10 +3086,71 @@ literal "false"
 
 \begin_layout Standard
 The interactive code available online and written with Jupiter Notebook,
- is very helpful in research and study,
- for instance;
- other experiments could be made increasing the number of qubits to be connected.
- 
+ is very helpful in research and study
+\color red
+;
+
+\color inherit
+ for instance
+\color red
+,
+
+\color inherit
+ other experiments could be made increasing the number of qubits to be connected 
+\color red
+directly from your browser
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Browser
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color red
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+A web browser,
+ often abbreviated as browser,
+ is an application for accessing websites.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
@@ -2193,11 +3187,19 @@ literal "false"
 
 \begin_layout Standard
 Following the instructions provided by Qiskit documentation is quite easy to have a snippet to create a quantum circuit with quantum entanglement.
- To do that is necessary to familiarize with the basics quantum logical ports that make the algorithm.
+ To do that is necessary to familiarize with the basics quantum logical ports 
+\color red
+to build an
+\color inherit
+ algorithm.
 \end_layout
 
 \begin_layout Standard
-To be more detailed the entanglement states between two qubits could be four,
+To be more detailed the entanglement states between two qubits 
+\color red
+could be expressed by four equations
+\color inherit
+,
  written as follow:
 \end_layout
 
@@ -2436,7 +3438,7 @@ hspace{1mm}
 \align right
 \begin_inset CommandInset citation
 LatexCommand cite
-after "Figure 3, page 5; Quantum circuits for Bell state preparation by using quantum gates."
+after "Figure 3, page 5; Quantum circuits for Bell state."
 key "sisodia2020comparison"
 literal "false"
 
@@ -2458,6 +3460,73 @@ hspace{1mm}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\color red
+Once realized the entanglement state we are able to use all the properties expressed before,
+ the correlations between two qubits is called 
+\series bold
+ebit
+\series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Ebit
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color red
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+An ebit is one unit of bipartite entanglement,
+ defined as the amount of entanglement in a maximally entangled two-qubit state,
+ such as a Bell state.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (entanglement bit);
+ it is the fundamental unit of quantum entanglement,
+ a measure of 
+\emph on
+how much entanglement
+\emph default
+ two parts share.
 \end_layout
 
 \begin_layout Standard

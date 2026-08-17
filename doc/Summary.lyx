@@ -153,9 +153,60 @@ This thesis it’s my personal way,
  to learn 
 \series bold
 quantum computing
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Quantum computing
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+A quantum computer is a computer that represents and processes information using quantum states.
+ Quantum computations exploit phenomena such as superposition,
+ interference,
+ and entanglement.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \series default
  and all the potential behind it.
- Practice has helped always me a lot to discover dynamics that sometimes are difficult to understand.
+ Practice has helped me always a lot to discover dynamics that sometimes are difficult to understand.
  Writing source code with the objective of learn something complex like quantum computing is a good interactive way that I hope will let me discover something new about what I'm thinking about 
 \emph on
 reality
@@ -172,9 +223,170 @@ memory game
  especially for the 
 \series bold
 entanglement
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Entanglement
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Quantum entanglement is the phenomenon in which the quantum state of each particle in a group cannot be described independently of the state of the others,
+ even when the particles are separated by a large distance.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \series default
  state.
- The source code that I have created in Python with the Qiskit module I will be tested on a real quantum computer to compare my analysis and experience with a 
+ The source code that I have created in 
+\series bold
+Python
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Python
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Python is a high-level,
+ general-purpose programming language that emphasizes code readability,
+ simplicity,
+ and ease-of-writing with the use of significant indentation,
+ an extensive ("batteries-included") standard library,
+ and garbage collection.
+ Python supports multiple programming paradigms but with an emphasis on object-oriented programming and dynamic typing.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series default
+ with the 
+\series bold
+Qiskit
+\series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Qiskit
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Software development kit,
+ Python based,
+ developed by IBM as high-performance software stack for quantum computing.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ module I will be tested on a real quantum computer to compare my analysis and experience with a 
 \emph on
 real
 \emph default
@@ -244,7 +456,8 @@ status collapsed
 
 \begin_layout Plain Layout
 Central processing unit,
- is the primary processor in a computer 
+ is the primary processor in a computer.
+ 
 \end_layout
 
 \end_inset
@@ -293,10 +506,10 @@ GPU
 \color inherit
 
 \begin_inset Argument post:1
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Graphics processing unit
+Graphics processing unit.
 \end_layout
 
 \end_inset
@@ -394,7 +607,7 @@ FOSS
 status collapsed
 
 \begin_layout Plain Layout
-Free and Open Source Software
+Free and Open Source Software.
 \end_layout
 
 \end_inset
@@ -444,7 +657,64 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-The new paradigm of using computers include AI,
+The new paradigm of using computers include 
+\series bold
+AI
+\series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AI
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Artificial intelligence is the capability of computational systems to perform tasks typically associated with human intelligence,
+ such as learning,
+ reasoning,
+ problem-solving,
+ perception,
+ and decision-making.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+,
  and for this reason I have used an AI in 
 \series bold
 oversight mode
@@ -460,14 +730,14 @@ bgus
 \series default
 
 \begin_inset Nomenclature
-status open
+status collapsed
 
 \begin_layout Plain Layout
 BUG
 \series bold
 
 \begin_inset Argument post:1
-status open
+status collapsed
 
 \begin_layout Plain Layout
 A software bug is a defect in computer software.
