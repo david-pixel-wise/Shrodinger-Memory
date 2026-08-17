@@ -153,6 +153,57 @@ This thesis it’s my personal way,
  to learn 
 \series bold
 quantum computing
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Quantum computing
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+A quantum computer is a computer that represents and processes information using quantum states.
+ Quantum computations exploit phenomena such as superposition,
+ interference,
+ and entanglement.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \series default
  and all the potential behind it.
  Practice has helped me always a lot to discover dynamics that sometimes are difficult to understand.
@@ -350,6 +401,56 @@ Schrödinger Memory
 ” has been chosen because one of the most important experiment designed by the physicist 
 \series bold
 Erwin Schrödinger
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Erwin Schrödinger
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Erwin Rudolf Josef Alexander Schrödinger,
+ sometimes anglicised as Schroedinger or Schrodinger,
+ was an Austrian theoretical physicist who developed fundamental results in quantum theory.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \series default
  was to image a cat that was in an uncertain state between life and death.
 \end_layout
@@ -492,9 +593,9 @@ qubits
 \begin_layout Standard
 The development of this game give me also,
  the possibility to improve my programming skills with the creation of a source code that respect the vision about 
-\series bold
+\emph on
 freedom in technology
-\series default
+\emph default
 .
 \end_layout
 
@@ -507,6 +608,58 @@ free
 \series bold
 open source software
 \series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Open source software
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Open-source software is computer software with publicly available source code,
+ so people can use,
+ study,
+ modify,
+ and distribute it under an open license.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 ,
  because the technology that we are creating have to consider ethical and philosophical values that grant everyone the utilization,
  analysis and modification of the code realized with this experiments;
@@ -665,9 +818,9 @@ Artificial intelligence is the capability of computational systems to perform ta
 
 ,
  and for this reason I have used an AI in 
-\series bold
+\emph on
 oversight mode
-\series default
+\emph default
 ,
  because it is the best way to solve problems avoiding humans and machines errors;
  this way to work gave me the ability to speedup the development of code,
@@ -679,10 +832,10 @@ bgus
 \series default
 
 \begin_inset Nomenclature
-status collapsed
+status open
 
 \begin_layout Plain Layout
-BUG
+Bug
 \series bold
 
 \begin_inset Argument post:1

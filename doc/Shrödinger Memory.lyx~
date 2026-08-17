@@ -329,7 +329,7 @@ status collapsed
 \uwave off
 \noun off
 \color none
-EPOCH
+Epoch
 \family default
 \series default
 \shape default
@@ -424,19 +424,7 @@ Faculty L8 Computer Engineering
 \begin_inset Newline newline
 \end_inset
 
-Telematic University of the 
-\begin_inset Quotes eld
-\end_inset
-
-
-\emph on
-Camere di Commercio Italiane
-\emph default
-
-\begin_inset Quotes erd
-\end_inset
-
-
+Telematic University of the Camere di Commercio Italiane
 \begin_inset VSpace -3cm
 \end_inset
 

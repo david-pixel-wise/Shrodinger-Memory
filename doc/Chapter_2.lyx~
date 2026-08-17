@@ -605,13 +605,73 @@ virtually associated
  to a qubit.
 \end_layout
 
-\begin_layout Section
-Memory rules
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-The memory game,
- also known as Concentration,
+\align center
+\begin_inset Graphics
+	filename ../img/deck_visualization.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+[
+\family typewriter
+deck_visualization.png
+\family default
+:
+ image of the GUI common to all experiments]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The rules of the memory game
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+memory game
+\emph default
+,
+ also known as 
+\emph on
+concentration
+\emph default
+,
  is a simple card-matching game played by one or more players.
  To set up,
  all cards are laid face down on the table in a grid.
@@ -643,7 +703,6 @@ The key skill is memory:
 The game continues until all pairs have been collected.
  The winner is the player with the most pairs at the end,
  or the player who collects all pairs when playing alone.
- The game can also be made easier or harder by adding or removing pairs.
 \end_layout
 
 \begin_layout Standard
@@ -653,7 +712,8 @@ In this version of the game,
 \end_layout
 
 \begin_layout Standard
-The experiments that I have created with the support of different AI are:
+The experiments that I have created with the support of different AI are,
+ here the list with the subject of research and the corresponding Python file name stored in the GitHub repository created for this thesis:
 \end_layout
 
 \begin_layout Standard
@@ -674,17 +734,15 @@ hspace{1mm}
 \begin_layout Itemize
 \align left
 
-\emph on
+\bar under
 Experiment 1
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align left
-No entanglement,
+\bar default
+:
+ No entanglement,
  opposite arrows
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \align left
 (filename:
@@ -699,16 +757,14 @@ exp1_no_entanglement_random_qubits.py
 \begin_layout Itemize
 \align left
 
-\emph on
-Experiment 2 
+\bar under
+Experiment 2
+\bar default
+:
+ Random partial entanglement per pair
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\align left
-Random partial entanglement per pair
-\end_layout
-
 \begin_layout Standard
 \align left
 (filename:
@@ -723,16 +779,14 @@ exp2_bell_concurrence.py
 \begin_layout Itemize
 \align left
 
-\emph on
+\bar under
 Experiment 3
+\bar default
+:
+ All four Bell states
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\align left
-All four Bell states
-\end_layout
-
 \begin_layout Standard
 \align left
 (filename:
@@ -747,16 +801,14 @@ exp3_all_bell_states.py
 \begin_layout Itemize
 \align left
 
-\emph on
+\bar under
 Experiment 4
+\bar default
+:
+ Entanglement that grows with progress
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\align left
-Entanglement that grows with progress
-\end_layout
-
 \begin_layout Standard
 \align left
 (filename:
@@ -771,17 +823,15 @@ exp4_tunable_entanglement.py
 \begin_layout Itemize
 \align left
 
-\emph on
+\bar under
 Experiment 5
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align left
-Phase-type entanglement,
+\bar default
+:
+ Phase-type entanglement,
  different gate family
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \align left
 (filename:
@@ -794,15 +844,754 @@ exp5_phase_equatorial.py
 
 \end_deeper
 \begin_layout Section
-Quantum circuit
+Quantum circuits for deck generation
+\end_layout
+
+\begin_layout Standard
+A quantum circuit is a visual and mathematical representation of a quantum computation,
+ analogous to an electronic circuit in classical computing.
+ It consists of a sequence of quantum gates,
+ measurements,
+ and sometimes resets,
+ applied to a set of qubits over time.
+\end_layout
+
+\begin_layout Standard
+The qubits are usually depicted as horizontal lines,
+ each representing one two level quantum system.
+ Time flows from left to right.
+ A gate acting on a qubit is shown as a box or symbol placed on the qubit’s line at the appropriate time;
+ multi-qubit gates (like CNOT or SWAP) connect several lines.
+ The gates implement unitary transformations on the state of the qubits.
+ Measurement gates,
+ often shown as a meter symbol,
+ collapse the quantum state to a classical outcome.
+\end_layout
+
+\begin_layout Standard
+Quantum circuits are built from a small universal set of gates,
+ e.g.,
+ 
+\series bold
+Hadamard
+\series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Hadamard gate
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+The Hadamard gate is a single-qubit quantum gate that transforms the basis states |0⟩ and |1⟩ into superposition states.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (creates superposition),
+ 
+\series bold
+Pauli
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Pauli gates
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+The Pauli gates are the three Pauli matrices and act on a single qubit.
+ The Pauli X,
+ Y and Z equate,
+ respectively,
+ to a rotation around the x,
+ y and z axes of the Bloch sphere by radians.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series default
+ X,
+ Y,
+ Z (bit and phase flips),
+ and 
+\series bold
+CNOT
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+CNOT gate
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+The CNOT gate,
+ or Controlled-NOT gate,
+ is a two-qubit quantum logic gate that flips the state of the target qubit only if the control qubit is in the state |1⟩.
+ It is essential for creating entangled states and is a fundamental component in quantum computing.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series default
+ (creates entanglement).
+ By composing these,
+ any unitary operation on an arbitrary number of qubits can be approximated (the Solovay-Kitaev theorem
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wiki:SolovayKitaev"
+literal "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+When a circuit is executed on a quantum computer,
+ the initial state (usually |0...0⟩) is transformed by each gate in sequence,
+ and finally the qubits are measured,
+ producing a string of classical bits.
+ Because of superposition and entanglement,
+ the output of a circuit is generally probabilistic;
+ multiple runs (shots) are taken to estimate the distribution of results.
+\end_layout
+
+\begin_layout Standard
+The circuits created for the experiments have a common schema but they differs to change the behaviors in the game.
+ The main circuit used for all the games could be graphically represented as the following image:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../img/deck_generation_circuit.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+[
+\family typewriter
+deck_generation_circuit.png
+\family default
+:
+ common circuit to all the experiments]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the image you can see 4 qubits (q0,
+ q1,
+ q2,
+ q3,
+ q4),
+ each put into equal to |0⟩ at the starting position.
+ The H (Hadamard) gate on each qubit means that,
+ before measurement,
+ every one of the 4 qubits has a 50/50 chance of coming out 0 or 1 and this is the source of the 
+\emph on
+quantum randomness
+\emph default
+ that I have tried to add to the whole game to generate more interesting visualizations.
+\end_layout
+
+\begin_layout Standard
+One entangling gate cx(1,
+ 0),
+ represented in the image as a blue circle with a plus in the middle that connect the q0 to q1,
+ is a CNOT.
+ The qubit 1 acts as the controller and qubit 0 as the target.
+ If qubit 1 measures 1,
+ qubit 0 value gets flipped;
+ if qubit 1 measures 0,
+ qubit 0 is left alone.
+\end_layout
+
+\begin_layout Standard
+All 4 qubits measured simultaneously,
+ giving a random 4 bit string used to build one card:
+\end_layout
+
+\begin_layout Itemize
+qubit 0 bit → give a the sign to the card,
+ positive or negative (+ or -)
+\end_layout
+
+\begin_layout Itemize
+qubits 1,
+ 2,
+ 3 bits → combined into a 3 bit number (0 - 7) → picks which emoji out of the 8
+\end_layout
+
+\begin_layout Standard
+This whole circuit runs once per card,
+ discarding duplicates,
+ until all 16 distinct sign and emoji combinations exist.
+\end_layout
+
+\begin_layout Standard
+After the deck generation,
+ the last thing that happens in the circuit is the 
+\emph on
+measurement
+\emph default
+.
+ This operation is destructive in quantum mechanics;
+ the instant a qubit is measured,
+ its superposition collapses into one definite classical value (0 or 1),
+ and that quantum information is lost.
+ After that the Python code consider only a plain 4 bit string (like 0011);
+ not a quantum state anymore but only four classical bits.
+\end_layout
+
+\begin_layout Standard
+So during the visualization of the popup after match,
+ the source code builds a fresh 2 qubit circuit from scratch,
+ starting clean at |00⟩,
+ and uses the matched card's sign and emoji identity only as classical inputs that decide which gates to apply depending to the experiment and not as some inherited quantum state.
+ That's what makes it possible to have a controlled,
+ reproducible,
+ exactly known state to actually show you:
+ real superposition,
+ real entanglement (or deliberately none,
+ for Experiment 1),
+ still fully intact right up until the moment the popup renders it.
 \end_layout
 
 \begin_layout Section
-Tiles are ebit (
-\emph on
-entangled qubit
-\emph default
-)
+Quantum circuits for cards visualization
+\end_layout
+
+\begin_layout Standard
+Once generated the deck with all the cards to explore better the possibility of entanglement I have decided to create some variation on the original experiments.
+\end_layout
+
+\begin_layout Subsection
+Experiment 1:
+ no entanglement
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../img/exp1_circuit.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+[
+\family typewriter
+exp1_circuit.png
+\family default
+:
+ two independent 
+\family typewriter
+ry
+\family default
+ rotations,
+ no entangling gate]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Before entanglement can mean anything,
+ you need to see what its absence looks like.
+ This experiment shows two completely independent qubits,
+ each with its own clear,
+ full-length arrow,
+ always pointing opposite ways.
+ Nothing mysterious happens here —
+ knowing one qubit tells you nothing about the other.
+ It's the deliberate "before" picture,
+ so that the strange,
+ collapsed-looking spheres in every other experiment read as meaningful rather than broken.
+\end_layout
+
+\begin_layout Subsection
+Experiment 2:
+ random partial entanglement
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../img/exp2_circuit.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+[
+\family typewriter
+exp2_circuit.png
+\family default
+:
+ partial-entanglement 
+\family typewriter
+ry + cx
+\family default
+]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entanglement isn't all-or-nothing —
+ this is where that idea lives.
+ Each matched pair carries its own fixed,
+ quantum-random "amount" of entanglement,
+ so some matches barely show any correlation while others come close to fully entangled.
+ It's built to make a core trade-off visible:
+ the more entangled two qubits become,
+ the less either one has a state that belongs to it alone —
+ you can watch that happen as the arrow shrinks toward the center.
+\end_layout
+
+\begin_layout Subsection
+Experiment 3:
+ all four Bell states
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../img/exp3_circuit.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+[
+\family typewriter
+exp3_circuit.png
+\family default
+:
+ 
+\family typewriter
+h + cx
+\family default
+,
+ then conditional 
+\family typewriter
+z/x
+\family default
+]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Maximal entanglement isn't a single thing —
+ there are four distinct "flavors" of it (the Bell states),
+ and this experiment makes sure you meet all of them over a game.
+ The lesson:
+ two entangled pairs can be equally,
+ maximally entangled and still be genuinely different states,
+ in a way that ordinary probabilities can't show you.
+ You have to look deeper —
+ at the actual structure of the state —
+ to tell them apart.
+\end_layout
+
+\begin_layout Subsection
+Experiment 4:
+ entanglement that grows with the game
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../img/exp4_circuit.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+[
+\family typewriter
+exp4_circuit.png
+\family default
+:
+ same shape as experiment 2,
+ but 
+\family typewriter
+theta
+\family default
+ tied to game progress]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here entanglement isn't random —
+ it's tied to your own progress.
+ Early matches barely show any correlation;
+ the more pairs you successfully find,
+ the more entangled each new pair becomes,
+ building toward full entanglement by the end.
+ It turns a physics concept into something you experience over time,
+ rather than a fact stated once.
+\end_layout
+
+\begin_layout Subsection
+Experiment 5:
+ phase-type entanglement
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../img/exp5_circuit.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+[
+\family typewriter
+exp5_circuit.png
+\family default
+:
+
+\family typewriter
+ h
+\family default
+,
+ 
+\family typewriter
+h
+\family default
+,
+ 
+\family typewriter
+cz
+\family default
+,
+ then conditional 
+\family typewriter
+x
+\family default
+]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Not all entanglement announces itself the same way.
+ This experiment is fully,
+ maximally entangled,
+ yet if you only looked at measurement probabilities,
+ you'd see nothing unusual at all —
+ everything looks perfectly random and flat.
+ The correlation is hiding in the phase instead.
+ It's a lesson in how quantum correlations can stay invisible until you know to look at them the right way.
 \end_layout
 
 \begin_layout Standard

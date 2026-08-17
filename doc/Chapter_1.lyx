@@ -1177,7 +1177,14 @@ the engineering and the science needs
 \color red
 answers
 \color inherit
- to humans.
+ to humans 
+\color red
+like,
+ the famous comedy science fiction 
+\emph on
+The Hitchhiker's Guide to the Galaxy
+\emph default
+:
 \end_layout
 
 \begin_layout Standard
@@ -1799,6 +1806,21 @@ Gaussian distribution
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
@@ -1873,6 +1895,21 @@ Normal curve
 \begin_layout Standard
 \align right
 [Plots created by the student with R Studio]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2727,6 +2764,13 @@ A transporter is a fictional teleportation machine used in the Star Trek univers
 \end_layout
 
 \begin_layout Standard
+
+\color red
+Is too optimistic to think that in the next decade we could have instruments that can move matter almost instantaneously,
+ but with the quantum technology we can do some steps forward at lead with telecommunications if we will be able to develop instruments that will use the entanglement state with a new generations of computers.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -3187,11 +3231,118 @@ literal "false"
 
 \begin_layout Standard
 Following the instructions provided by Qiskit documentation is quite easy to have a snippet to create a quantum circuit with quantum entanglement.
- To do that is necessary to familiarize with the basics quantum logical ports 
+ To do that is necessary to familiarize with the basics quantum 
+\series bold
+logical gates
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Logic gate
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+A logic gate is a device that performs a Boolean function,
+ a logical operation performed on one or more binary inputs that produces a single binary output.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series default
+ 
 \color red
 to build an
 \color inherit
- algorithm.
+ 
+\series bold
+algorithm
+\series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Algorithm
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+In mathematics and computer science,
+ an algorithm is a finite sequence of mathematically rigorous instructions,
+ typically used to solve a class of specific problems or to perform a computation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3321,7 +3472,15 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-Here the code translated in Python with Qiskit:
+
+\color red
+Later in the next chapter we will see in details all the quantum circuits used in the source code,
+ but for now the goal is to show how simply is to write quantum circuits with Qiskit.
+ With exactly four lines of Python code we can translate the mathematical equation 
+\begin_inset Formula $\mid\psi^{+}\rangle$
+\end_inset
+
+ for our simulations:
 \end_layout
 
 \begin_layout Standard

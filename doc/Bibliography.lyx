@@ -238,12 +238,6 @@ thepage
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset ERT
 status collapsed
 
@@ -251,6 +245,11 @@ status collapsed
 
 \backslash
 thepage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -329,7 +328,7 @@ restore the right header line
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 This .lyx file will give an error if compiled on its own,
@@ -364,12 +363,12 @@ encoding "default"
 status open
 
 \begin_layout Plain Layout
-
+Nomenclature
 \end_layout
 
 \end_inset
 
-Nomenclature
+
 \begin_inset Note Note
 status collapsed
 
@@ -407,7 +406,7 @@ Nomenclature
 \begin_inset CommandInset nomencl_print
 LatexCommand printnomenclature
 set_width "custom"
-width "2.5cm"
+width "4.5cm"
 
 \end_inset
 
