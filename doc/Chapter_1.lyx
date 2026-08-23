@@ -1117,7 +1117,7 @@ x86-64 (also known as AMD64,
  x86_64,
  x64 and,
  rarely,
- Intel 64) [note 1] is a 64-bit extension of the x86 instruction set.
+ Intel 64) is a 64-bit extension of the x86 instruction set.
  It was announced in 1999 and first available in the AMD Opteron family in 2003.
 \end_layout
 
@@ -1207,10 +1207,22 @@ hspace{1mm}
 
 \emph on
 \color red
-“O Deep Thought computer," he said,
+«O Deep Thought computer," he said,
  "the task we have designed you to perform is this.
- We want you to tell us...." he paused,
- "The Answer."
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+We want you to tell us...." he paused,
+ "
+\series bold
+The Answer.
+\series default
+"
 \end_layout
 
 \begin_layout Standard
@@ -1227,7 +1239,11 @@ hspace{1mm}
 
 \emph on
 \color red
-"Life!" urged Fook.
+"
+\series bold
+Life!
+\series default
+" urged Fook.
 \end_layout
 
 \begin_layout Standard
@@ -1235,7 +1251,11 @@ hspace{1mm}
 
 \emph on
 \color red
-"The Universe!" said Lunkwill.
+"
+\series bold
+The Universe!
+\series default
+" said Lunkwill.
 \end_layout
 
 \begin_layout Standard
@@ -1243,7 +1263,11 @@ hspace{1mm}
 
 \emph on
 \color red
-"Everything!" they said in chorus.
+"
+\series bold
+Everything!
+\series default
+" they said in chorus.
  
 \end_layout
 
@@ -1303,11 +1327,28 @@ Again,
 \emph on
 \color red
 "Yes," said Deep Thought.
- "Life,
+ "
+\series bold
+Life,
  the Universe,
  and Everything.
- There is an answer.
- But,
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+There is an answer.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\color red
+But,
  I'll have to think about it."
 \end_layout
 
@@ -1356,12 +1397,12 @@ Fook glanced impatiently at his watch.
 
 \emph on
 \color red
-"Forty-two," said Deep Thought,
- with infinite majesty and calm.
-\begin_inset Quotes erd
-\end_inset
-
-
+"
+\series bold
+Forty-two,
+\series default
+" said Deep Thought,
+ with infinite majesty and calm.»
 \end_layout
 
 \begin_layout Standard
@@ -3695,7 +3736,7 @@ In the next chapter we will see how all these concepts will be used to create an
 \begin_layout Standard
 \begin_inset Branch Standalone
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset CommandInset include

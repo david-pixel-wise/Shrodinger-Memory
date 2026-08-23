@@ -603,6 +603,57 @@ freedom in technology
 To realize the source code I have used only 
 \series bold
 free
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Free software
+\family default
+\series bold
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Free software or libre software sometimes known as freedom-respecting software is computer software distributed under free software licenses that allow users to run the software for any purpose as well as to study,
+ change,
+ and distribute it and any adapted versions.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \series default
  and 
 \series bold
@@ -759,7 +810,7 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-The new paradigm of using computers include 
+The new paradigm of using computers include the artificial intelligence (later in the text 
 \series bold
 AI
 \series default
@@ -816,8 +867,8 @@ Artificial intelligence is the capability of computational systems to perform ta
 
 \end_inset
 
-,
- and for this reason I have used an AI in 
+),
+ and for this reason I have used some AIs in 
 \emph on
 oversight mode
 \emph default
@@ -832,7 +883,7 @@ bgus
 \series default
 
 \begin_inset Nomenclature
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Bug

@@ -416,7 +416,11 @@ baselineskip}
 \begin_inset Newline newline
 \end_inset
 
+
+\series bold
 Universitas Mercatorum
+\series default
+
 \begin_inset Newline newline
 \end_inset
 

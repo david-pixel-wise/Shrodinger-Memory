@@ -810,7 +810,7 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-The new paradigm of using computers include 
+The new paradigm of using computers include the artificial intelligence (later in the text 
 \series bold
 AI
 \series default
@@ -867,14 +867,14 @@ Artificial intelligence is the capability of computational systems to perform ta
 
 \end_inset
 
-,
- and for this reason I have used an AI in 
+),
+ and for this reason I have used some AIs in 
 \emph on
 oversight mode
 \emph default
 ,
  because it is the best way to solve problems avoiding humans and machines errors;
- this way to work gave me the ability to speedup the development of code,
+ this way to work gave me the ability to speedup the development of source code,
  granting me more time to:
  read new articles,
  follow quantum courses or fixing 
@@ -883,7 +883,7 @@ bgus
 \series default
 
 \begin_inset Nomenclature
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Bug

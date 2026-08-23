@@ -383,6 +383,10 @@ Reading graphs:
  and the Bloch sphere
 \end_layout
 
+\begin_layout Standard
+To better understand the graph and chart produced during the experiments I add here a simple reminder of the concepts need to generate the charts and understand it.
+\end_layout
+
 \begin_layout Subsection
 Complex numbers as vectors
 \end_layout
