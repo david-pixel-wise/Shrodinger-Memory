@@ -605,13 +605,73 @@ virtually associated
  to a qubit.
 \end_layout
 
-\begin_layout Section
-Memory rules
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-The memory game,
- also known as Concentration,
+\align center
+\begin_inset Graphics
+	filename ../img/deck_visualization.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+[
+\family typewriter
+deck_visualization.png
+\family default
+:
+ image of the GUI common to all experiments]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The rules of the memory game
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+memory game
+\emph default
+,
+ also known as 
+\emph on
+concentration
+\emph default
+,
  is a simple card-matching game played by one or more players.
  To set up,
  all cards are laid face down on the table in a grid.
@@ -643,7 +703,6 @@ The key skill is memory:
 The game continues until all pairs have been collected.
  The winner is the player with the most pairs at the end,
  or the player who collects all pairs when playing alone.
- The game can also be made easier or harder by adding or removing pairs.
 \end_layout
 
 \begin_layout Standard
@@ -653,7 +712,8 @@ In this version of the game,
 \end_layout
 
 \begin_layout Standard
-The experiments that I have created with the support of different AI are:
+The experiments that I have created with the support of different AI are,
+ here the list with the subject of research and the corresponding Python file name stored in the GitHub repository created for this thesis:
 \end_layout
 
 \begin_layout Standard
@@ -674,17 +734,15 @@ hspace{1mm}
 \begin_layout Itemize
 \align left
 
-\emph on
+\bar under
 Experiment 1
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align left
-No entanglement,
+\bar default
+:
+ No entanglement,
  opposite arrows
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \align left
 (filename:
@@ -699,16 +757,14 @@ exp1_no_entanglement_random_qubits.py
 \begin_layout Itemize
 \align left
 
-\emph on
+\bar under
 Experiment 2
+\bar default
+:
+ Random partial entanglement per pair
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\align left
-Random partial entanglement per pair
-\end_layout
-
 \begin_layout Standard
 \align left
 (filename:
@@ -723,16 +779,14 @@ exp2_bell_concurrence.py
 \begin_layout Itemize
 \align left
 
-\emph on
+\bar under
 Experiment 3
+\bar default
+:
+ All four Bell states
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\align left
-All four Bell states
-\end_layout
-
 \begin_layout Standard
 \align left
 (filename:
@@ -747,16 +801,14 @@ exp3_all_bell_states.py
 \begin_layout Itemize
 \align left
 
-\emph on
+\bar under
 Experiment 4
+\bar default
+:
+ Entanglement that grows with progress
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\align left
-Entanglement that grows with progress
-\end_layout
-
 \begin_layout Standard
 \align left
 (filename:
@@ -771,17 +823,15 @@ exp4_tunable_entanglement.py
 \begin_layout Itemize
 \align left
 
-\emph on
+\bar under
 Experiment 5
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align left
-Phase-type entanglement,
+\bar default
+:
+ Phase-type entanglement,
  different gate family
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \align left
 (filename:
@@ -991,7 +1041,7 @@ The CNOT gate,
 \series default
  (creates entanglement).
  By composing these,
- any unitary operation on an arbitrary number of qubits can be approximated (the Solovay-Kitaev theorem
+ any unitary operation on an arbitrary number of qubits can be approximated (the Solovay-Kitaev theorem 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "wiki:SolovayKitaev"
@@ -1036,8 +1086,8 @@ hspace{1mm}
 \align center
 \begin_inset Graphics
 	filename ../img/deck_generation_circuit.png
-	lyxscale 50
-	scale 50
+	lyxscale 70
+	scale 70
 
 \end_inset
 
@@ -1046,8 +1096,27 @@ hspace{1mm}
 
 \begin_layout Standard
 \align right
-[Fig 2.3.0:
- Common circ]
+[
+\family typewriter
+deck_generation_circuit.png
+\family default
+:
+ common circuit to all the experiments]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1130,20 +1199,31 @@ So during the visualization of the popup after match,
 \end_layout
 
 \begin_layout Section
-Tiles are ebit (
-\emph on
-entangled qubit
-\emph default
-)
+Quantum circuits for cards visualization
 \end_layout
 
 \begin_layout Standard
-Once generated the deck with all the cards to explore better the possibility of entanglement I have decided to create some variation on the original experiments.
+Once generated the deck with all the cards to explore better the possibility of entanglement I have decided to create some variation to the original experiment.
 \end_layout
 
 \begin_layout Subsection
 Experiment 1:
- No Entanglement
+ no entanglement
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1159,8 +1239,12 @@ Experiment 1:
 \end_layout
 
 \begin_layout Standard
-\align center
-[Fig 1:
+\align right
+[
+\family typewriter
+exp1_circuit.png
+\family default
+:
  two independent 
 \family typewriter
 ry
@@ -1170,32 +1254,63 @@ ry
 \end_layout
 
 \begin_layout Standard
-Before entanglement can mean anything,
- you need to see what its absence looks like.
- This experiment shows two completely independent qubits,
- each with its own clear,
- full-length arrow,
- always pointing opposite ways.
- Nothing mysterious happens here —
- knowing one qubit tells you nothing about the other.
- It's the deliberate "before" picture,
- so that the strange,
- collapsed-looking spheres in every other experiment read as meaningful rather than broken.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The circuit associated with this experiment consists of two independent single-qubit rotations,
+ each implemented by means of an RY gate,
+ applied respectively to the first and second qubit.
+ No two-qubit gate is present in this circuit.
+ The rotation angle applied to the second qubit is fixed to be the rotation angle of the first qubit augmented by π,
+ so that the corresponding Bloch vectors are diametrically opposed.
+ The rotation angle itself is obtained through a quantum-random process,
+ consistent with the method employed for deck generation,
+ and is fixed once for each pictorial symbol at the beginning of the session.
+ The absence of any interaction between the two qubits ensures that the resulting two-qubit state is separable,
+ and therefore devoid of entanglement,
+ independently of the specific value of the rotation angle.
+ This experiment establishes the reference condition against which the entangled states presented in the subsequent experiments are to be interpreted,
+ and permits the direct observation of two qubits each possessing a fully defined individual state.
 \end_layout
 
 \begin_layout Subsection
 Experiment 2:
- Random Partial Entanglement (Partial-entanglement 
-\family typewriter
-ry + cx)
+ random partial entanglement
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename ../img/exp2_circuit.png
-	lyxscale 50
-	scale 50
+	lyxscale 70
+	scale 70
 
 \end_inset
 
@@ -1203,35 +1318,78 @@ ry + cx)
 \end_layout
 
 \begin_layout Standard
-Entanglement isn't all-or-nothing —
- this is where that idea lives.
- Each matched pair carries its own fixed,
- quantum-random "amount" of entanglement,
- so some matches barely show any correlation while others come close to fully entangled.
- It's built to make a core trade-off visible:
- the more entangled two qubits become,
- the less either one has a state that belongs to it alone —
- you can watch that happen as the arrow shrinks toward the center.
+\align right
+[
+\family typewriter
+exp2_circuit.png
+\family default
+:
+ partial-entanglement 
+\family typewriter
+ry + cx
+\family default
+]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The circuit associated with this experiment comprises a single-qubit RY rotation applied to the first qubit,
+ followed by a controlled-NOT gate with the first qubit as control and the second as target.
+ Two additional single-qubit NOT gates may be conditionally applied to the first and second qubit respectively,
+ according to the sign encoded on the corresponding cards;
+ these operations,
+ being local,
+ do not affect the degree of entanglement of the resulting state,
+ but determine which of the two computational basis states is associated with a positive or negative amplitude.
+ The rotation angle preceding the controlled-NOT gate is obtained through a quantum-random process and is fixed independently for each pictorial symbol.
+ As this angle varies,
+ the resulting two-qubit state exhibits an entanglement entropy ranging continuously between zero and one ebit,
+ with the maximal value attained when the rotation angle equals π/2.
+ This experiment is designed to illustrate that entanglement admits intermediate degrees,
+ in contrast to the binary distinction addressed in the preceding experiment,
+ and to demonstrate the corresponding progressive reduction in the definiteness of the individual qubit states.
 \end_layout
 
 \begin_layout Subsection
 Experiment 3:
- All Four Bell States
-\family typewriter
- (h + cx
-\family default
-,
- then conditional 
-\family typewriter
-z/x)
+ all four Bell states
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename ../img/exp3_circuit.png
-	lyxscale 50
-	scale 50
+	lyxscale 70
+	scale 70
 
 \end_inset
 
@@ -1239,34 +1397,80 @@ z/x)
 \end_layout
 
 \begin_layout Standard
-Maximal entanglement isn't a single thing —
- there are four distinct "flavors" of it (the Bell states),
- and this experiment makes sure you meet all of them over a game.
- The lesson:
- two entangled pairs can be equally,
- maximally entangled and still be genuinely different states,
- in a way that ordinary probabilities can't show you.
- You have to look deeper —
- at the actual structure of the state —
- to tell them apart.
+\align right
+[
+\family typewriter
+exp3_circuit.png
+\family default
+:
+ 
+\family typewriter
+h + cx
+\family default
+,
+ then conditional 
+\family typewriter
+z/x
+\family default
+]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This experiment demonstrates that maximal entanglement does not correspond to a unique quantum state,
+ but rather to an entire class of states,
+ exemplified here by the four Bell states.
+ Each state generated in this experiment possesses identical entanglement entropy,
+ equal to one ebit,
+ and identical marginal probability distributions for the individual qubits.
+ The four states are nonetheless distinguishable,
+ differing in the relative phase and bit-parity structure of their amplitudes.
+ The educational objective of this experiment is to show that maximal entanglement is not sufficient to fully characterize a quantum state,
+ and that additional structural information,
+ not accessible through single-qubit measurement statistics alone,
+ is required to distinguish between the members of the Bell basis.
 \end_layout
 
 \begin_layout Subsection
 Experiment 4:
- Entanglement That Grows With the Game (same shape as experiment 2,
- but 
-\family typewriter
-theta
-\family default
- tied to game progress)
+ entanglement that grows with the game
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename ../img/exp4_circuit.png
-	lyxscale 50
-	scale 50
+	lyxscale 70
+	scale 70
 
 \end_inset
 
@@ -1274,21 +1478,90 @@ theta
 \end_layout
 
 \begin_layout Standard
-Here entanglement isn't random —
- it's tied to your own progress.
- Early matches barely show any correlation;
- the more pairs you successfully find,
- the more entangled each new pair becomes,
- building toward full entanglement by the end.
- It turns a physics concept into something you experience over time,
- rather than a fact stated once.
+\align right
+[
+\family typewriter
+exp4_circuit.png
+\family default
+:
+ same shape as experiment 2,
+ but 
+\family typewriter
+theta
+\family default
+ tied to game progress]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This experiment associates the degree of entanglement with the player's progress within the game,
+ rather than with an independent random variable.
+ The entangling parameter is determined deterministically by the number of pairs previously identified,
+ resulting in an entanglement entropy that increases monotonically over the course of a session,
+ from zero towards one ebit.
+ This experiment is intended to convey the concept of entanglement as a dynamic,
+ controllable quantity rather than a static property of a system,
+ and to provide an experiential,
+ rather than purely descriptive,
+ understanding of its gradual onset.
 \end_layout
 
 \begin_layout Subsection
 Experiment 5:
- Phase-Type Entanglement
+ phase-type entanglement
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../img/exp5_circuit.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+[
 \family typewriter
- (h
+exp5_circuit.png
+\family default
+:
+
+\family typewriter
+ h
 \family default
 ,
  
@@ -1303,15 +1576,20 @@ cz
 ,
  then conditional 
 \family typewriter
-x)
+x
+\family default
+]
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename ../img/exp5_circuit.png
-	lyxscale 50
-	scale 50
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
 
 \end_inset
 
@@ -1319,14 +1597,16 @@ x)
 \end_layout
 
 \begin_layout Standard
-Not all entanglement announces itself the same way.
- This experiment is fully,
- maximally entangled,
- yet if you only looked at measurement probabilities,
- you'd see nothing unusual at all —
- everything looks perfectly random and flat.
- The correlation is hiding in the phase instead.
- It's a lesson in how quantum correlations can stay invisible until you know to look at them the right way.
+This experiment demonstrates that maximal entanglement,
+ quantified as one ebit,
+ does not necessarily produce observable correlations in the computational basis.
+ The state generated in this experiment yields a uniform probability distribution over all measurement outcomes when measured in the standard basis,
+ despite being maximally entangled.
+ The entanglement is instead manifest in the correlation of measurement outcomes obtained in an alternative basis.
+ The purpose of this experiment is to illustrate that the detection of entanglement is basis-dependent,
+ and that the absence of correlation in one measurement basis does not,
+ in general,
+ imply the absence of entanglement in the underlying quantum state.
 \end_layout
 
 \begin_layout Standard

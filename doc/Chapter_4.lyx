@@ -323,7 +323,33 @@ Overview
 \end_layout
 
 \begin_layout Standard
-bla bla bla.
+For the creation of the software of this experiments I have used to write the code two different AI;
+ this has been my first time using AI for the development in Python,
+ because I came from the old school of programming and actually I write mostly scripts in Bash and Ansible for my daily work.
+\end_layout
+
+\begin_layout Standard
+In any case the experience of programming was good and helped me to realize the game with the minimum effort of coding;
+ but during the development phase,
+ some 
+\begin_inset Quotes eld
+\end_inset
+
+hallucinations
+\begin_inset Quotes erd
+\end_inset
+
+ produced by the artificial intelligence have made me spend some time debugging the code in search of the bugs inserted in the code.
+\end_layout
+
+\begin_layout Standard
+After the corrections,
+ I have used another artificial intelligence to do a double check of the code;
+ after that I have used the knowledge learned with the quantum computing course of IBM and my experience as programmer gained with big headache and sleepless nights to shape the code of the memory game.
+\end_layout
+
+\begin_layout Standard
+So in this chapter I will face all the development and deployment aspects to make easier for the each reader that would to try make tests on quantum computing with the source code produced with this thesis.
 \end_layout
 
 \begin_layout Section

@@ -1041,7 +1041,7 @@ The CNOT gate,
 \series default
  (creates entanglement).
  By composing these,
- any unitary operation on an arbitrary number of qubits can be approximated (the Solovay-Kitaev theorem
+ any unitary operation on an arbitrary number of qubits can be approximated (the Solovay-Kitaev theorem 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "wiki:SolovayKitaev"
@@ -1203,12 +1203,14 @@ Quantum circuits for cards visualization
 \end_layout
 
 \begin_layout Standard
-Once generated the deck with all the cards to explore better the possibility of entanglement I have decided to create some variation on the original experiments.
+
+\color red
+Once generated the deck with all the cards to explore better the possibility of entanglement I have decided to create some variation to the original experiment.
 \end_layout
 
 \begin_layout Subsection
 Experiment 1:
- no entanglement
+ absence of entanglement
 \end_layout
 
 \begin_layout Standard
@@ -1229,7 +1231,7 @@ hspace{1mm}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../img/exp1_circuit.png
+	filename ../img/exp1_ch2_circuit.png
 	lyxscale 70
 	scale 70
 
@@ -1242,7 +1244,7 @@ hspace{1mm}
 \align right
 [
 \family typewriter
-exp1_circuit.png
+exp1_ch2_circuit.png
 \family default
 :
  two independent 
@@ -1269,22 +1271,44 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-Before entanglement can mean anything,
- you need to see what its absence looks like.
- This experiment shows two completely independent qubits,
- each with its own clear,
- full-length arrow,
- always pointing opposite ways.
- Nothing mysterious happens here —
- knowing one qubit tells you nothing about the other.
- It's the deliberate "before" picture,
- so that the strange,
- collapsed-looking spheres in every other experiment read as meaningful rather than broken.
+The circuit associated with this experiment consists of two independent single qubit rotations,
+ each implemented by means of an R
+\begin_inset Formula $_{y}$
+\end_inset
+
+ gate,
+ applied respectively to the first and second qubit.
+ No two qubit gate is present in this circuit.
+ The rotation angle applied to the second qubit is fixed to be the rotation angle of the first qubit augmented by 
+\begin_inset Formula $\pi$
+\end_inset
+
+,
+ so that 
+\emph on
+the corresponding Bloch vectors are diametrically opposed
+\emph default
+.
+ The rotation angle itself is obtained through a quantum random process,
+ consistent with the method employed for deck generation,
+ and is fixed once for each pictorial symbol at the beginning of the session.
+ The absence of any interaction between the two qubits ensures that 
+\emph on
+the resulting two qubit state is separable
+\emph default
+,
+ and therefore devoid of entanglement,
+ independently of the specific value of the rotation angle.
+\end_layout
+
+\begin_layout Standard
+This experiment establishes the reference condition against which the entangled states presented in the subsequent experiments are to be interpreted,
+ and permits the direct observation of two qubits each possessing a fully defined individual state.
 \end_layout
 
 \begin_layout Subsection
 Experiment 2:
- random partial entanglement
+ partial and variable entanglement
 \end_layout
 
 \begin_layout Standard
@@ -1305,7 +1329,7 @@ hspace{1mm}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../img/exp2_circuit.png
+	filename ../img/exp2_ch2_circuit.png
 	lyxscale 70
 	scale 70
 
@@ -1318,7 +1342,7 @@ hspace{1mm}
 \align right
 [
 \family typewriter
-exp2_circuit.png
+exp2_ch2_circuit.png
 \family default
 :
  partial-entanglement 
@@ -1344,20 +1368,37 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-Entanglement isn't all-or-nothing —
- this is where that idea lives.
- Each matched pair carries its own fixed,
- quantum-random "amount" of entanglement,
- so some matches barely show any correlation while others come close to fully entangled.
- It's built to make a core trade-off visible:
- the more entangled two qubits become,
- the less either one has a state that belongs to it alone —
- you can watch that happen as the arrow shrinks toward the center.
+The circuit associated with this experiment comprises a single qubit R
+\begin_inset Formula $_{y}$
+\end_inset
+
+ rotation applied to the first qubit,
+ followed by a controlled NOT gate with the first qubit as control and the second as target.
+ Two additional single qubit NOT gates may be conditionally applied to the first and second qubit respectively,
+ according to the sign encoded on the corresponding cards;
+ these operations,
+ being local,
+ do not affect the degree of entanglement of the resulting state,
+ but determine which of the two computational basis states is associated with a positive or negative amplitude.
+ The rotation angle preceding the controlled NOT gate is obtained through a quantum random process and is fixed independently for each pictorial symbol.
+ As this angle varies,
+ the resulting two qubit state exhibits an entanglement entropy ranging continuously between zero and one ebit,
+ with the maximal value attained when the rotation angle equals π/2.
+\end_layout
+
+\begin_layout Standard
+This experiment is designed to illustrate that 
+\emph on
+entanglement admits intermediate degrees
+\emph default
+,
+ in contrast to the binary distinction addressed in the preceding experiment,
+ and to demonstrate the corresponding progressive reduction in the definiteness of the individual qubit states.
 \end_layout
 
 \begin_layout Subsection
 Experiment 3:
- all four Bell states
+ the Bell state basis
 \end_layout
 
 \begin_layout Standard
@@ -1378,7 +1419,7 @@ hspace{1mm}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../img/exp3_circuit.png
+	filename ../img/exp3_ch2_circuit.png
 	lyxscale 70
 	scale 70
 
@@ -1391,7 +1432,7 @@ hspace{1mm}
 \align right
 [
 \family typewriter
-exp3_circuit.png
+exp3_ch2_circuit.png
 \family default
 :
  
@@ -1422,21 +1463,106 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-Maximal entanglement isn't a single thing —
- there are four distinct "flavors" of it (the Bell states),
- and this experiment makes sure you meet all of them over a game.
- The lesson:
- two entangled pairs can be equally,
- maximally entangled and still be genuinely different states,
- in a way that ordinary probabilities can't show you.
- You have to look deeper —
- at the actual structure of the state —
- to tell them apart.
+The circuit associated with this experiment consists of a Hadamard gate applied to the first qubit,
+ followed by a controlled NOT gate with the first qubit as control and the second as target,
+ generating a 
+\emph on
+maximally entangled state
+\emph default
+.
+ A Z gate may be conditionally applied to the first qubit according to the sign of the corresponding card,
+ and an X gate may be conditionally applied to the second qubit according to the parity of the index associated with the pictorial symbol.
+ The combined application of these two conditional operations 
+\emph on
+allows the circuit to generate any one of the four Bell states
+\emph default
+.
+ Each of these four states possesses identical entanglement entropy,
+ equal to one ebit,
+ and identical marginal probability distributions for the individual qubits,
+ yet they are mutually distinguishable through the relative phase and bit-parity structure of their amplitudes.
+\end_layout
+
+\begin_layout Standard
+This experiment demonstrates that 
+\emph on
+maximal entanglement does not correspond to a single quantum state
+\emph default
+,
+ but to an equivalence class of states requiring additional structural information for their complete characterization.
+\end_layout
+
+\begin_layout Standard
+As we have seen before,
+ the Bell states can be obtained with different circuits,
+ but in this experiment we are demonstrating that also with the circuit producing Φ⁺ we can reach all of the other three Bell states,
+ Φ⁻,
+ Ψ⁺,
+ and Ψ⁻,
+ without changing the entangling step itself.
+\end_layout
+
+\begin_layout Standard
+To be more precise,
+ we are using a 
+\emph on
+Bell state preparation circuit
+\emph default
+ (Hadamard followed by CNOT),
+ circuit that produces Φ⁺;
+ followed by a 
+\emph on
+conditional Pauli encoding
+\emph default
+ step (Z and/or X,
+ applied to one qubit only).
+\end_layout
+
+\begin_layout Standard
+The idea behind this experiment is that,
+ once two qubits have been made entangled,
+ moving between the four Bell states does not require building the entanglement again from scratch.
+ Starting from the same entangled pair,
+ a small operation performed on only one of the two qubits,
+ leaving the other completely untouched,
+ is enough to turn the pair into a different member of the Bell family.
+ In this experiment,
+ that operation is decided by two pieces of information that the game already provides:
+ the sign of the matched card,
+ which decides whether a phase adjustment is introduced,
+ and the identity of the matched picture,
+ which decides whether a bit flip is introduced.
+ Depending on which of these two conditions are met,
+ the same starting entangled pair ends up as one of the four possible Bell states.
+\end_layout
+
+\begin_layout Standard
+What makes this worth highlighting from an educational standpoint is twofold.
+ First,
+ it shows that maximal entanglement does not describe a single,
+ unique state of two qubits,
+ but rather an entire family of four states,
+ all equally and maximally entangled,
+ and distinguished from each other only by these small,
+ local adjustments.
+ Second,
+ and more strikingly,
+ it shows that acting on just one of the two qubits is sufficient to change which member of that family the pair becomes,
+ even though the two qubits remain entangled throughout,
+ and even though the second qubit is never directly touched.
+ This has no real counterpart in classical physics,
+ where performing an operation on one object cannot change how that object is jointly described together with another,
+ distant object.
+ It is precisely this property,
+ of steering a shared entangled pair by acting on only one half of it,
+ that underlies well-known quantum communication protocols such as superdense coding,
+ in which a sender is able to communicate one of four possible messages to a receiver by transmitting a single qubit,
+ relying on an entangled pair the two parties already share in advance.
 \end_layout
 
 \begin_layout Subsection
 Experiment 4:
- entanglement that grows with the game
+ entanglement as a function of progression
 \end_layout
 
 \begin_layout Standard
@@ -1457,7 +1583,7 @@ hspace{1mm}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../img/exp4_circuit.png
+	filename ../img/exp4_ch2_circuit.png
 	lyxscale 70
 	scale 70
 
@@ -1470,7 +1596,7 @@ hspace{1mm}
 \align right
 [
 \family typewriter
-exp4_circuit.png
+exp4_ch2_circuit.png
 \family default
 :
  same shape as experiment 2,
@@ -1497,19 +1623,40 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-Here entanglement isn't random —
- it's tied to your own progress.
- Early matches barely show any correlation;
- the more pairs you successfully find,
- the more entangled each new pair becomes,
- building toward full entanglement by the end.
- It turns a physics concept into something you experience over time,
- rather than a fact stated once.
+The circuit associated with this experiment is structurally identical to that of the second experiment,
+ comprising a single qubit R
+\begin_inset Formula $_{y}$
+\end_inset
+
+ rotation applied to the first qubit,
+ a controlled NOT gate coupling the first and second qubit,
+ and two conditionally applied NOT gates encoding the sign of the corresponding cards.
+ The distinguishing feature of this experiment lies not in the circuit itself,
+ but in the determination of the rotation angle,
+ which is not obtained through a random process but is instead computed as a function of the number of matching pairs previously identified during the session,
+ increasing monotonically from zero to 
+\begin_inset Formula $\pi/2$
+\end_inset
+
+.
+ Consequently,
+ the entanglement entropy of the generated state increases monotonically over the course of the session,
+ from 0 to 1 ebit.
+\end_layout
+
+\begin_layout Standard
+This experiment is intended to convey the notion of entanglement as a 
+\emph on
+dynamically evolving quantity
+\emph default
+,
+ associated with the progression of the game,
+ rather than as a static or randomly determined property.
 \end_layout
 
 \begin_layout Subsection
 Experiment 5:
- phase-type entanglement
+ entanglement not manifest in measurement probabilities
 \end_layout
 
 \begin_layout Standard
@@ -1530,7 +1677,7 @@ hspace{1mm}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../img/exp5_circuit.png
+	filename ../img/exp5_ch2_circuit.png
 	lyxscale 70
 	scale 70
 
@@ -1584,14 +1731,33 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-Not all entanglement announces itself the same way.
- This experiment is fully,
- maximally entangled,
- yet if you only looked at measurement probabilities,
- you'd see nothing unusual at all —
- everything looks perfectly random and flat.
- The correlation is hiding in the phase instead.
- It's a lesson in how quantum correlations can stay invisible until you know to look at them the right way.
+The circuit associated with this experiment consists of a Hadamard gate applied to each of the two qubits,
+ followed by a controlled Z gate.
+ Two NOT gates may be conditionally applied,
+ respectively to the first and second qubit,
+ according to the sign of the corresponding card and the parity of the index of the associated pictorial symbol.
+ The resulting state is 
+\emph on
+maximally entangled
+\emph default
+,
+ with an entanglement entropy equal to one ebit;
+ however,
+ the probability distribution obtained upon measurement in the computational basis is uniform across all four possible outcomes,
+ irrespective of the specific state generated.
+ The entanglement is manifest exclusively through the correlation of measurement outcomes obtained in a different measurement basis,
+ specifically along the Y axis.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+This experiment demonstrates that the detection of entanglement is contingent upon the choice of measurement basis
+\emph default
+,
+ and that a uniform outcome distribution in one basis does not,
+ in general,
+ permit the inference of separability of the underlying state.
 \end_layout
 
 \begin_layout Standard
