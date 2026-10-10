@@ -21,7 +21,7 @@ alias designer='designer -platform xcb'
 designer
 
 # Install QISKIT
-uv pip install qiskit-aer matplotlib
+uv pip install qiskit-aer matplotlib qiskit_ibm_runtime
 
 # Run the init to export automatically PATH
 source init.sh

@@ -62,7 +62,7 @@
 \end_preamble
 \options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage
 \use_default_options true
-\master /usr/share/lyx/templates/Theses/PhD_Thesis/Main_File.lyx
+\master ./Shrodinger_Memory.lyx
 \begin_modules
 customHeadersFooters
 \end_modules
@@ -323,20 +323,34 @@ Overview
 \end_layout
 
 \begin_layout Standard
-The traditional approach to teaching quantum computing typically requires the learner to first acquire a substantial body of formal mathematics,
- including linear algebra,
+The traditional approach to teaching quantum computing typically requires the learner,
+ to first acquire a substantial body of formal mathematics,
+ including:
+ linear algebra,
  complex numbers,
  and probability theory,
  before any intuition about the behavior of qubits can be developed.
  This sequencing places a considerable barrier between the learner and the subject matter,
- and often results in the physical and conceptual significance of concepts such as superposition and entanglement being obscured by the notation required to describe them.
+ and often results in the physical and conceptual significance of concepts such as 
+\emph on
+superposition
+\emph default
+ and 
+\emph on
+entanglement
+\emph default
+ being obscured by the notation required to describe them.
  The pedagogical premise underlying the present work is that this barrier can be substantially lowered by inverting the customary order of exposure:
  rather than deriving intuition from formalism,
  the learner is first placed in direct,
  repeated,
  and low stakes contact with the phenomena themselves,
  with the formal description introduced only afterwards,
- as an explanation of what has already been observed.
+ 
+\emph on
+as an explanation of what has already been observed
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -357,23 +371,28 @@ levels in a video game
 \emph default
 ;
  to discover better the behaviors behind different configurations of circuits.
- In the following pages I'll show you the visualizations for each experiments explaining the different properties observed in the simulation and also running the code on the real quantum computer.
+ In the following pages I'll show you the visualizations for each experiments explaining the different properties observed in the simulation and also running the code on the 
+\emph on
+real quantum computer
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
 To visualize the data I have used different Python modules,
  explained in details in the next chapter.
- Not always will be possible to see the full complexity of all the aspects of qubits.
- 
+ Not always will be possible to see the full complexity of all the aspects of qubits,
+ because the evolution of quantum computers is still ongoing trying to remove the bias generated from the noise of QPU;
+ recently some companies have realized the first quantum processors that are working at room temperature.
 \end_layout
 
 \begin_layout Standard
-With this experiments I'm trying to emphasize only the entanglement state between two qubits;
+With this experiments I'm trying to emphasize only new horizons shaped by the entanglement state between two qubits;
  but to be more exhaustive and intellectually honest I have to mention also that is possible to establish the entanglement state with more then two qubits.
  It's also necessary to specify to the reader that since the two qubits are connected some operations characteristics of the qubits will not be visible.
  To show this compromise about learning and playing,
  I have deliberately chosen to don't create any entanglement in the first experiment,
- as way to make the reader consciousness about how is appearing a qubit in a Bloch sphere.
+ as way to make the reader consciousness about how it is appearing a qubit in a Bloch sphere.
 \end_layout
 
 \begin_layout Section
@@ -384,7 +403,8 @@ Reading graphs:
 \end_layout
 
 \begin_layout Standard
-To better understand the graph and chart produced during the experiments I add here a simple reminder of the concepts need to generate the charts and understand it.
+To better understand the graph and chart produced during the experiments I have added here,
+ a simple reminder of the concepts needed to generate the charts and understand it.
 \end_layout
 
 \begin_layout Subsection
@@ -434,16 +454,29 @@ A complex number can be described,
  in exactly the same terms as an ordinary vector in physics:
  a magnitude,
  and a direction.
- Figure [
+ The figure that you can see up there [
 \family typewriter
 ch3_complex_numbers_as_vectors.png
 \family default
-] illustrates this correspondence.
- A complex number a + bi is drawn as an arrow,
- denoted v,
+],
+ illustrates this correspondence.
+ A complex number 
+\emph on
+a + bi
+\emph default
+ is drawn as an arrow,
+ denoted 
+\emph on
+v
+\emph default
+,
  originating from the origin of a plane;
  its length,
- denoted |v| and referred to as its magnitude,
+ denoted 
+\emph on
+|v|
+\emph default
+ and referred to as its magnitude,
  and its direction,
  given by the angle the arrow makes with the horizontal axis,
  together fully specify it.
@@ -484,9 +517,13 @@ The vector used on the Bloch sphere works in the same way,
  and they are also what allows the length of that arrow to be measured:
  the longer the arrow,
  the larger these numbers are,
- and when the arrow shrinks to the centre of the sphere,
+ and when the arrow shrinks to the center of the sphere,
  all three numbers approach zero.
- The value printed as |v| in the figures is precisely this length,
+ The value printed as 
+\emph on
+|v|
+\emph default
+ in the figures is precisely this length,
  obtained from those three numbers.
 \end_layout
 
@@ -551,10 +588,12 @@ ch3_vector_length_and_probability.png
 
 \begin_layout Standard
 An important consequence of this rule,
- illustrated in the left-hand panel of the same figure,
+ illustrated in the left side panel of the figure,
  is that the probability depends only on the length of the vector,
  and not on its direction.
- The three example vectors shown are of equal length but point in three different directions,
+ The three example vectors (red,
+ green and blue arrows) shown that are of equal length,
+ but are pointing in three different directions,
  and all three consequently correspond to the same probability of 0.50.
  The direction of the vector,
  referred to as its phase,
@@ -612,12 +651,16 @@ ch3_bloch_sphere_illustration.png
 \family default
 ],
  extends this vector description to the state of a qubit considered as a whole.
- The state is represented as a single vector drawn from the centre of a sphere to a point on its surface:
+ The state is represented as a single vector drawn from the center of a sphere to a point on its surface:
  a vector pointing to the top of the sphere corresponds to the state |0⟩,
  a vector pointing to the bottom corresponds to the state |1⟩,
  and,
  as shown in the figure,
- a vector lying on the equator,
+ a vector pointing on the equator (the 
+\emph on
+x
+\emph default
+ in the figure),
  midway between the two,
  corresponds to an equal blend of both.
  Every direction on the sphere corresponds to a possible state of the qubit,
@@ -627,7 +670,11 @@ ch3_bloch_sphere_illustration.png
 \begin_layout Standard
 The length of this vector is equally significant,
  and constitutes the detail of greatest relevance to the figures presented in this thesis.
- A vector reaching the surface of the sphere indicates that the qubit possesses a fully defined state of its own.
+ 
+\emph on
+A vector reaching the surface of the sphere indicates that the qubit possesses a fully defined state of its own.
+
+\emph default
  When two qubits become entangled,
  however,
  neither of them retains such a state considered individually;
@@ -635,7 +682,7 @@ The length of this vector is equally significant,
  This circumstance is reflected,
  in the figures generated by the game,
  by a visible shortening of the corresponding vector,
- down to the exact centre of the sphere in the case of maximal entanglement,
+ down to the exact center of the sphere in the case of maximal entanglement,
  at which point the vector vanishes entirely.
  The presence of a full-length vector therefore indicates that a qubit is not entangled,
  while a shortened or vanished vector indicates that it is,
@@ -648,8 +695,9 @@ Play and learn
 
 \begin_layout Standard
 The game is easy!
- You have simply to find two cards with the same emoji!
+ The player have simply to find two cards with the same emoji!
  Once done,
+ if there is a match;
  a graph with all information about the qubit and entanglement state will be visualized on the screen.
 \end_layout
 
@@ -691,14 +739,15 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-For instance in this case we have found two cows and and a pop up showing the related information about what is happening behind the screen will be visualized.
+For instance in this case we have found two cows,
+ and and a pop up showing the related information about what is happening behind the screen will be visualized.
  In the next chapters we will examine the information in detail for each experiment.
  
 \end_layout
 
 \begin_layout Subsection
 Experiment 1:
- two independent qubits in absence of entanglement
+ two independent qubits
 \end_layout
 
 \begin_layout Standard
@@ -745,26 +794,44 @@ hspace{1mm}
 \begin_layout Standard
 The uppermost region presents a summary of the quantum state associated with the two qubits involved.
  The individual states of qubit A and qubit B are given explicitly,
- in the form cos(θ)|0⟩ + sin(θ)|1⟩,
- with the rotation angle of qubit B differing from that of qubit A by π,
+ in the form 
+\emph on
+cos(θ)|0⟩ + sin(θ)|1⟩
+\emph default
+,
+ with the rotation angle of qubit B differing from that of qubit A by 
+\emph on
+π
+\emph default
+,
  in accordance with the antipodal relationship established between the two qubits in this experiment.
  Immediately below,
  the concurrence of the pair is reported as exactly zero,
- together with an explicit indication that the two qubits are not entangled,
+ together with an explicit indication that the 
+\emph on
+two qubits are not entangled
+\emph default
+,
  and a noise index of zero per cent,
  confirming that the state was generated by an ideal,
  noiseless simulation rather than by execution on physical hardware.
- The final line of this region reports the four complex amplitudes of the joint two-qubit state in the computational basis.
+ The final line of this region reports the four complex amplitudes of the joint two qubit state in the computational basis.
 \end_layout
 
 \begin_layout Standard
 The central region displays the Bloch sphere representation of each of the two qubits individually.
  Both vectors are reported with unit magnitude,
- denoted |v| = 1.00,
+ denoted 
+\emph on
+|v| = 1.00
+\emph default
+,
  indicating that each qubit occupies a pure state;
  the two vectors are observed to point in diametrically opposite directions,
  a direct visual consequence of the angular relationship imposed between them.
- This is to be contrasted with the qubit visualizations produced in the entangled experiments,
+ 
+\emph on
+This is to be contrasted with the qubit visualizations produced in the entangled experiments,
  in which the corresponding vectors are of reduced magnitude,
  or vanish entirely in the case of maximal entanglement.
 \end_layout
@@ -777,7 +844,7 @@ The rightmost region presents the measurement probabilities of each qubit indivi
  are found to be numerically consistent with the rotation angles reported in the upper region,
  and are symmetric between the two qubits as a further consequence of their antipodal relationship.
  The absence of any bar corresponding to a joint or correlated outcome is notable,
- and distinguishes this panel from the joint-probability representations employed in the entangled experiments,
+ and distinguishes this panel from the joint probability representations employed in the entangled experiments,
  reflecting the fact that,
  in the absence of entanglement,
  each qubit possesses an independently meaningful probability distribution of its own.
@@ -796,7 +863,7 @@ Taken together,
 
 \begin_layout Subsection
 Experiment 2:
- randomly and partially entangled
+ partially entangled vectors
 \end_layout
 
 \begin_layout Standard
@@ -838,22 +905,28 @@ hspace{1mm}
 
 \begin_layout Standard
 The figure reproduces a screenshot of the graphical interface generated by Experiment 2 following the identification of a matching pair of cards during actual execution of the application.
- The window is titled "Entangled Pair —
- Random Partial Entanglement," and is organized into the same three regions employed throughout the figures presented in this thesis.
 \end_layout
 
 \begin_layout Standard
-The uppermost region reports the parameters and outcome of the underlying circuit.
- The rotation angle θ,
+The uppermost region reports the parameters and outcome of the partially entangled circuit.
+ The rotation angle 
+\emph on
+θ
+\emph default
+,
  here equal to 0.55 radians and fixed once for the emoji associated with this pair,
  is given together with the corresponding pre-encoding state,
- cos(0.28)|00⟩ + sin(0.28)|11⟩.
+ 
+\emph on
+cos(0.28)|00⟩ + sin(0.28)|11⟩
+\emph default
+.
  The concurrence of the resulting pair is reported as 0.53,
- explicitly labelled as this particular pair's fixed degree of entanglement,
+ explicitly labeled as this particular pair's fixed degree of entanglement,
  together with a noise index of zero per cent,
  confirming that the state was obtained from an ideal,
  noiseless simulation.
- The final line reports the four complex amplitudes of the joint two-qubit state;
+ The final line reports the four complex amplitudes of the joint two qubit state;
  it may be observed that the amplitude is concentrated on the outcomes |01⟩ and |10⟩,
  rather than |00⟩ and |11⟩ as the pre-encoding formula would suggest,
  a consequence of the local bit-flip operation applied during the encoding of the card's sign,
@@ -864,12 +937,20 @@ The uppermost region reports the parameters and outcome of the underlying circui
 The central region displays the Bloch sphere representation of the two qubits individually.
  In contrast to the case of separable qubits,
  the two vectors are here observed to be of reduced length,
- each reported as |v| = 0.85,
+ each reported as 
+\emph on
+|v| = 0.85
+\emph default
+,
  rather than reaching the surface of the sphere.
  This value is consistent with the reported concurrence,
  the two quantities being related in such a way that an increase in one corresponds to a decrease in the other;
  a partially entangled pair is thus seen to correspond to a partially shortened vector,
- of intermediate length between the fully defined vectors of a separable qubit and the vanishing vectors of a maximally entangled pair.
+ of
+\emph on
+ intermediate length between the fully defined vectors of a separable qubit and the vanishing vectors of a maximally entangled pair
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -883,7 +964,9 @@ The rightmost region presents the joint outcome probabilities,
  with probability 0.07,
  while the outcomes |00⟩ and |11⟩ are found to occur with negligible probability.
  These values are consistent with the squared magnitudes of the corresponding amplitudes reported in the upper region.
- The presence of two,
+ 
+\emph on
+The presence of two,
  rather than four,
  distinguishable outcomes with appreciable probability constitutes a further indication of the correlation existing between the two qubits,
  in contrast with the case of a separable pair,
@@ -892,7 +975,7 @@ The rightmost region presents the joint outcome probabilities,
 
 \begin_layout Subsection
 Experiment 3:
- one of the four Bell states generated
+ Bell states and density matrix
 \end_layout
 
 \begin_layout Standard
@@ -934,14 +1017,18 @@ hspace{1mm}
 
 \begin_layout Standard
 The figure reproduces a screenshot of the graphical interface generated by Experiment 3 following the identification of a matching pair of cards during actual execution of the application.
- The window is titled "Bell State Explorer Φ+/Φ-/Ψ+/Ψ-," and departs from the layout employed in the preceding experiments in that the two Bloch sphere representations are here replaced by a color coded representation of the density matrix associated with the generated state,
+ The window departs from the layout employed in the preceding experiments in that the two Bloch sphere representations are here replaced by a color coded representation of the density matrix associated with the generated state,
  positioned alongside the joint outcome probability chart.
 \end_layout
 
 \begin_layout Standard
-The uppermost region identifies the specific Bell state produced on this occasion as Ψ⁻ = (|01⟩−|10⟩)/√2,
+The uppermost region identifies the specific Bell state produced on this occasion as 
+\emph on
+Ψ⁻ = (|01⟩−|10⟩)/√2
+\emph default
+,
  together with a concurrence of 1.00,
- explicitly labelled as corresponding to an entangled pair,
+ explicitly labeled as corresponding to an entangled pair,
  and a noise index of zero per cent,
  confirming that the state was obtained from an ideal,
  noiseless simulation.
@@ -961,9 +1048,17 @@ The density matrix representation,
  |01⟩,
  |10⟩,
  and |11⟩.
- The size of each colored square is proportional to the magnitude of the corresponding matrix entry,
+ 
+\emph on
+The size of each colored square is proportional to the 
+\series bold
+magnitude
+\series default
+ of the corresponding matrix entry,
  while its color indicates the sign of that entry,
  blue denoting a positive value and red a negative value.
+
+\emph default
  In the present case,
  non-zero entries are observed exclusively within the block corresponding to the |01⟩ and |10⟩ states,
  consistent with the Bell state identified above;
@@ -980,11 +1075,15 @@ The joint outcome probability chart,
  reports probabilities of 0.50 for each of the outcomes |01⟩ and |10⟩,
  and a probability of zero for the outcomes |00⟩ and |11⟩,
  consistent with the amplitudes reported above.
- It may be observed that this distribution is indistinguishable from the one that would be obtained for the state Ψ⁺,
+ 
+\emph on
+It may be observed that this distribution is indistinguishable from the one that would be obtained for the state Ψ⁺,
  since the two states differ only in the relative sign of their amplitudes,
  a feature to which the measurement probabilities,
  depending as they do only on the squared magnitude of each amplitude,
  are not sensitive.
+
+\emph default
  The distinction between the two states is accordingly not visible in this panel,
  and is recoverable only from the density matrix representation positioned alongside it,
  this contrast constituting the principal illustrative purpose of the present figure.
@@ -1060,17 +1159,21 @@ The two figures reproduce screenshots of the graphical interface generated by Ex
  and final,
  successful match,
  respectively.
- Both share the window title "Entanglement Growth - Bloch Spheres & Concurrence Trend," and both are organized according to the same layout employed throughout this thesis,
+ Both are organized according to the same layout employed throughout this thesis,
  with the addition,
  in the rightmost panel,
  of a plot showing the concurrence obtained at each successive match within the session,
- in place of the outcome-probability charts employed in the preceding experiments.
+ in place of the outcome probability charts employed in the preceding experiments.
 \end_layout
 
 \begin_layout Standard
 In the first figure,
  corresponding to the second match of the session,
- the rotation angle θ is reported as 0.39 radians,
+ the rotation angle 
+\emph on
+θ
+\emph default
+ is reported as 0.39 radians,
  a value determined by the number of pairs previously identified rather than by a random process,
  as is the case in this experiment.
  The corresponding concurrence is reported as 0.38,
@@ -1084,13 +1187,25 @@ In the first figure,
 \begin_layout Standard
 In the second figure,
  corresponding to the eighth and final match of the session,
- the rotation angle θ is reported as 1.57 radians,
- corresponding to π/2,
- at which the entangling operation produces a maximally entangled state.
+ the rotation angle 
+\emph on
+θ
+\emph default
+ is reported as 1.57 radians,
+ corresponding to 
+\emph on
+π/2
+\emph default
+,
+ at which the entangling operation produces a 
+\emph on
+maximally entangled state
+\emph default
+.
  The concurrence is accordingly reported as 1.00,
  and the length of each Bloch vector is reported as 0.00,
- both vectors having contracted to the centre of the sphere;
- a residual marker is visible at the centre of the sphere associated with the second qubit,
+ both vectors having contracted to the center of the sphere;
+ a residual marker is visible at the center of the sphere associated with the second qubit,
  corresponding to the same vanishing vector,
  of exactly zero length.
  The trend panel on the right now displays eight points,
@@ -1104,7 +1219,9 @@ Considered together,
  namely the progressive increase of entanglement over the course of a single game session,
  rather than its determination by an independent random process,
  as in the case of the preceding experiment.
- The correspondence between the shortening of the two Bloch vectors and the rise of the plotted concurrence curve,
+ 
+\emph on
+The correspondence between the shortening of the two Bloch vectors and the rise of the plotted concurrence curve,
  observable across the two figures,
  provides direct visual confirmation of the relationship between these two quantities discussed in the preceding sections.
 \end_layout
@@ -1153,17 +1270,21 @@ hspace{1mm}
 
 \begin_layout Standard
 The figure reproduces a screenshot of the graphical interface generated by Experiment 5 following the identification of a matching pair of cards during actual execution of the application.
- The window is titled "Phase Entanglement —
- Correlator View," and,
+ The window,
  as in the preceding figure,
- replaces the two Bloch sphere representations with a colour-coded representation of the density matrix;
+ replaces the two Bloch sphere representations with a color coded representation of the density matrix;
  in this case,
  however,
- the joint outcome probability chart employed elsewhere is in turn replaced by a chart of two-qubit correlators.
+ the joint outcome probability chart employed elsewhere is in turn replaced by a chart of two qubit correlation.
 \end_layout
 
 \begin_layout Standard
-The uppermost region identifies the generated state through the formula (|00⟩−|01⟩+|10⟩+|11⟩)/2,
+The uppermost region identifies the generated state through the equation explained with the relation between this qubits,
+ 
+\emph on
+(|00⟩−|01⟩+|10⟩+|11⟩)/2
+\emph default
+,
  together with a concurrence of 1.00 and a noise index of zero per cent,
  confirming a maximally entangled state obtained from an ideal,
  noiseless simulation.
@@ -1182,19 +1303,21 @@ The density matrix representation,
  of equal magnitude,
  are present throughout the entire grid,
  each of the sixteen cells being populated with either a positive or a negative value.
- This density matrix therefore corresponds to a state in which every one of the four basis outcomes contributes to the superposition,
+ 
+\emph on
+This density matrix therefore corresponds to a state in which every one of the four basis outcomes contributes to the superposition,
  in contrast with the Bell states considered previously,
  in which only two basis outcomes were involved.
 \end_layout
 
 \begin_layout Standard
-The chart shown in the lower right reports the expectation values of the three two-qubit correlators,
+The chart shown in the lower right reports the expectation values of the three two qubit correlation,
  ⟨XX⟩,
  ⟨YY⟩,
  and ⟨ZZ⟩,
  corresponding to measurements performed in three different combinations of measurement bases.
- The correlators ⟨XX⟩ and ⟨ZZ⟩ are both found to be exactly zero,
- whereas the correlator ⟨YY⟩ is found to attain its most negative possible value,
+ The correlation ⟨XX⟩ and ⟨ZZ⟩ are both found to be exactly zero,
+ whereas the correlation ⟨YY⟩ is found to attain its most negative possible value,
  −1.00.
  This outcome is to be contrasted with the joint outcome probability chart that would be obtained for this same state upon measurement in the standard computational basis,
  which,
@@ -1203,7 +1326,7 @@ The chart shown in the lower right reports the expectation values of the three t
  0.25,
  to each of the four possible outcomes,
  and would accordingly exhibit no discernible structure.
- The correlator chart shown here demonstrates that the entanglement present in this state,
+ The correlation chart shown here demonstrates that the entanglement present in this state,
  despite being maximal,
  is not manifest in the computational basis,
  and becomes observable only when measurements are performed in an alternative basis,

@@ -62,7 +62,7 @@
 \end_preamble
 \options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage
 \use_default_options true
-\master /usr/share/lyx/templates/Theses/PhD_Thesis/Main_File.lyx
+\master ./Shrodinger_Memory.lyx
 \begin_modules
 customHeadersFooters
 \end_modules
@@ -330,11 +330,7 @@ name "sec:Overview"
 \end_layout
 
 \begin_layout Standard
-The 
-\color red
-experiments
-\color inherit
- that I have realized is using some fundamentals notions of math that must be understood to learn how the quantum computers are working.
+The experiments that I have realized is using some fundamentals notions of math that must be understood to learn how the quantum computers are working.
  The first concept that we have to familiarize to is the 
 \emph on
 quantum bit
@@ -449,11 +445,7 @@ The bit is the most basic unit of information in computing and digital communica
 
 
 \series default
- that could be explained 
-\color red
-as
-\color inherit
- the state assumed by a switch when we want to turn 
+ that could be explained as the state assumed by a switch when we want to turn 
 \emph on
 ON
 \emph default
@@ -462,11 +454,7 @@ ON
 OFF
 \emph default
  the light.
- This simple action that we do daily
-\color red
-,
-
-\color inherit
+ This simple action that we do daily,
  explain better the state that can assume a 
 \emph on
 single bit
@@ -482,21 +470,13 @@ single bit
 +5V
 \emph default
 ,
- 
-\color red
-needed
-\color inherit
- to give power to the bulb;
+ needed to give power to the bulb;
  but moving to computers the standard way to represent a single bit use the values 0 or 1 that it means presence or absence of voltage.
 \end_layout
 
 \begin_layout Standard
 This kind of data,
- give us the ability to express simple 
-\color red
-information
-\color inherit
- like the presence or not of electrical tension in the case of the switch;
+ give us the ability to express simple information like the presence or not of electrical tension in the case of the switch;
  or 
 \series bold
 true
@@ -566,22 +546,10 @@ Boolean logic is a type of algebra that deals with true and false values,
 \end_layout
 
 \begin_layout Standard
-The computers of 
-\color red
-current
-\color inherit
- times are using bits elevated 
-\color red
-at
-\color inherit
- base two,
+The computers of current times are using bits elevated at base two,
  to make everything;
  from complex calculations to storing data.
- To make it possible we are using several number of bits to 
-\color red
-trying
-\color inherit
- to describe the real world.
+ To make it possible we are using several number of bits to trying to describe the real world.
 \end_layout
 
 \begin_layout Standard
@@ -590,15 +558,7 @@ For instance,
 \begin_inset Formula $^{8}$
 \end_inset
 
- bits we can 
-\color red
-representing
-\color inherit
- 256 values 
-\color red
-as better described
-\color inherit
- in the table below:
+ bits we can representing 256 values as better described in the table below:
 \end_layout
 
 \begin_layout Standard
@@ -966,30 +926,16 @@ literal "false"
 
 \begin_layout Standard
 If you are not really aware about how many data are needed to represent a photo with colors,
- 
-\color red
-try to think
-\color inherit
- that a common phone camera with 12 megapixel and 24 bit (8 bit for each color RGB) in RAW format (without any compression) can store a 
-\color red
-relatively big
-\color inherit
- amount of data.
+ try to think that a common phone camera with 12 megapixel and 24 bit (8 bit for each color RGB) in RAW format (without any compression) can store a relatively big amount of data.
 \end_layout
 
 \begin_layout Standard
-
-\color red
 Usually humans are reasoning using numbers with a scale of 10s till a maximum of 1000s,
  but in the computer world the impact of a simple file have an amplitude of millions or billions of numbers.
 \end_layout
 
 \begin_layout Standard
-Here some calculations to see approximately how many 
-\color red
-data
-\color inherit
- storage we need for a 
+Here some calculations to see approximately how many data storage we need for a 
 \emph on
 simple photo
 \emph default
@@ -1057,25 +1003,17 @@ The CPU architectures now days are processing data with 2
 \begin_inset Formula $^{10}$
 \end_inset
 
- bits and can store 
-\color red
-it
-\color inherit
- in registers of 2
+ bits and can store it in registers of 2
 \begin_inset Formula $^{64}$
 \end_inset
 
- bits and in some cases 
-\color red
-till
-\color inherit
- to 2
+ bits and in some cases till to 2
 \begin_inset Formula $^{128}$
 \end_inset
 
- bits for the common general purpose 
+ bits for the common general purpose
 \series bold
-
+ x86_64
 \begin_inset Nomenclature
 status collapsed
 
@@ -1128,13 +1066,9 @@ x86-64 (also known as AMD64,
 
 \end_inset
 
-x86_64
+
 \series default
- computers 
-\color red
-architecture
-\color inherit
-.
+ computers architecture.
 \end_layout
 
 \begin_layout Standard
@@ -1169,17 +1103,7 @@ literal "false"
 Also if this numbers are out the imagination of a common person;
  the reality,
  the nature,
- 
-\color red
-the engineering and the science needs
-\color inherit
- enormous computing power to process data to give simple 
-\color red
-answers
-\color inherit
- to humans 
-\color red
-like,
+ the engineering and the science needs enormous computing power to process data to give simple answers to humans like,
  the famous comedy science fiction 
 \emph on
 The Hitchhiker's Guide to the Galaxy
@@ -1206,7 +1130,6 @@ hspace{1mm}
 \align center
 
 \emph on
-\color red
 «O Deep Thought computer," he said,
  "the task we have designed you to perform is this.
  
@@ -1216,7 +1139,6 @@ hspace{1mm}
 \align center
 
 \emph on
-\color red
 We want you to tell us...." he paused,
  "
 \series bold
@@ -1229,7 +1151,6 @@ The Answer.
 \align center
 
 \emph on
-\color red
 "The Answer?" said Deep Thought.
  "The Answer to what?"
 \end_layout
@@ -1238,7 +1159,6 @@ The Answer.
 \align center
 
 \emph on
-\color red
 "
 \series bold
 Life!
@@ -1250,7 +1170,6 @@ Life!
 \align center
 
 \emph on
-\color red
 "
 \series bold
 The Universe!
@@ -1262,7 +1181,6 @@ The Universe!
 \align center
 
 \emph on
-\color red
 "
 \series bold
 Everything!
@@ -1275,7 +1193,6 @@ Everything!
 \align center
 
 \emph on
-\color red
 Deep Thought paused for a moment's reflection.
 \end_layout
 
@@ -1283,7 +1200,6 @@ Deep Thought paused for a moment's reflection.
 \align center
 
 \emph on
-\color red
 "Tricky," he said finally.
 \end_layout
 
@@ -1291,7 +1207,6 @@ Deep Thought paused for a moment's reflection.
 \align center
 
 \emph on
-\color red
 "But can you do it?"
 \end_layout
 
@@ -1299,7 +1214,6 @@ Deep Thought paused for a moment's reflection.
 \align center
 
 \emph on
-\color red
 Again,
  a significant pause.
 \end_layout
@@ -1308,7 +1222,6 @@ Again,
 \align center
 
 \emph on
-\color red
 "Yes," said Deep Thought,
  "I can do it."
 \end_layout
@@ -1317,7 +1230,6 @@ Again,
 \align center
 
 \emph on
-\color red
 "There is an answer?" said Fook with breathless excitement.
 \end_layout
 
@@ -1325,7 +1237,6 @@ Again,
 \align center
 
 \emph on
-\color red
 "Yes," said Deep Thought.
  "
 \series bold
@@ -1338,7 +1249,6 @@ Life,
 \align center
 
 \emph on
-\color red
 There is an answer.
  
 \end_layout
@@ -1347,7 +1257,6 @@ There is an answer.
 \align center
 
 \emph on
-\color red
 But,
  I'll have to think about it."
 \end_layout
@@ -1356,7 +1265,6 @@ But,
 \align center
 
 \emph on
-\color red
 [...]
 \end_layout
 
@@ -1364,7 +1272,6 @@ But,
 \align center
 
 \emph on
-\color red
 Fook glanced impatiently at his watch.
 \end_layout
 
@@ -1372,7 +1279,6 @@ Fook glanced impatiently at his watch.
 \align center
 
 \emph on
-\color red
 “How long?” he said.
 \end_layout
 
@@ -1380,7 +1286,6 @@ Fook glanced impatiently at his watch.
 \align center
 
 \emph on
-\color red
 “Seven and a half million years,” said Deep Thought.
 \end_layout
 
@@ -1388,7 +1293,6 @@ Fook glanced impatiently at his watch.
 \align center
 
 \emph on
-\color red
 [...]
 \end_layout
 
@@ -1396,7 +1300,6 @@ Fook glanced impatiently at his watch.
 \align center
 
 \emph on
-\color red
 "
 \series bold
 Forty-two,
@@ -1603,7 +1506,6 @@ With the qubit the new era of quantum computation will give to the human beings 
 \begin_layout Standard
 
 \shape italic
-\color red
 Representing a generational advancement in computer science,
  QPUs are designed to process quantum algorithms better than even the most powerful supercomputers.
  Optimized for large-scale quantum calculations,
@@ -1616,7 +1518,6 @@ Representing a generational advancement in computer science,
 \begin_layout Standard
 
 \shape italic
-\color red
 In a quantum-centric supercomputer,
  each type of processor functions differently and is used for processing different types of computations with the ecosystem:
 \end_layout
@@ -1625,7 +1526,6 @@ In a quantum-centric supercomputer,
 
 \series bold
 \shape italic
-\color red
 CPUs
 \series default
 :
@@ -1638,7 +1538,6 @@ CPUs
 
 \series bold
 \shape italic
-\color red
 GPUs
 \series default
 :
@@ -1650,7 +1549,6 @@ GPUs
 
 \series bold
 \shape italic
-\color red
 NPU
 \begin_inset Nomenclature
 status collapsed
@@ -1709,7 +1607,6 @@ s
 
 \series bold
 \shape italic
-\color red
 QPU
 \begin_inset Nomenclature
 status collapsed
@@ -1802,16 +1699,8 @@ To do that,
  I know that this can sound weird,
  but it's not a joke!
  Let's go back to the concept of binary value.
- As we said
-\color red
-,
-
-\color inherit
- a bit can have 2 simple state
-\color red
-;
-
-\color inherit
+ As we said,
+ a bit can have 2 simple state;
  usually we think to 0 or 1.
 \end_layout
 
@@ -1954,20 +1843,8 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-In quantum computers the concept of head 
-\color red
-or
-\color inherit
- tail is a little bit different.
- Going back to the famous experiment of Schrödinger's cat 
-\color red
-we
-\color inherit
- have to think that 
-\color red
-a
-\color inherit
- coin will be in both states till we don't look it the palm of our hand.
+In quantum computers the concept of head or tail is a little bit different.
+ Going back to the famous experiment of Schrödinger's cat we have to think that a coin will be in both states till we don't look it the palm of our hand.
  It could sound strange,
  because in our daily life we don't encounter similarities.
 \end_layout
@@ -1975,11 +1852,7 @@ a
 \begin_layout Standard
 Ideally we can think that while the coin is flipping in the air the coin can assume both states and when the coin is catch and seen by a person the state change definitely in head or tail;
  a quantum bit can exist simultaneously in multiple possible states,
- and only when measurement is performed it define exactly the 
-\color red
-state
-\color inherit
- of the bit.
+ and only when measurement is performed it define exactly the state of the bit.
 \end_layout
 
 \begin_layout Standard
@@ -2170,11 +2043,7 @@ Dirac notation,
 \end_inset
 
 ;
- explain better the 
-\color red
-concept
-\color inherit
- of superposition in a qubit.
+ explain better the concept of superposition in a qubit.
  The qubit can be 0 or 1 with a probability of 50% each.
  Moving the numbers we can obtain an equation in a easier way to understand:
 \end_layout
@@ -2218,25 +2087,9 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-Now it's clear that the probability (
-\emph on
-P
-\emph default
-) that a qubit have to be 0 or 1 is equal to 0.5 and it's sum is equal to 1.
- Behind this formula there are other aspects 
-\color red
-that
-\color inherit
- are going deeper into the quantum mechanics and 
-\color red
-that I will not consider for this thesis
-\color inherit
-.
- For my purpose the need is simply to understand the behaviors that a qubit can 
-\color red
-assume
-\color inherit
- during the computing phase.
+Now it's clear that the probability (P) that a qubit have to be 0 or 1 is equal to 0.5 and it's sum is equal to 1.
+ Behind this formula there are other aspects that are going deeper into the quantum mechanics and that I will not consider for this thesis.
+ For my purpose the need is simply to understand the behaviors that a qubit can assume during the computing phase.
 \end_layout
 
 \begin_layout Standard
@@ -2505,50 +2358,22 @@ hspace{1mm}
 \begin_layout Standard
 If we are at a concert and we are listening music,
  the same phenomenon happen;
- also if 
-\color red
-in this case we are not able to see it with our eyes
-\color inherit
-.
+ also if in this case we are not able to see it with our eyes.
 \end_layout
 
 \begin_layout Standard
-But computers need to process 
-\color red
-precise
-\color inherit
- data and we can't 
-\color red
-reason
-\color inherit
- 
-\color red
-per
-\color inherit
- abstractions,
+But computers need to process precise data and we can't reason per abstractions,
  in computers programming we need fix and 
 \series bold
 reproducible results;
 
 \series default
- the probability assumed by a qubit must be something 
-\color red
-repeatable in time
-\color inherit
- without any doubt.
+ the probability assumed by a qubit must be something repeatable in time without any doubt.
 \end_layout
 
 \begin_layout Standard
-The physic behind quantum computing use wave forms that give us the probability to have a qubit in a certain state
-\color red
-,
-
-\color inherit
- but when we made a measurements of the qubit the state 
-\series bold
-collapse
-\series default
- and we obtain with mathematical certain the result of our calculations.
+The physic behind quantum computing use wave forms that give us the probability to have a qubit in a certain state,
+ but when we made a measurements of the qubit the state collapse and we obtain with mathematical certain the result of our calculations.
 \end_layout
 
 \begin_layout Standard
@@ -2616,20 +2441,10 @@ name "sec:Quantum-teleport"
 \end_layout
 
 \begin_layout Standard
-Quantum computers open the way to another field of research that promise to change completely the world that we know
-\color red
-;
-
-\color inherit
- 
-\color red
-in different fields of computers technology
-\color inherit
-.
+Quantum computers open the way to another field of research that promise to change completely the world that we know;
+ in different fields of computers technology.
  Since the early days of modernization,
- the 
-\series bold
-sci-fi
+ the sci-fi
 \begin_inset Nomenclature
 status collapsed
 
@@ -2680,13 +2495,7 @@ Sci-fi is short for science fiction,
 
 \end_inset
 
-
-\series default
- novels and human imaginary was dreaming a way of moving matter so fast that instantaneously 
-\color red
-can
-\color inherit
- move the mass of an object,
+ novels and human imaginary was dreaming a way of moving matter so fast that instantaneously can move the mass of an object,
  from a place A to a place B.
 \end_layout
 
@@ -2805,8 +2614,6 @@ A transporter is a fictional teleportation machine used in the Star Trek univers
 \end_layout
 
 \begin_layout Standard
-
-\color red
 Is too optimistic to think that in the next decade we could have instruments that can move matter almost instantaneously,
  but with the quantum technology we can do some steps forward at lead with telecommunications if we will be able to develop instruments that will use the entanglement state with a new generations of computers.
 \end_layout
@@ -2999,23 +2806,11 @@ In Star Trek,
 
 \begin_layout Standard
 Back to reality,
- one way we can experiment with entanglement 
-\color red
-state
-\color inherit
- and quantum teleportation is to recreate the 
-\emph on
-connection
-\emph default
- between two qubits using Qiskit.
+ one way we can experiment with entanglement state and quantum teleportation is to recreate the connection between two qubits using Qiskit.
 \end_layout
 
 \begin_layout Standard
-Qiskit is a software development kit (
-\color red
-later 
-\color inherit
-SDK
+Qiskit is a software development kit (later SDK
 \begin_inset Nomenclature
 status collapsed
 
@@ -3065,11 +2860,7 @@ Software development kit.
 
 ),
  available through Python modules,
- that allows 
-\color red
-us
-\color inherit
- to build quantum circuits and algorithms on real quantum computers (typically IBM) or through emulation on your local machine.
+ that allows us to build quantum circuits and algorithms on real quantum computers (typically IBM) or through emulation on your local machine.
 \end_layout
 
 \begin_layout Standard
@@ -3171,19 +2962,11 @@ literal "false"
 
 \begin_layout Standard
 The interactive code available online and written with Jupiter Notebook,
- is very helpful in research and study
+ is very helpful in research and study;
+ for instance,
+ other experiments could be made increasing the number of qubits to be connected directly from your browser
 \color red
-;
 
-\color inherit
- for instance
-\color red
-,
-
-\color inherit
- other experiments could be made increasing the number of qubits to be connected 
-\color red
-directly from your browser
 \begin_inset Nomenclature
 status collapsed
 
@@ -3325,11 +3108,7 @@ A logic gate is a device that performs a Boolean function,
 
 
 \series default
- 
-\color red
-to build an
-\color inherit
- 
+ to build an 
 \series bold
 algorithm
 \series default
@@ -3387,11 +3166,7 @@ In mathematics and computer science,
 \end_layout
 
 \begin_layout Standard
-To be more detailed the entanglement states between two qubits 
-\color red
-could be expressed by four equations
-\color inherit
-,
+To be more detailed the entanglement states between two qubits could be expressed by four equations,
  written as follow:
 \end_layout
 
@@ -3513,8 +3288,6 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-
-\color red
 Later in the next chapter we will see in details all the quantum circuits used in the source code,
  but for now the goal is to show how simply is to write quantum circuits with Qiskit.
  With exactly four lines of Python code we can translate the mathematical equation 
@@ -3663,14 +3436,8 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-
-\color red
 Once realized the entanglement state we are able to use all the properties expressed before,
- the correlations between two qubits is called 
-\series bold
-ebit
-\series default
-
+ the correlations between two qubits is called ebit
 \begin_inset Nomenclature
 status collapsed
 
@@ -3722,11 +3489,7 @@ An ebit is one unit of bipartite entanglement,
 
  (entanglement bit);
  it is the fundamental unit of quantum entanglement,
- a measure of 
-\emph on
-how much entanglement
-\emph default
- two parts share.
+ a measure of how much entanglement two parts share.
 \end_layout
 
 \begin_layout Standard

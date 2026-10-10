@@ -24,13 +24,13 @@ You must also have saved your IBM Quantum credentials once, e.g.:
 # "ibm"       -> a real IBM Quantum backend, queued, noisy, no exact
 #                statevector available (Bloch vectors are estimated from
 #                measured Pauli expectation values instead).
-BACKEND_MODE = "simulator"          # "simulator"  or  "ibm"
+BACKEND_MODE = "ibm"          # "simulator"  or  "ibm"
 
 # -------------------------------------------------------------------
 # IBM Quantum settings (only read when BACKEND_MODE == "ibm")
 # -------------------------------------------------------------------
-IBM_CHANNEL  = "ibm_quantum"        # "ibm_quantum" or "ibm_cloud"
-IBM_INSTANCE = None                 # e.g. "ibm-q/open/main"; None = default
-IBM_TOKEN    = None                 # None -> use a previously saved account
-IBM_BACKEND  = None                 # None -> auto-pick the least-busy real QPU
-IBM_SHOTS    = 1024                 # shots per circuit/observable on hardware
+IBM_CHANNEL  = "ibm_quantum_platform"     # "ibm_quantum" or "ibm_cloud"
+IBM_INSTANCE = None                       # e.g. "ibm-q/open/main"; None = default
+IBM_TOKEN    = None                       # None -> use a previously saved account
+IBM_BACKEND  = None                       # None -> auto-pick the least-busy real QPU
+IBM_SHOTS    = 1024                       # shots per circuit/observable on hardware

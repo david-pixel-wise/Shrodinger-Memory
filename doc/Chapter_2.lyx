@@ -62,7 +62,7 @@
 \end_preamble
 \options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage
 \use_default_options true
-\master /usr/share/lyx/templates/Theses/PhD_Thesis/Main_File.lyx
+\master ./Shrodinger_Memory.lyx
 \begin_modules
 customHeadersFooters
 \end_modules
@@ -327,7 +327,8 @@ A good way to improve my development skills and learn new concepts in a fun way,
  has been to write a simple game in Python to test the capabilities of quantum computers.
  To develop something interesting and educational,
  I thought that a simple game could have shown,
- in an interactive way the concept of entanglement.
+ in an interactive way,
+ the concept of entanglement.
 \end_layout
 
 \begin_layout Standard
@@ -712,8 +713,17 @@ In this version of the game,
 \end_layout
 
 \begin_layout Standard
-The experiments that I have created with the support of different AI are,
- here the list with the subject of research and the corresponding Python file name stored in the GitHub repository created for this thesis:
+Here you can find all the Python files that you will find in the GitHub repository (
+\begin_inset CommandInset href
+LatexCommand href
+name "link to Shrodinger-Memory"
+target "https://github.com/david-pixel-wise/Shrodinger-Memory"
+literal "false"
+
+\end_inset
+
+) for this thesis;
+ each file is corresponding to a different experiment on quantum computing:
 \end_layout
 
 \begin_layout Standard
@@ -865,7 +875,7 @@ The qubits are usually depicted as horizontal lines,
  The gates implement unitary transformations on the state of the qubits.
  Measurement gates,
  often shown as a meter symbol,
- collapse the quantum state to a classical outcome.
+ collapse the quantum state to a classical outcome 0 or 1.
 \end_layout
 
 \begin_layout Standard
@@ -1203,9 +1213,15 @@ Quantum circuits for cards visualization
 \end_layout
 
 \begin_layout Standard
+In this section we will see the differences in the quantum circuits for each variations of the game.
+ Starting from the easier versions,
+ without entanglement and going forward to most complex circuits with more quantum gates.
+\end_layout
 
-\color red
-Once generated the deck with all the cards to explore better the possibility of entanglement I have decided to create some variation to the original experiment.
+\begin_layout Standard
+We will not see in details the math behind this circuits,
+ but we will try the most common and tested versions of the circuits;
+ that you can find also in the IBM documentation of Qiskit.
 \end_layout
 
 \begin_layout Subsection
@@ -1278,7 +1294,7 @@ The circuit associated with this experiment consists of two independent single q
 
  gate,
  applied respectively to the first and second qubit.
- No two qubit gate is present in this circuit.
+ No-two qubit gate is present in this circuit.
  The rotation angle applied to the second qubit is fixed to be the rotation angle of the first qubit augmented by 
 \begin_inset Formula $\pi$
 \end_inset
@@ -1294,7 +1310,7 @@ the corresponding Bloch vectors are diametrically opposed
  and is fixed once for each pictorial symbol at the beginning of the session.
  The absence of any interaction between the two qubits ensures that 
 \emph on
-the resulting two qubit state is separable
+the resulting two-qubit state is separable
 \emph default
 ,
  and therefore devoid of entanglement,
@@ -1373,7 +1389,7 @@ The circuit associated with this experiment comprises a single qubit R
 \end_inset
 
  rotation applied to the first qubit,
- followed by a controlled NOT gate with the first qubit as control and the second as target.
+ followed by a controlled NOT gate (in the picture the cross inside the blue circle) with the first qubit as control and the second as target.
  Two additional single qubit NOT gates may be conditionally applied to the first and second qubit respectively,
  according to the sign encoded on the corresponding cards;
  these operations,
@@ -1562,7 +1578,7 @@ What makes this worth highlighting from an educational standpoint is twofold.
 
 \begin_layout Subsection
 Experiment 4:
- entanglement as a function of progression
+ entanglement grows with pairs found
 \end_layout
 
 \begin_layout Standard

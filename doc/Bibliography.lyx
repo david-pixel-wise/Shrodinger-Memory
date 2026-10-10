@@ -412,7 +412,7 @@ width "4.5cm"
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 The width of the nomenclature entries can be changed by clicking on the nomenclature inset.

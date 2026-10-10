@@ -140,16 +140,18 @@ def get_bloch_vectors(qc_no_measure, n_qubits=2):
         estimator = Estimator(backend)
         estimator.options.default_shots = config.IBM_SHOTS
 
-        vectors = []
+        # The transpiled circuit spans the whole device (e.g. 156 qubits),
+        # so each 2-qubit observable must be remapped onto the physical
+        # qubits the transpiler chose. All observables go in one job.
+        obs = []
         for q in range(n_qubits):
-            obs = []
             for p in "XYZ":
                 label = ["I"] * n_qubits
                 label[q] = p
-                obs.append(SparsePauliOp("".join(reversed(label))))
-            job = estimator.run([(tqc, obs)])
-            evs = job.result()[0].data.evs
-            vectors.append([float(v) for v in evs])
+                obs.append(SparsePauliOp("".join(reversed(label))).apply_layout(tqc.layout))
+        job = estimator.run([(tqc, obs)])
+        evs = [float(v) for v in job.result()[0].data.evs]
+        vectors = [evs[3 * q: 3 * q + 3] for q in range(n_qubits)]
         return vectors, None
     else:
         qc2 = qc_no_measure.copy()
@@ -181,7 +183,7 @@ def get_entanglement_witness(qc_no_measure):
     estimator = Estimator(backend)
     estimator.options.default_shots = config.IBM_SHOTS
 
-    obs = [SparsePauliOp("XX"), SparsePauliOp("YY"), SparsePauliOp("ZZ")]
+    obs = [SparsePauliOp(l).apply_layout(tqc.layout) for l in ("XX", "YY", "ZZ")]
     job = estimator.run([(tqc, obs)])
     evs = job.result()[0].data.evs
     return sum(abs(float(v)) for v in evs)
@@ -292,7 +294,7 @@ def get_pauli_correlators(qc_no_measure):
         tqc = transpile(qc_no_measure, backend)
         estimator = Estimator(backend)
         estimator.options.default_shots = config.IBM_SHOTS
-        obs = [SparsePauliOp("XX"), SparsePauliOp("YY"), SparsePauliOp("ZZ")]
+        obs = [SparsePauliOp(l).apply_layout(tqc.layout) for l in ("XX", "YY", "ZZ")]
         job = estimator.run([(tqc, obs)])
         evs = job.result()[0].data.evs
         return {"XX": float(evs[0]), "YY": float(evs[1]), "ZZ": float(evs[2])}

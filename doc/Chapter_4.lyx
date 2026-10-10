@@ -62,7 +62,7 @@
 \end_preamble
 \options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage
 \use_default_options true
-\master /usr/share/lyx/templates/Theses/PhD_Thesis/Main_File.lyx
+\master ./Shrodinger_Memory.lyx
 \begin_modules
 customHeadersFooters
 \end_modules

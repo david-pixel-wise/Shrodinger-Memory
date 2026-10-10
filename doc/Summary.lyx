@@ -14,7 +14,7 @@
 \end_preamble
 \options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage
 \use_default_options true
-\master /usr/share/lyx/templates/Theses/PhD_Thesis/Main_File.lyx
+\master ./Shrodinger_Memory.lyx
 \maintain_unincluded_children no
 \language english
 \language_package default
@@ -386,7 +386,8 @@ Software development kit,
 
 \end_inset
 
- module I will be tested on a real quantum computer to compare my analysis and experience with a 
+ module,
+ will be tested on a real quantum computer to compare my analysis and experience with a 
 \emph on
 real
 \emph default
@@ -583,7 +584,7 @@ classical computers
 entanglement
 \series default
  state,
- with different numbers of 
+ with two 
 \series bold
 qubits
 \series default
@@ -810,7 +811,11 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-The new paradigm of using computers include the artificial intelligence (later in the text 
+The new paradigm of using computers include the 
+\series bold
+artificial intelligence
+\series default
+ (later in the text 
 \series bold
 AI
 \series default
@@ -904,6 +909,22 @@ A software bug is a defect in computer software.
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Before starting with my thesis,
+ I would like to apologize for any inaccuracies or omissions that may appear in this work.
+\end_layout
+
+\begin_layout Standard
+With this thesis,
+ I simply attempt to write down,
+ with great humility,
+ the method I applied to approach learning quantum computers.
+\end_layout
+
+\begin_layout Standard
+I apologize again for any inaccuracies that may appear in this text.
 \end_layout
 
 \end_body

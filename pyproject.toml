@@ -2,9 +2,13 @@
 name = "SchrodingerMemory"
 version = "0.1.0"
 dependencies = [
-  "pyqt6",
-  "pyqt6-tools",
-  "qiskit-aer",
+  "matplotlib==3.9.4",
+  "numpy==2.0.2",
+  "pyqt6==6.4.2",
+  "pyqt6-tools==6.4.2.3.3",
+  "qiskit==2.2.3",
+  "qiskit-aer==0.17.2",
+  "qiskit-ibm-runtime==0.43.1",
 ]
 description = "The goal of this project is to create a simple version of memory game using qubit and the entanglement state."
 requires-python = "~=3.9.0"
