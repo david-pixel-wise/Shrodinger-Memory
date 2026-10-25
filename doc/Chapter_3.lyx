@@ -430,7 +430,11 @@ Complex numbers as vectors
 ch3_complex_numbers_as_vectors.png
 \family default
 :
- graph of a complex number as vector]
+
+\emph on
+ graph of a complex number as vector
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -550,7 +554,11 @@ Vector length and probability
 ch3_vector_length_and_probability.png
 \family default
 :
- vectors and probability]
+
+\emph on
+ vectors and probability
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -625,7 +633,11 @@ The Bloch sphere
 ch3_bloch_sphere_illustration.png
 \family default
 :
- the Bloch sphere]
+
+\emph on
+ the Bloch sphere
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -720,7 +732,11 @@ The game is easy!
 exp1_ch3_deck1.png
 \family default
 :
- match of two cards]
+
+\emph on
+ match of two cards
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -773,7 +789,11 @@ Finding a couple of cards with the same emoji in the first experiments show us a
 exp1_ch3_visualization1.png
 \family default
 :
- two independent qubits]
+
+\emph on
+ two independent qubits
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -882,10 +902,14 @@ Experiment 2:
 \align right
 [
 \family typewriter
-exp3_ch3_visualization1.png
+exp2_ch3_visualization1.png
 \family default
 :
- two partially entangled qubits]
+
+\emph on
+ two partially entangled qubits
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -997,7 +1021,11 @@ Experiment 3:
 exp3_ch3_visualization1.png
 \family default
 :
- Bell state generator]
+
+\emph on
+ Bell state generator
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -1113,7 +1141,11 @@ Experiment 4:
 exp4_ch3_visualization1.png
 \family default
 :
- progressive entanglement after the second match]
+
+\emph on
+ progressive entanglement after the second match
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -1135,7 +1167,11 @@ exp4_ch3_visualization1.png
 exp4_ch3_visualization5.png
 \family default
 :
- progressive entanglement after the eighth match]
+
+\emph on
+ progressive entanglement after the eighth match
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -1250,7 +1286,11 @@ Experiment 5:
 exp5_ch3_visualization1.png
 \family default
 :
- maximally entangled state qubits]
+
+\emph on
+ maximally entangled state qubits
+\emph default
+]
 \end_layout
 
 \begin_layout Standard

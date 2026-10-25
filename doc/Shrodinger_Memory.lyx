@@ -512,7 +512,7 @@ Date of the graduation
 \begin_inset Newline newline
 \end_inset
 
-01.12.2026
+04.11.2026
 \end_layout
 
 \begin_layout Dedication
@@ -704,12 +704,6 @@ thepage
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset ERT
 status collapsed
 
@@ -717,6 +711,11 @@ status collapsed
 
 \backslash
 thepage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -955,6 +954,27 @@ status open
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapter_4.lyx"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch chapter-2
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter_5.lyx"
 literal "true"
 
 \end_inset

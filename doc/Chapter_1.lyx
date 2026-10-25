@@ -1824,7 +1824,11 @@ Normal curve
 
 \begin_layout Standard
 \align right
-[Plots created by the student with R Studio]
+[
+\emph on
+Plots created by the student with R Studio
+\emph default
+]
 \end_layout
 
 \begin_layout Standard

@@ -640,7 +640,11 @@ hspace{1mm}
 deck_visualization.png
 \family default
 :
- image of the GUI common to all experiments]
+ 
+\emph on
+image of the GUI common to all experiments
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -1111,7 +1115,11 @@ hspace{1mm}
 deck_generation_circuit.png
 \family default
 :
- common circuit to all the experiments]
+ 
+\emph on
+common circuit to all the experiments
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -1263,12 +1271,16 @@ hspace{1mm}
 exp1_ch2_circuit.png
 \family default
 :
- two independent 
+ 
+\emph on
+two independent 
 \family typewriter
 ry
 \family default
  rotations,
- no entangling gate]
+ no entangling gate
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -1361,10 +1373,13 @@ hspace{1mm}
 exp2_ch2_circuit.png
 \family default
 :
+
+\emph on
  partial-entanglement 
 \family typewriter
 ry + cx
 \family default
+\emph default
 ]
 \end_layout
 
@@ -1451,6 +1466,8 @@ hspace{1mm}
 exp3_ch2_circuit.png
 \family default
 :
+
+\emph on
  
 \family typewriter
 h + cx
@@ -1460,6 +1477,7 @@ h + cx
 \family typewriter
 z/x
 \family default
+\emph default
 ]
 \end_layout
 
@@ -1615,12 +1633,16 @@ hspace{1mm}
 exp4_ch2_circuit.png
 \family default
 :
+
+\emph on
  same shape as experiment 2,
  but 
 \family typewriter
 theta
 \family default
- tied to game progress]
+ tied to game progress
+\emph default
+]
 \end_layout
 
 \begin_layout Standard
@@ -1711,6 +1733,7 @@ exp5_ch2_circuit.png
 :
 
 \family typewriter
+\emph on
  h
 \family default
 ,
@@ -1728,6 +1751,7 @@ cz
 \family typewriter
 x
 \family default
+\emph default
 ]
 \end_layout
 
