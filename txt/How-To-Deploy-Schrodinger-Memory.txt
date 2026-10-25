@@ -25,3 +25,36 @@ uv pip install qiskit-aer matplotlib qiskit_ibm_runtime
 
 # Run the init to export automatically PATH
 source init.sh
+
+#------------------------------------------------------------------------------
+# HOW TO RUN ON IBM CLOUD QUANTUM COMPUTING PLATFORM
+#------------------------------------------------------------------------------
+
+A — IBM Quantum Platform dashboard (simplest)
+
+1. Log in at quantum.cloud.ibm.com (with your IBMid / IBM Cloud account).
+
+2. Write in the search bar "Quantum" and select the service
+
+3. On the dashboard, find the API key panel and click Create. Copy it to a
+   secure location so you can use it for authentication — the same API key works
+   to connect to any region. It’s only shown once.
+
+B - Login into the account via console
+
+1. Open the terminal
+
+2. Go in the source code folder
+
+3. Activate the Python environment
+
+4. Run this code in python:
+
+from qiskit_ibm_runtime import QiskitRuntimeService
+
+QiskitRuntimeService.save_account(
+    token="<your-api-key>",
+    instance="<your-instance-CRN>",  # optional
+    set_as_default=True,
+    overwrite=True,
+)
