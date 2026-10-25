@@ -748,10 +748,10 @@ hspace{1mm}
 \begin_layout Itemize
 \align left
 
-\bar under
-Experiment 1
-\bar default
-:
+\series bold
+Experiment 1:
+
+\series default
  No entanglement,
  opposite arrows
 \end_layout
@@ -771,10 +771,10 @@ exp1_no_entanglement_random_qubits.py
 \begin_layout Itemize
 \align left
 
-\bar under
-Experiment 2
-\bar default
-:
+\series bold
+Experiment 2:
+
+\series default
  Random partial entanglement per pair
 \end_layout
 
@@ -793,10 +793,10 @@ exp2_bell_concurrence.py
 \begin_layout Itemize
 \align left
 
-\bar under
-Experiment 3
-\bar default
-:
+\series bold
+Experiment 3:
+
+\series default
  All four Bell states
 \end_layout
 
@@ -815,10 +815,10 @@ exp3_all_bell_states.py
 \begin_layout Itemize
 \align left
 
-\bar under
-Experiment 4
-\bar default
-:
+\series bold
+Experiment 4:
+
+\series default
  Entanglement that grows with progress
 \end_layout
 
@@ -837,10 +837,10 @@ exp4_tunable_entanglement.py
 \begin_layout Itemize
 \align left
 
-\bar under
-Experiment 5
-\bar default
-:
+\series bold
+Experiment 5:
+
+\series default
  Phase-type entanglement,
  different gate family
 \end_layout

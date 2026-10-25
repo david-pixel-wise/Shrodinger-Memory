@@ -1,0 +1,858 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrbook
+\begin_preamble
+% in case somebody want to have the label "Equation"
+%\renewcommand{\eqref}[1]{Equation~(\negthinspace\autoref{#1})}
+
+% that links to image floats jumps to the beginning
+% of the float and not to its caption
+\usepackage[figure]{hypcap}
+
+% the pages of the TOC is numbered roman
+% and a pdf-bookmark for the TOC is added
+\let\myTOC\tableofcontents
+\renewcommand\tableofcontents{%
+  \frontmatter
+  \pdfbookmark[1]{\contentsname}{}
+  \myTOC
+  \mainmatter }
+
+% makes caption labels bold
+% for more info about these settings, see
+% https://mirrors.ctan.org/macros/latex/contrib/koma-script/doc/scrguide-en.pdf
+\setkomafont{captionlabel}{\bfseries}
+\setcapindent{1em}
+
+% enables calculations
+\usepackage{calc}
+
+% fancy page header/footer settings
+% for more information see section 9 of
+% https://mirrors.ctan.org/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+% increases the bottom float placement fraction
+\renewcommand{\bottomfraction}{0.5}
+
+% avoids that floats are placed above its sections
+\let\mySection\section\renewcommand{\section}{\suppressfloats[t]\mySection}
+
+% increases link area for cross-references and autoname them
+% if you change the document language to e.g. French
+% you must change "extrasenglish" to "extrasfrench"
+% if you uncomment the following lines, you cannot use the reference version Ref+Text in LyX
+%\AtBeginDocument{%
+% \renewcommand{\ref}[1]{\autoref{#1}}
+%}
+%\def\refnamechanges{%
+% \renewcommand*{\equationautorefname}[1]{}
+% \renewcommand{\sectionautorefname}{sec.\negthinspace}
+% \renewcommand{\subsectionautorefname}{sec.\negthinspace}
+% \renewcommand{\subsubsectionautorefname}{sec.\negthinspace}
+% \renewcommand{\figureautorefname}{Fig.\negthinspace}
+% \renewcommand{\tableautorefname}{Tab.\negthinspace}
+%}
+%\@ifpackageloaded{babel}{\addto\extrasenglish{\refnamechanges}}{\refnamechanges}
+\end_preamble
+\options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage
+\use_default_options true
+\master ./Shrodinger_Memory.lyx
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children no
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement h
+\float_alignment class
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_title "Your title"
+\pdf_author "Your name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize a4
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\branch Standalone
+\selected 1
+\filename_suffix 0
+\color #ff0000 #00ffff
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 1
+\math_indentation default
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+chaptername
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+thechapter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+rightmark
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Enable page headers and add the chapter to the header line.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+leftmark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Footer
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Software and architecture
+\end_layout
+
+\begin_layout Section
+Overview
+\end_layout
+
+\begin_layout Standard
+For the creation of the software of this thesis I have written the code with two different AI;
+ this has been my first time using AI for the development in Python,
+ because I came from the old school of programming and actually I write mostly scripts in Bash and Ansible for my daily work.
+\end_layout
+
+\begin_layout Standard
+In any case the experience of programming was good and helped me to realize the game with the minimum effort of coding;
+ but during the development phase,
+ some 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+hallucinations
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ produced by the artificial intelligence have made me spend some time debugging the code in search of the bugs inserted in the source code.
+\end_layout
+
+\begin_layout Standard
+After the corrections,
+ I have used another artificial intelligence to do a double check of the code and the results;
+ after that I have used the knowledge learned with the quantum computing course of IBM and my experience as programmer gained with big headache and sleepless nights to shape the code of the memory game.
+\end_layout
+
+\begin_layout Standard
+So in this chapter I will face all the development and deployment aspects to make easier for the each reader that would to try make tests on quantum computing with the source code produced with this thesis.
+\end_layout
+
+\begin_layout Standard
+All the code written and the documentation,
+ included also the Lyx files that using to generate this PDF are freely available in the Git repository created for this thesis.
+\end_layout
+
+\begin_layout Standard
+To make citations in this document I have create also a DOI
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+DOI
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+They are widely used to identify academic,
+ professional,
+ and government information,
+ such as journal articles,
+ research reports,
+ data sets,
+ and official publications.
+ A DOI aims to resolve to its target,
+ the information object to which the DOI refers.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ for it;
+ in the following chapters you can find the quotes the code and following the links you can also access and deploy the source code of this project.
+\end_layout
+
+\begin_layout Section
+Initialization and deployment
+\end_layout
+
+\begin_layout Standard
+The choose of the language and the components for a new project is always really important for the development and the modification phase.
+\end_layout
+
+\begin_layout Standard
+In this case Python has been a mandatory choice because the Qiskit module is written mostly with it.
+\end_layout
+
+\begin_layout Standard
+To grant portability and a secure environment to make my tests and write new code I have adopted the best practice from the developers standards of today,
+ the module 
+\family typewriter
+venv
+\family default
+ is an isolated workspace that allows to manage dependencies for different projects separately,
+ preventing conflicts between package versions.
+\end_layout
+
+\begin_layout Standard
+A common way that I use in my works is to create scripts to recreate the original environment in case of issues or simply to 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+initialize
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ the development folder to re-create everything from scratch.
+ The init script is useful also to deploy the environment on a new computer and also to remember the modules used in Python;
+ quoting a famous latin phrase in the modern era with can say 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Verba volant,
+ 
+\series bold
+scripts
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Scripts
+\family default
+\series bold
+\shape default
+\size default
+\emph on
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+In Linux,
+ scripts are files containing sequences of commands that the shell executes automatically in order,
+ often starting with a shebang line to specify the interpreter.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series default
+ manent
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Here an example of Bash script that I have used to 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+populate
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ the environment with the software stack used in this project:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+pipx install uv
+\end_layout
+
+\begin_layout Plain Layout
+rm -rf .venv
+\end_layout
+
+\begin_layout Plain Layout
+uv venv --python 3.9 .venv
+\end_layout
+
+\begin_layout Plain Layout
+source .venv/bin/activate
+\end_layout
+
+\begin_layout Plain Layout
+uv pip install --upgrade pip setuptools wheel
+\end_layout
+
+\begin_layout Plain Layout
+uv pip install pyqt6 pyqt6-tools notebook
+\end_layout
+
+\begin_layout Plain Layout
+uv pip install qiskit-aer matplotlib
+\end_layout
+
+\begin_layout Plain Layout
+uv pip install qiskit_ibm_runtime
+\end_layout
+
+\begin_layout Plain Layout
+export PATH="$PWD/.venv/bin:$PWD/.venv/lib/python3.9/site-packages/qt6_applications/Qt/bin/:$PATH"
+\end_layout
+
+\begin_layout Plain Layout
+alias designer='designer -platform xcb'
+\end_layout
+
+\begin_layout Plain Layout
+chmod +x ./src/qt_memory_game_emoji_bloch.py
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset CommandInset citation
+LatexCommand cite
+after "file \"init.sh\" from GitHub repository"
+key "Giovannini2026-db"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the syntax that I have used for init script I have omitted the modules version used but it is required for professional and production environment.
+\end_layout
+
+\begin_layout Standard
+The correct sequence of steps to deploy and after run the scripts on the IBM Quantum Platform can be found in the script named 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "How to deploy Schrodinger memory"
+target "https://github.com/david-pixel-wise/Shrodinger-Memory/blob/main/txt/How-To-Deploy-Schrodinger-Memory.txt"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Software architecture
+\end_layout
+
+\begin_layout Standard
+The application is organized in four layers,
+ each with a single responsibility:
+ configuration,
+ quantum backend,
+ visualization,
+ and game and graphical interface.
+ The code is written in Python and amounts to about 2,500 lines,
+ of which roughly three quarters belong to the game layer.
+ The remaining quarter is shared by all experiments.
+ This division was chosen so that the five experiments could differ from one another only in their quantum content,
+ while everything else stayed unchanged.
+\end_layout
+
+\begin_layout Subsection
+Configuration layer.
+\end_layout
+
+\begin_layout Standard
+A single file,
+ 
+\family typewriter
+config.py
+\family default
+,
+ selects how the program runs.
+ The main parameter chooses between the local simulator and a real IBM quantum processor.
+ Further parameters define the IBM channel,
+ the account instance,
+ the access token,
+ the name of the device and the number of shots per circuit.
+ Every other module reads this file,
+ so switching from simulation to hardware requires editing only one place,
+ and no experiment contains code that is specific to a backend.
+\end_layout
+
+\begin_layout Subsection
+Quantum backend layer
+\end_layout
+
+\begin_layout Standard
+The module 
+\family typewriter
+quantum_backend.py
+\family default
+ hides the differences between the simulator and the real device behind a common set of functions.
+ These functions run the circuit that generates the deck,
+ compute the Bloch vectors of the two qubits,
+ return the joint outcome probabilities and the correlators ⟨XX⟩,
+ ⟨YY⟩ and ⟨ZZ⟩,
+ and compute the entanglement witness and the noise index.
+ On the simulator the quantities are computed exactly from the state vector.
+ On the real device they are estimated from measurements,
+ using sampling for the probabilities and expectation values of Pauli operators for the vectors and correlators.
+ Quantities that exist only in simulation,
+ such as the state vector and the exact concurrence,
+ are not available on hardware,
+ and the backend returns an empty value in their place.
+ The graphical code recognizes this case and adapts the content of the window.
+ The module also contains small helper functions,
+ among them a random-angle generator based on quantum measurements,
+ which assigns the entanglement angle used in experiment 2.
+\end_layout
+
+\begin_layout Subsection
+Visualization layer
+\end_layout
+
+\begin_layout Standard
+The module 
+\family typewriter
+edu_viz.py
+\family default
+ collects the educational charts as independent functions,
+ each drawing one chart on a given Matplotlib axis.
+ They produce the boxed title,
+ the joint probability chart,
+ the per-qubit probability chart,
+ the density matrix grid,
+ the correlator chart and the concurrence trend.
+ These functions know nothing about the game or about the graphical toolkit,
+ so each experiment can freely choose which of them to combine in its result window.
+\end_layout
+
+\begin_layout Subsection
+Game and interface layer
+\end_layout
+
+\begin_layout Standard
+Each experiment is a separate script,
+ derived from the original memory game,
+ and all five have the same structure.
+ A function converts the measured bits of the deck circuit into cards.
+ The main window,
+ built with PyQt6,
+ manages the grid of sixteen buttons,
+ the flipping of cards,
+ the matching rule and the hiding of non-matching pairs.
+ When a pair is matched,
+ a single method builds the two-qubit circuit of the experiment,
+ requests the results from the backend,
+ composes the charts and shows them in a dialog that embeds the Matplotlib figure in a Qt window.
+ This method is the only part that changes substantially from one experiment to another.
+ The graphical interface is identical in all of them,
+ in accordance with the design constraint of modifying only the circuit and its initialization.
+\end_layout
+
+\begin_layout Subsubsection
+Flow of a match
+\end_layout
+
+\begin_layout Standard
+When the player turns two cards,
+ the game checks the matching rule.
+ If the cards match,
+ the experiment circuit is built,
+ including the conditional gates that depend on the sign of the first card and on the parity of the emoji index.
+ The circuit is then executed by the backend,
+ on the simulator or on the quantum processor according to the configuration.
+ A new circuit is used for this purpose,
+ because the measurement that generated the deck has already destroyed the state of the original qubits.
+ The results are finally drawn as charts in the result window.
+\end_layout
+
+\begin_layout Subsubsection
+Design rationale
+\end_layout
+
+\begin_layout Standard
+Four choices follow from this structure.
+ The separation of concerns keeps configuration,
+ quantum computation,
+ drawing and game logic in distinct modules,
+ so that a change in one does not affect the others.
+ The abstraction of the backend gives simulator and hardware the same interface,
+ which makes the direct comparison of the two modes,
+ presented in the results chapter,
+ possible with identical code.
+ The minimal modification of the original script keeps the interface familiar to the player and limits the differences between experiments to the quantum circuit.
+ Finally,
+ the graceful handling of unavailable quantities allows the same window code to show exact values in simulation and estimated values on hardware.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch Standalone
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The contents of this branch is only output if this chapter is processed on its own,
+ i.
+\begin_inset space \thinspace{}
+\end_inset
+
+e.,
+ not from the master.
+ This allows you to have a bibliography and a nomenclature if you only want to output this chapter.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Bibliography.lyx"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
