@@ -316,16 +316,141 @@ thepage
 
 \begin_layout Chapter
 Software and architecture
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5 Software and architecture"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Overview
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.1 Overview"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 For the creation of the software of this thesis I have written the code with two different AI;
  this has been my first time using AI for the development in Python,
- because I came from the old school of programming and actually I write mostly scripts in Bash and Ansible for my daily work.
+ because I came from the old school of programming and actually I write mostly scripts in 
+\series bold
+Bash
+\series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Bash
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Bash (short for "Bourne Again SHell") is an interactive command interpreter and command language developed for Unix-like operating systems.
+ Supported by the Free Software Foundation and created in 1989 by Brian Fox for the GNU Project,
+ it is designed as a completely free software alternative for the Bourne shell,
+ sh,
+ and other proprietary Unix shells.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and 
+\series bold
+Ansible
+\series default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Ansible
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Ansible is a suite of software tools that enables infrastructure as code.
+ It is open-source and the suite includes software provisioning,
+ configuration management,
+ and application deployment functionality.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ for my daily work.
 \end_layout
 
 \begin_layout Standard
@@ -358,7 +483,7 @@ So in this chapter I will face all the development and deployment aspects to mak
 
 \begin_layout Standard
 All the code written and the documentation,
- included also the Lyx files that using to generate this PDF are freely available in the Git repository created for this thesis.
+ included also the Lyx files that using to generate this PDF are freely available in the GitHub repository created for this thesis.
 \end_layout
 
 \begin_layout Standard
@@ -428,6 +553,13 @@ They are widely used to identify academic,
 
 \begin_layout Section
 Initialization and deployment
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.2 Initialization and deployment"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -463,7 +595,8 @@ initialize
 \emph default
  the development folder to re-create everything from scratch.
  The init script is useful also to deploy the environment on a new computer and also to remember the modules used in Python;
- quoting a famous latin phrase in the modern era with can say 
+ quoting a famous latin phrase in the modern era with can say:
+ 
 \emph on
 
 \begin_inset Quotes eld
@@ -613,7 +746,7 @@ alias designer='designer -platform xcb'
 \end_layout
 
 \begin_layout Plain Layout
-chmod +x ./src/qt_memory_game_emoji_bloch.py
+chmod +x ./src/exp1_no_entanglement_random_qubits.py
 \end_layout
 
 \end_inset
@@ -659,14 +792,20 @@ The correct sequence of steps to deploy and after run the scripts on the IBM Qua
 \end_inset
 
 
+\bar under
+\color blue
+
 \begin_inset CommandInset href
 LatexCommand href
-name "How to deploy Schrodinger memory"
+name "How-To-Deploy-Schrodinger-Memory.txt"
 target "https://github.com/david-pixel-wise/Shrodinger-Memory/blob/main/txt/How-To-Deploy-Schrodinger-Memory.txt"
 literal "false"
 
 \end_inset
 
+
+\bar default
+\color inherit
 
 \begin_inset Quotes erd
 \end_inset
@@ -676,6 +815,13 @@ literal "false"
 
 \begin_layout Section
 Software architecture
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3 Software architecture"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -735,7 +881,14 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Subsection
-Configuration layer.
+Configuration layer
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3.1 Configuration layer"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -758,6 +911,13 @@ config.py
 
 \begin_layout Subsection
 Quantum backend layer
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3.2 Quantum backend layer"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -786,6 +946,13 @@ quantum_backend.py
 
 \begin_layout Subsection
 Visualization layer
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3.3 Visualization layer"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -810,6 +977,13 @@ Matplotlib
 
 \begin_layout Subsection
 Game and interface layer
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3.4 Game and interface layer"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -841,6 +1015,13 @@ Matplotlib
 
 \begin_layout Subsubsection
 Flow of a match
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3.4.1 Flow of a match"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -858,6 +1039,13 @@ When the player turns two cards,
 
 \begin_layout Subsubsection
 Design rationale
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3.4.2 Design rationale"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -893,6 +1081,13 @@ game logic
 
 \begin_layout Subsection
 Software design choices
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3.5 Software design choices"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -926,6 +1121,13 @@ src
 
 \begin_layout Subsubsection
 Encoding of a card
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3.5.1 Encoding of a card"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -935,7 +1137,11 @@ A card is the outcome of a measurement on four qubits.
 bits_to_card
 \family default
  converts the four bits into a sign and an index,
- and the index selects one of eight emojis (Listing 1).
+ and the index selects one of eight emojis (
+\emph on
+Listing 1
+\emph default
+).
 \end_layout
 
 \begin_layout Standard
@@ -1060,7 +1266,11 @@ quantum_backend.py
 \family typewriter
 BACKEND_MODE
 \family default
- from the configuration file and dispatches internally (Listing 2).
+ from the configuration file and dispatches internally (
+\emph on
+Listing 2
+\emph default
+).
 \end_layout
 
 \begin_layout Standard
@@ -1261,7 +1471,11 @@ IBM_TOKEN = None
 Mapping of the observables on hardware.
  On a real processor the transpiler places the two qubits of the experiment on physical qubits of its choice,
  in a device that has more than one hundred qubits.
- For this reason each observable is remapped with the layout produced by the transpiler (Listing 3).
+ For this reason each observable is remapped with the layout produced by the transpiler (
+\emph on
+Listing 3
+\emph default
+).
  Without this step the expectation values would refer to different qubits from those of the circuit,
  and the Bloch vectors would be meaningless.
  All six single-qubit observables are sent in a single job,
@@ -1395,7 +1609,11 @@ show_bloch_pair
  which builds the circuit for the matched pair.
  In experiment 3,
  for instance,
- the Bell state is selected by two properties of the match (Listing 4).
+ the Bell state is selected by two properties of the match (
+\emph on
+Listing 4
+\emph default
+).
 \end_layout
 
 \begin_layout Standard
@@ -1519,6 +1737,13 @@ Here the sign of the first card controls the phase gate,
 
 \begin_layout Subsubsection
 Adaptation to the limits of hardware
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3.5.2 Adaptation to the limits of hardware"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1533,13 +1758,24 @@ A real processor does not return the state vector,
 
 \begin_layout Subsubsection
 Numerical robustness
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3.5.3 Numerical robustness"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 One function deals with a numerical problem of the library.
  The concurrence function of Qiskit can return a value that is not a number for almost unentangled states,
  because rounding errors make the argument of a square root slightly negative.
- All concurrence calls go through the wrapper safe_concurrence (Listing 5),
+ All concurrence calls go through the wrapper safe_concurrence (
+\emph on
+Listing 5
+\emph default
+),
  which clips the result to the interval from 0 to 1.
 \end_layout
 
@@ -1554,7 +1790,11 @@ Listing 5:
 src/quantum_backend.py
 \family default
 ,
- function safe_concurrence,
+ function 
+\family typewriter
+safe_concurrence
+\family default
+,
  lines 332 to 339).
 \end_layout
 
@@ -1649,6 +1889,13 @@ hspace{1mm}
 
 \begin_layout Subsubsection
 Embedding of the charts in the interface
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:5.3.5.4 Embedding of the charts in the interface"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1656,7 +1903,11 @@ The result window is a Qt dialog that contains a
 \family typewriter
 Matplotlib
 \family default
- canvas (Listing 6).
+ canvas (
+\emph on
+Listing 6
+\emph default
+).
  The charts are therefore built as ordinary Matplotlib figures by the module 
 \family typewriter
 edu_viz.py
@@ -1676,7 +1927,11 @@ Listing 6:
 src/exp2_bell_concurrence.py
 \family default
 ,
- class BlochDialog,
+ class 
+\family typewriter
+BlochDialog
+\family default
+,
  lines 73 to 82).
 \end_layout
 

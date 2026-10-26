@@ -63,6 +63,16 @@
 \usepackage{lipsum}
 %\usepackage[margin=1.5cm]{geometry}
 \usepackage{braket}
+\usepackage{hyperref}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+\hypersetup{
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  citecolor=black
+}
 \end_preamble
 \options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage
 \use_default_options true
@@ -170,6 +180,26 @@ customHeadersFooters
 \end_branch
 \branch Standalone
 \selected 0
+\filename_suffix 0
+\color background background
+\end_branch
+\branch chapter-3
+\selected 1
+\filename_suffix 0
+\color background background
+\end_branch
+\branch chapter-4
+\selected 1
+\filename_suffix 0
+\color background background
+\end_branch
+\branch chapter-5
+\selected 1
+\filename_suffix 0
+\color background background
+\end_branch
+\branch chapter-6
+\selected 1
 \filename_suffix 0
 \color background background
 \end_branch
@@ -704,6 +734,12 @@ thepage
 status open
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset ERT
 status collapsed
 
@@ -711,11 +747,6 @@ status collapsed
 
 \backslash
 thepage
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -925,7 +956,7 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch chapter-2
+\begin_inset Branch chapter-3
 inverted 0
 status open
 
@@ -933,7 +964,7 @@ status open
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapter_3.lyx"
-literal "true"
+literal "false"
 
 \end_inset
 
@@ -946,7 +977,7 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch chapter-2
+\begin_inset Branch chapter-4
 inverted 0
 status open
 
@@ -954,7 +985,7 @@ status open
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapter_4.lyx"
-literal "true"
+literal "false"
 
 \end_inset
 
@@ -967,7 +998,7 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch chapter-2
+\begin_inset Branch chapter-5
 inverted 0
 status open
 
@@ -975,7 +1006,28 @@ status open
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapter_5.lyx"
-literal "true"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch chapter-6
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter_6.lyx"
+literal "false"
 
 \end_inset
 

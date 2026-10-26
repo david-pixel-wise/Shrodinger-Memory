@@ -315,14 +315,21 @@ thepage
 \end_layout
 
 \begin_layout Chapter
-The Math behind the game
+Math behind the game
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:1 Math behind the game"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Overview
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Overview"
+name "sec:1.1 Overview"
 
 \end_inset
 
@@ -999,21 +1006,13 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-The CPU architectures now days are processing data with 2
-\begin_inset Formula $^{10}$
-\end_inset
-
- bits and can store it in registers of 2
-\begin_inset Formula $^{64}$
-\end_inset
-
- bits and in some cases till to 2
-\begin_inset Formula $^{128}$
-\end_inset
-
- bits for the common general purpose
+The CPU architectures nowadays are processing data in words of 64 bits,
+ so that a single word can represent 2⁶⁴ different values,
+ and can store it in registers of up to 128 bits,
+ which can represent up to 2¹²⁸ different values,
+ for the common general purpose 
 \series bold
- x86_64
+x86_64
 \begin_inset Nomenclature
 status collapsed
 
@@ -1549,7 +1548,7 @@ GPUs
 
 \series bold
 \shape italic
-NPU
+NPUs
 \begin_inset Nomenclature
 status collapsed
 
@@ -1597,7 +1596,7 @@ Neural processing unit.
 
 \end_inset
 
-s
+
 \series default
 :
  Neural processing units (NPUs) mimic the function of the human brain and are typically used for tasks involving the specific types of computations used in machine learning (ML) and artificial intelligence (AI).
@@ -1607,7 +1606,7 @@ s
 
 \series bold
 \shape italic
-QPU
+QPUs
 \begin_inset Nomenclature
 status collapsed
 
@@ -1655,7 +1654,7 @@ Quantum processing unit.
 
 \end_inset
 
-s
+
 \series default
 :
  Quantum processing units (QPUs) process information by using qubits instead of binary bits and are designed to perform complex quantum algorithms.
@@ -1680,7 +1679,7 @@ literal "false"
 Differences between bit and qubit
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Differences-between-bit-and-qubit"
+name "sec:1.2 Differences between bit and qubit"
 
 \end_inset
 
@@ -2069,7 +2068,7 @@ hspace{1mm}
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $P(0)=\mid\frac{1}{\sqrt{2}}\mid^{2}=\frac{1}{2}\qquad P(1)=\mid\frac{1}{\sqrt{2}}\mid=\frac{1}{2}$
+\begin_inset Formula $P(0)=\mid\frac{1}{\sqrt{2}}\mid^{2}=\frac{1}{2}\qquad P(1)=\mid\frac{1}{\sqrt{2}}\mid^{2}=\frac{1}{2}$
 \end_inset
 
 
@@ -2106,7 +2105,7 @@ The assumption that a qubit can be both states at the same time bring us again t
 Probabilistic or deterministic in quantum states
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Probabilistic-or-deterministic"
+name "sec:1.3 Probabilistic or deterministic"
 
 \end_inset
 
@@ -2237,17 +2236,14 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Plain Layout
-
-\emph on
 \begin_inset CommandInset citation
 LatexCommand cite
-after "Stones in a pond"
 key "mar2019"
 literal "false"
 
 \end_inset
 
-
+ Stones in a pond
 \end_layout
 
 \end_inset
@@ -2280,17 +2276,14 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Plain Layout
-
-\emph on
 \begin_inset CommandInset citation
 LatexCommand cite
-after "Wave function"
 key "ebunn2026"
 literal "false"
 
 \end_inset
 
-
+ Wave function
 \end_layout
 
 \end_inset
@@ -2377,7 +2370,9 @@ reproducible results;
 
 \begin_layout Standard
 The physic behind quantum computing use wave forms that give us the probability to have a qubit in a certain state,
- but when we made a measurements of the qubit the state collapse and we obtain with mathematical certain the result of our calculations.
+ but when we made a measurements of the qubit the state collapse and we obtain as outcome of a measurement a random number,
+ with the probabilities given by the squared amplitudes.
+ What is deterministic is the evolution between measurements.
 \end_layout
 
 \begin_layout Standard
@@ -2437,7 +2432,7 @@ literal "false"
 Quantum teleport and entanglement
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Quantum-teleport"
+name "sec:1.4 Quantum teleport and entanglement"
 
 \end_inset
 
@@ -2700,12 +2695,28 @@ literal "false"
 
 \begin_layout Standard
 By significantly scaling down the concept of teleportation today,
- we can see on smaller scale how the entanglement property of qubits allows information to travel instantaneously,
+ we can see on smaller scale how the entanglement property of qubits allows the 
+\emph on
+correlations
+\emph default
+ between the measurement results of entangled qubits appear instantaneously,
  
 \emph on
-without exceeding the speed of light
+but no information travels faster than light
 \emph default
-.
+ (the 
+\emph on
+no-communication theorem 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wiki:nocom"
+literal "false"
+
+\end_inset
+
+
+\emph default
+).
 \end_layout
 
 \begin_layout Standard
@@ -3053,8 +3064,10 @@ literal "false"
 
 \end_inset
 
-,
- who won the Nobel Prize in Physics for the theorem with the homonyms name.
+.
+ Bell did not receive the Nobel Prize,
+ but the 2022 Nobel Prize in Physics was awarded to Alain Aspect,
+ John Clauser and Anton Zeilinger for experiments on Bell’s theorem.
 \end_layout
 
 \begin_layout Standard
@@ -3191,7 +3204,7 @@ hspace{1mm}
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $\mid\psi^{+}\rangle=\frac{\mid00\rangle+\mid11\rangle}{\sqrt{2}}$
+\begin_inset Formula $\mid\phi^{+}\rangle=\frac{\mid00\rangle+\mid11\rangle}{\sqrt{2}}$
 \end_inset
 
 
@@ -3199,7 +3212,7 @@ hspace{1mm}
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $\mid\psi^{-}\rangle=\frac{\mid00\rangle-\mid11\rangle}{\sqrt{2}}$
+\begin_inset Formula $\mid\phi^{-}\rangle=\frac{\mid00\rangle-\mid11\rangle}{\sqrt{2}}$
 \end_inset
 
 
@@ -3207,7 +3220,7 @@ hspace{1mm}
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $\mid\phi^{+}\rangle=\frac{\mid01\rangle-\mid10\rangle}{\sqrt{2}}$
+\begin_inset Formula $\mid\psi^{+}\rangle=\frac{\mid01\rangle+\mid10\rangle}{\sqrt{2}}$
 \end_inset
 
 
@@ -3215,7 +3228,7 @@ hspace{1mm}
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $\mid\phi^{-}\rangle=\frac{\mid01\rangle-\mid10\rangle}{\sqrt{2}}$
+\begin_inset Formula $\mid\psi^{-}\rangle=\frac{\mid01\rangle-\mid10\rangle}{\sqrt{2}}$
 \end_inset
 
 
@@ -3238,7 +3251,7 @@ hspace{1mm}
 
 \begin_layout Standard
 The most easiest state 
-\begin_inset Formula $\mid\psi^{+}\rangle$
+\begin_inset Formula $\mid\phi^{+}\rangle$
 \end_inset
 
  in python code could be translated as:

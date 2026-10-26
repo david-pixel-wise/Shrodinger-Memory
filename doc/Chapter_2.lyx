@@ -316,10 +316,24 @@ thepage
 
 \begin_layout Chapter
 Quantum entanglement and memory game
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2 Quantum entanglement and memory game"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Overview
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2.1 Overview"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -463,7 +477,7 @@ Graphical user interface.
 
 ) written in 
 \series bold
-Qt
+Qt 6
 \begin_inset Nomenclature
 status collapsed
 
@@ -516,7 +530,7 @@ Qt is a cross-platform application development framework for creating graphical 
 
 
 \series default
- 6 I have realized 16 
+ I have realized 16 
 \emph on
 virtual cards
 \emph default
@@ -560,8 +574,7 @@ Emojis
 status collapsed
 
 \begin_layout Plain Layout
-The word emoji comes from Japanese e (X;
- 
+The word emoji comes from Japanese e (
 \begin_inset Quotes eld
 \end_inset
 
@@ -569,8 +582,7 @@ picture
 \begin_inset Quotes erd
 \end_inset
 
-) + moji (XX;
- 
+) + moji (
 \begin_inset Quotes eld
 \end_inset
 
@@ -663,7 +675,14 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Section
-The rules of the memory game
+The rules of memory game
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2.2 The rules of memory game"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -713,20 +732,77 @@ The game continues until all pairs have been collected.
 \begin_layout Standard
 In this version of the game,
  the player that will find the equal card will visualize a pop up image that will explain the quantum state of the ebit;
- to be more educational and to investigate deeply on the quantum entanglement I have created 4 version of the game as experiments to run in a first phase as simulation and then to run it on a real quantum computer.
+ to be more educational and to investigate deeply on the quantum entanglement I have created 5 versions of the game as experiments to run in a first phase as simulation and then to run it on a real quantum computer.
 \end_layout
 
 \begin_layout Standard
-Here you can find all the Python files that you will find in the GitHub repository (
+Here you can find all the Python files that you will find in the Git
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Git
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+ Git is lightning fast and has a huge ecosystem of GUIs,
+ hosting services,
+ and command-line tools.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ repository (follow this link to access the 
+\bar under
+\color blue
+
 \begin_inset CommandInset href
 LatexCommand href
-name "link to Shrodinger-Memory"
+name "Shrodinger Memory"
 target "https://github.com/david-pixel-wise/Shrodinger-Memory"
 literal "false"
 
 \end_inset
 
-) for this thesis;
+
+\bar default
+\color inherit
+ source code) for this thesis;
  each file is corresponding to a different experiment on quantum computing:
 \end_layout
 
@@ -859,6 +935,13 @@ exp5_phase_equatorial.py
 \end_deeper
 \begin_layout Section
 Quantum circuits for deck generation
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2.3 Quantum circuits for deck generation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1141,8 +1224,7 @@ hspace{1mm}
 In the image you can see 4 qubits (q0,
  q1,
  q2,
- q3,
- q4),
+ q3),
  each put into equal to |0⟩ at the starting position.
  The H (Hadamard) gate on each qubit means that,
  before measurement,
@@ -1212,12 +1294,19 @@ So during the visualization of the popup after match,
  exactly known state to actually show you:
  real superposition,
  real entanglement (or deliberately none,
- for Experiment 1),
+ for experiment 1),
  still fully intact right up until the moment the popup renders it.
 \end_layout
 
 \begin_layout Section
 Quantum circuits for cards visualization
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2.4 Quantum circuits for cards visualization"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1235,6 +1324,13 @@ We will not see in details the math behind this circuits,
 \begin_layout Subsection
 Experiment 1:
  absence of entanglement
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2.4.1 Experiment 1: absence of entanglement"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1337,6 +1433,13 @@ This experiment establishes the reference condition against which the entangled 
 \begin_layout Subsection
 Experiment 2:
  partial and variable entanglement
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2.4.2 Experiment 2: partial and variable entanglement"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1430,6 +1533,13 @@ entanglement admits intermediate degrees
 \begin_layout Subsection
 Experiment 3:
  the Bell state basis
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2.4.3 Experiment 3: the Bell state basis"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1597,6 +1707,13 @@ What makes this worth highlighting from an educational standpoint is twofold.
 \begin_layout Subsection
 Experiment 4:
  entanglement grows with pairs found
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2.4.4 Experiment 4: entanglement grows with pairs found"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1695,6 +1812,13 @@ dynamically evolving quantity
 \begin_layout Subsection
 Experiment 5:
  entanglement not manifest in measurement probabilities
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2.4.5 Experiment 5: entanglement not manifest in measurement probabilities"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -8,4 +8,4 @@ uv pip install qiskit-aer matplotlib
 uv pip install qiskit_ibm_runtime
 export PATH="$PWD/.venv/bin:$PWD/.venv/lib/python3.9/site-packages/qt6_applications/Qt/bin/:$PATH"
 alias designer='designer -platform xcb'
-chmod +x ./src/qt_memory_game_emoji_bloch.py
+chmod +x ./src/exp1_no_entanglement_random_qubits.py

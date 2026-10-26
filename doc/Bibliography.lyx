@@ -343,7 +343,7 @@ This .lyx file will give an error if compiled on its own,
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "Bibliography,thesisExample"
+bibfiles "Bibliography"
 options "alpha"
 encoding "default"
 

@@ -316,14 +316,31 @@ thepage
 
 \begin_layout Chapter
 Experiments on a real quantum computer
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:4 Experiments on a real quantum computer"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Overview
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:4.1 Overview"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 The experiments that I have made has been realized with the 
+\bar under
+\color blue
+
 \begin_inset CommandInset href
 LatexCommand href
 name "IBM quantum platform"
@@ -332,6 +349,9 @@ literal "false"
 
 \end_inset
 
+
+\bar default
+\color inherit
 .
  The creation of a new account on the platform give to every user 10 mins of free quantum computing,
  to complete all the tests I have used circa 15 mins.
@@ -345,20 +365,15 @@ An important aspect to take in consideration that could be useful to all the peo
 This means that the free 10 mins of utilization given with the free account is not the effective time that you will be used by the quantum processor unit.
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand cite
-after "IBM Launches Its Most Advanced Quantum Computers"
-key "IBM:Anagelini-2024"
-literal "false"
+\begin_layout Section
+The quantum processor unit or QPU
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:4.2 The quantum processor unit or QPU"
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-The quantum processor unit or QPU
 \end_layout
 
 \begin_layout Standard
@@ -366,10 +381,8 @@ The server where I ran my Qiskit scripts was a server equipped with the processo
 \emph on
 Heron r2
 \emph default
- with with 156 programmable qubits.
- The free account,
- at the time of this thesis gave me the possibility to use maximum 3 qubits;
- enough to run my experiments but a big limitations for the students or technicians that want to push a little bit more the research.
+ with with 156 programmable qubits and I have made all my test with 1024 number of shots.
+ The free account was enough to run my experiments but it could be a big limitation for the students or technicians that want to push a little bit more the research in this field.
  
 \end_layout
 
@@ -420,6 +433,9 @@ hspace{1mm}
 \emph on
 The combined improvements across IBM Heron and Qiskit can execute certain mirrored kicked Ising quantum circuits of up to 5,000 gates,
  which is nearly twice the number of gates accurately run in IBM's 2023 demonstration of 
+\bar under
+\color blue
+
 \begin_inset CommandInset href
 LatexCommand href
 name "quantum utility"
@@ -428,10 +444,16 @@ literal "false"
 
 \end_inset
 
+
+\bar default
+\color inherit
 .
  This work further extends the performance of IBM's quantum computers beyond the capabilities of brute-force classical simulation methods.
  The 2023 utility experiment,
  published in 
+\bar under
+\color blue
+
 \begin_inset CommandInset href
 LatexCommand href
 name "Nature"
@@ -440,6 +462,9 @@ literal "false"
 
 \end_inset
 
+
+\bar default
+\color inherit
 ,
  demonstrated the speed results in terms of time to process,
  per data point,
@@ -457,6 +482,9 @@ IBM has further evolved Qiskit into the world's most performant quantum software
  accuracy,
  and speed.
  This is evidenced by 
+\bar under
+\color blue
+
 \begin_inset CommandInset href
 LatexCommand href
 name "results"
@@ -465,7 +493,13 @@ literal "false"
 
 \end_inset
 
+
+\bar default
+\color inherit
  gathered and published on arXiv.org using 
+\bar under
+\color blue
+
 \begin_inset CommandInset href
 LatexCommand href
 name "Benchpress"
@@ -474,6 +508,9 @@ literal "false"
 
 \end_inset
 
+
+\bar default
+\color inherit
 ,
  an open-source benchmarking tool which IBM used to measure Qiskit across 1,000 tests,
  largely from third parties,
@@ -481,18 +518,38 @@ literal "false"
  most reliable quantum software development kit against other selected platforms.
 \end_layout
 
+\begin_layout Standard
+\align right
+\begin_inset CommandInset citation
+LatexCommand cite
+after "IBM Launches Its Most Advanced Quantum Computers"
+key "IBM:Anagelini-2024"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Real runnings = real results
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:4.3 Real runnings = real results"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-In this chapter I will show the results obtained with the real runnings of my scripts in the IBM Quantum Platform.
+In this chapter I will show the results obtained with the real running of my scripts in the IBM Quantum Platform.
  An important consideration that have to be made is that in some case the results will be really different from the simulations because sometimes the real hardware can't give us some data like the full state of a vector.
 \end_layout
 
 \begin_layout Standard
-A real QPU can’t give the full state because every measurement destroys it.
- It also gives only one bit per qubit each time.
+A real QPU can’t give the full state because every measurement destroys it,
+ it also give only one bit per qubit each time.
 \end_layout
 
 \begin_layout Standard
@@ -514,7 +571,15 @@ The simulator is a program that stores the whole state vector in memory,
  The state exists only in the physics of the qubits,
  and you cannot copy it (the 
 \emph on
-no-cloning theorem
+no-cloning theorem 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wiki:noclone"
+literal "false"
+
+\end_inset
+
+
 \emph default
 ) or look at it without disturbing it.
 \end_layout
@@ -581,6 +646,13 @@ In quantum information theory,
 \begin_layout Subsection
 Experiment 1:
  two independent qubits
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:4.3.1 Experiment 1: two independent qubits"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -625,7 +697,7 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-Figure X shows the result window of experiment 1 when the circuit is executed on a real IBM quantum processor instead of the ideal simulator.
+The figure shows the result window of experiment 1 when the circuit is executed on a real IBM quantum processor instead of the ideal simulator.
  The title box reports the two prepared states,
  qubit A with angle 0.43 rad and qubit B with angle 2.00 rad,
  which are antipodal by construction.
@@ -696,6 +768,13 @@ In conclusion,
 \begin_layout Subsection
 Experiment 2:
  partially entangled vectors
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:4.3.2 Experiment 2: partially entangled vectors"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -820,6 +899,13 @@ The most visible effects are the leakage of about 5% of the probability into the
 \begin_layout Subsection
 Experiment 3:
  Bell states and density matrix
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:4.3.3 Experiment 3: Bell states and density matrix"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -867,7 +953,7 @@ hspace{1mm}
 Two points before the complete explanation of the image:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Bell state:
  this run is Ψ⁺,
  while the simulator figure I described earlier showed Ψ⁻ (see the picture in chapter 3.3.3 with name 
@@ -875,13 +961,13 @@ Bell state:
 exp3_ch3_visualization1.png
 \family default
 ).
- The card is chosen by the game,
- so the Bell state varies between runs.
+ The first card’s sign and emoji number set the state;
+ it varies between runs.
  Both states have the same probability support (01 and 10),
  so the comparison is direct.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Left panel:
  
 \bar under
@@ -898,19 +984,19 @@ The density matrix needs the full state vector,
 The ideal values for Ψ⁺ are:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Witness:
  3.0,
  from ⟨XX⟩ = +1,
  ⟨YY⟩ = +1 and ⟨ZZ⟩ = −1.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Bloch vectors:
  length 0.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Probabilities:
  0.5 for 01 and 0.5 for 10.
 \end_layout
@@ -998,6 +1084,13 @@ In conclusion,
 \begin_layout Subsection
 Experiment 4:
  progressive increase of entanglement
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:4.3.4 Experiment 4: progressive increase of entanglement"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1125,6 +1218,13 @@ The witness and the vector lengths agree with the ideal values at the level of a
 \begin_layout Subsection
 Experiment 5:
  maximally entangled state exhibiting
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:4.3.5 Experiment 5: maximally entangled state exhibiting"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
