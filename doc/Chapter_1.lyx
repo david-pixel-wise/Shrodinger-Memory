@@ -932,6 +932,21 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 If you are not really aware about how many data are needed to represent a photo with colors,
  try to think that a common phone camera with 12 megapixel and 24 bit (8 bit for each color RGB) in RAW format (without any compression) can store a relatively big amount of data.
 \end_layout
@@ -1341,7 +1356,11 @@ The quantum computing seems give us access to a new scale of magnitudes of compu
 \end_layout
 
 \begin_layout Standard
-For instance a Large Scale Problem (LSP
+For instance a Large Scale Problem (
+\series bold
+LSP
+\series default
+
 \begin_inset Nomenclature
 status collapsed
 
@@ -1393,7 +1412,6 @@ Large scale problem.
  is to find the optimized travel length that Santa Claus 
 \begin_inset CommandInset citation
 LatexCommand cite
-after "Santa Claus Problem"
 key "Bansal_Sviridenko_2006"
 literal "false"
 
@@ -1404,7 +1422,11 @@ literal "false"
 \emph on
 Traveling Salesman Problem
 \emph default
- (later in the text is mentioned as TSP
+ (later in the text is mentioned as 
+\series bold
+TSP
+\series default
+
 \begin_inset Nomenclature
 status collapsed
 
@@ -1527,6 +1549,58 @@ In a quantum-centric supercomputer,
 \shape italic
 CPUs
 \series default
+\shape default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+CPU
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Central processing unit,
+ is the primary processor in a computer.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\shape italic
 :
  Central processing units (CPUs) process inputs sequentially,
  performing tasks in a linear fashion and are best suited for high-level control operations,
@@ -1539,6 +1613,57 @@ CPUs
 \shape italic
 GPUs
 \series default
+\shape default
+
+\begin_inset Nomenclature
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+GPU
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Argument post:1
+status collapsed
+
+\begin_layout Plain Layout
+Graphics processing unit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\shape italic
 :
  Graphics processing units (GPUs) excel at parallel processing large amounts of operations simultaneously.
  GPUs can potentially be used in quantum systems to offload some amount of the processing workload from QPUs.
@@ -1795,7 +1920,7 @@ hspace{1mm}
 \begin_inset Text
 
 \begin_layout Plain Layout
-100 repetitions of head tail
+Figure 1.1
 \end_layout
 
 \end_inset
@@ -1804,11 +1929,7 @@ hspace{1mm}
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\emph on
-Normal curve
-\emph default
- in head tail distribution
+Figure 1.2
 \end_layout
 
 \end_inset
@@ -1822,12 +1943,42 @@ Normal curve
 \end_layout
 
 \begin_layout Standard
-\align right
-[
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+100 repetitions of head tail
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \emph on
-Plots created by the student with R Studio
+Normal curve
 \emph default
-]
+ in head tail distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2443,7 +2594,11 @@ name "sec:1.4 Quantum teleport and entanglement"
 Quantum computers open the way to another field of research that promise to change completely the world that we know;
  in different fields of computers technology.
  Since the early days of modernization,
- the sci-fi
+ the 
+\series bold
+sci-fi
+\series default
+
 \begin_inset Nomenclature
 status collapsed
 
@@ -2694,6 +2849,21 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 By significantly scaling down the concept of teleportation today,
  we can see on smaller scale how the entanglement property of qubits allows the 
 \emph on
@@ -2745,6 +2915,21 @@ LatexCommand cite
 after "Teleportation Physics Study"
 key "dav2004"
 literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
 
 \end_inset
 
@@ -2825,7 +3010,11 @@ Back to reality,
 \end_layout
 
 \begin_layout Standard
-Qiskit is a software development kit (later SDK
+Qiskit is a software development kit (later 
+\series bold
+SDK
+\series default
+
 \begin_inset Nomenclature
 status collapsed
 
@@ -2900,9 +3089,9 @@ literal "false"
 \begin_layout Standard
 All the lessons are enriched with interactive files that can be downloaded and edited using 
 \series bold
-Jupyter
+Jupyter Notebooks
 \series default
- Notebooks
+
 \begin_inset Nomenclature
 status collapsed
 
@@ -2979,7 +3168,10 @@ literal "false"
 The interactive code available online and written with Jupiter Notebook,
  is very helpful in research and study;
  for instance,
- other experiments could be made increasing the number of qubits to be connected directly from your browser
+ other experiments could be made increasing the number of qubits to be connected directly from your 
+\series bold
+browser
+\series default
 \color red
 
 \begin_inset Nomenclature
@@ -3305,7 +3497,19 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-Later in the next chapter we will see in details all the quantum circuits used in the source code,
+Later in the next Chapter 2
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:2.3 Quantum circuits for deck generation"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+ we will see in details all the quantum circuits used in the source code,
  but for now the goal is to show how simply is to write quantum circuits with Qiskit.
  With exactly four lines of Python code we can translate the mathematical equation 
 \begin_inset Formula $\mid\psi^{+}\rangle$
@@ -3428,7 +3632,7 @@ hspace{1mm}
 \align right
 \begin_inset CommandInset citation
 LatexCommand cite
-after "Figure 3, page 5; Quantum circuits for Bell state."
+after "Quantum circuits for Bell state"
 key "sisodia2020comparison"
 literal "false"
 
@@ -3454,7 +3658,11 @@ hspace{1mm}
 
 \begin_layout Standard
 Once realized the entanglement state we are able to use all the properties expressed before,
- the correlations between two qubits is called ebit
+ the correlations between two qubits is called 
+\series bold
+ebit
+\series default
+
 \begin_inset Nomenclature
 status collapsed
 
@@ -3504,7 +3712,11 @@ An ebit is one unit of bipartite entanglement,
 
 \end_inset
 
- (entanglement bit);
+ (or 
+\emph on
+entanglement bit
+\emph default
+);
  it is the fundamental unit of quantum entanglement,
  a measure of how much entanglement two parts share.
 \end_layout

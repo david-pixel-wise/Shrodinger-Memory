@@ -646,17 +646,31 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-deck_visualization.png
-\family default
-:
- 
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \emph on
 image of the GUI common to all experiments
-\emph default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -736,7 +750,11 @@ In this version of the game,
 \end_layout
 
 \begin_layout Standard
-Here you can find all the Python files that you will find in the Git
+Here you can find all the Python files that you will find in the 
+\series bold
+Git
+\series default
+
 \begin_inset Nomenclature
 status collapsed
 
@@ -1192,17 +1210,31 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-deck_generation_circuit.png
-\family default
-:
- 
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \emph on
 common circuit to all the experiments
-\emph default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1294,7 +1326,7 @@ So during the visualization of the popup after match,
  exactly known state to actually show you:
  real superposition,
  real entanglement (or deliberately none,
- for experiment 1),
+ for Experiment 1),
  still fully intact right up until the moment the popup renders it.
 \end_layout
 
@@ -1361,13 +1393,19 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-exp1_ch2_circuit.png
-\family default
-:
- 
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \emph on
 two independent 
 \family typewriter
@@ -1375,8 +1413,16 @@ ry
 \family default
  rotations,
  no entangling gate
-\emph default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1470,20 +1516,33 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-exp2_ch2_circuit.png
-\family default
-:
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
 
 \emph on
- partial-entanglement 
+partial-entanglement 
 \family typewriter
 ry + cx
-\family default
-\emph default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1570,25 +1629,37 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-exp3_ch2_circuit.png
-\family default
-:
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
 
-\emph on
- 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \family typewriter
+\emph on
 h + cx
 \family default
 ,
  then conditional 
 \family typewriter
 z/x
-\family default
-\emph default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1744,22 +1815,36 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-exp4_ch2_circuit.png
-\family default
-:
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
 
 \emph on
- same shape as experiment 2,
+same shape as Experiment 2,
  but 
 \family typewriter
 theta
 \family default
  tied to game progress
-\emph default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1849,16 +1934,22 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-exp5_ch2_circuit.png
-\family default
-:
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
 
 \family typewriter
 \emph on
- h
+h
 \family default
 ,
  
@@ -1874,9 +1965,16 @@ cz
  then conditional 
 \family typewriter
 x
-\family default
-\emph default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

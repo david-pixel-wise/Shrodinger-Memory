@@ -344,7 +344,7 @@ This .lyx file will give an error if compiled on its own,
 LatexCommand bibtex
 btprint "btPrintCited"
 bibfiles "Bibliography"
-options "alpha"
+options "ieeetr"
 encoding "default"
 
 \end_inset
@@ -395,12 +395,12 @@ Nomenclature
 status open
 
 \begin_layout Plain Layout
-Nomenclature
+
 \end_layout
 
 \end_inset
 
-
+Nomenclature
 \end_layout
 
 \begin_layout Standard

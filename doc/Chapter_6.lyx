@@ -338,7 +338,11 @@ name "sec:6.1 Overview"
 
 \begin_layout Standard
 This thesis started from a personal question:
- can a person with no background in quantum computing learn its basic ideas by building and studying a small interactive game?
+ 
+\emph on
+can a person with no background in quantum computing learn its basic ideas by building and studying a small interactive game?
+
+\emph default
  I came from the world GNU Linux system administration,
  and quantum computing was a subject that I did not know at all.
  To answer the question I created a memory game in which every card is produced by quantum measurements,
@@ -368,21 +372,33 @@ The five experiments covered the main situations of a two-qubit system.
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 Experiment 1:
+
+\series default
  
 \emph on
 prepared two independent qubits with no entanglement.
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 Experiment 2:
+
+\series default
  
 \emph on
 produced a pair with a partial entanglement that depends on a random angle.
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 Experiment 3:
+
+\series default
  
 \emph on
 produced the four Bell states,
@@ -390,14 +406,22 @@ produced the four Bell states,
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 Experiment 4:
+
+\series default
  
 \emph on
 increased the entanglement along the game.
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 Experiment 5:
+
+\series default
  
 \emph on
 produced a state whose entanglement lies only in the phases.
@@ -443,8 +467,6 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 
-\series bold
-iment
 \end_layout
 
 \end_inset
@@ -489,7 +511,7 @@ Noise index
 
 \begin_layout Plain Layout
 1.
- independent qubits
+ Independent qubits
 \end_layout
 
 \end_inset
@@ -528,7 +550,7 @@ Noise index
 
 \begin_layout Plain Layout
 2.
- partial entanglement
+ Partial entanglement
 \end_layout
 
 \end_inset
@@ -606,7 +628,7 @@ Noise index
 
 \begin_layout Plain Layout
 4.
- third match
+ Third match
 \end_layout
 
 \end_inset
@@ -645,7 +667,7 @@ Noise index
 
 \begin_layout Plain Layout
 5.
- phase entanglement
+ Phase entanglement
 \end_layout
 
 \end_inset
@@ -711,27 +733,45 @@ hspace{1mm}
 
 \begin_layout Standard
 Three conclusions follow from these results.
- The first is that the real processor reproduces the qualitative behavior of every experiment.
+ The first is that 
+\emph on
+the real processor reproduces the qualitative behavior of every experiment
+\emph default
+.
  The correlated outcomes of the Bell state,
  the reduced length of the Bloch vectors in entangled pairs,
- the growth of the witness along experiment 4 and the sign of the dominant correlator in experiment 5 are all visible on the hardware,
+ the growth of the witness along Experiment 4 and the sign of the dominant correlator in Experiment 5 are all visible on the hardware,
  with small deviations from the simulation.
- The second is that the noise is moderate.
+ The second is that 
+\emph on
+the noise is moderate
+\emph default
+.
  The noise index stays between 1.7% and 6.5%,
  and the lowest value belongs to the experiment without an entangling gate,
  which agrees with the fact that two-qubit gates are the main source of error in present devices.
- The third conclusion concerns a limit of the instrument.
- In experiment 5 the witness remains at the separable bound of 1,
+ The third conclusion concerns a 
+\emph on
+limit of the instrument
+\emph default
+.
+ In Experiment 5 the witness remains at the separable bound of 1,
  even though the state is maximally entangled,
  so a single indicator cannot replace the full set of correlators and vectors.
  The entanglement of that state is recognized only by combining the strong ⟨YY⟩ correlation with Bloch vectors close to zero length.
 \end_layout
 
 \begin_layout Standard
+
+\emph on
 These results must be read with caution.
+
+\emph default
  Each figure comes from a single run on a single device,
  so the values give the order of magnitude of the noise and not a statistical measurement.
- A different run,
+ 
+\emph on
+A different run,
  or the same device on another day,
  could give different numbers.
 \end_layout
@@ -749,15 +789,12 @@ name "sec:6.3 Practical limits of access to quantum hardware"
 
 \begin_layout Standard
 Working on a real quantum processor requires planning that a simulator does not.
- A new IBM account gives ten minutes of free quantum computing time,
- and all my tests needed about fifteen minutes.
+ A new IBM account gives 10 minutes of free quantum computing time,
+ and all my tests needed about 15 minutes.
  The jobs also wait in a queue,
  whose duration is not under the control of the user,
  and the free account is limited in the resources it can use,
- as described in Chapter 4 (
-\bar under
-\color blue
-
+ as described in Chapter 4
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "sec:4 Experiments on a real quantum computer"
@@ -769,10 +806,7 @@ tuple "range"
 
 \end_inset
 
-
-\bar default
-\color inherit
-).
+.
  In the game the quantum time is consumed quickly,
  because a deck is generated by repeating a four-qubit circuit with one measurement per run and discarding the cards already obtained.
  About 54 runs are needed on average to complete the sixteen cards,
@@ -783,7 +817,11 @@ tuple "range"
 \begin_layout Standard
 For a person who wants to explore the quantum world,
  the practical consequence is a way of working.
- Development and debugging should be done on the simulator,
+ 
+\emph on
+Development and debugging should be done on the simulator
+\emph default
+,
  which is instant and exact,
  and the hardware should be kept for a small number of final runs whose results are worth the time.
  The design adopted here follows this idea,
@@ -814,11 +852,12 @@ Artificial intelligence was used throughout the project,
  and it let me spend more time reading articles,
  following the quantum course and fixing bugs.
  It also showed that its output cannot be accepted without checking,
- because it can contain errors that look convincing.
- As described in Chapter 5 (
-\bar under
-\color blue
+ because 
+\emph on
+it can contain errors that look convincing.
 
+\emph default
+ As described in Chapter 5
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "sec:5 Software and architecture"
@@ -830,11 +869,12 @@ tuple "range"
 
 \end_inset
 
-
-\bar default
-\color inherit
-),
- some hallucinations inserted bugs in the code that I had to find,
+,
+ some 
+\emph on
+hallucinations
+\emph default
+ inserted bugs in the code that I had to find,
  and for this reason I used a second AI to double check the code and the results before relying on them.
  Some of the errors that appeared during this work are listed in Table 6.2.
 \end_layout
@@ -859,13 +899,14 @@ hspace{1mm}
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="2">
 <features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0pt" varwidth="true">
-<column alignment="left" valignment="top" width="0pt" varwidth="true">
+<column alignment="left" valignment="top" width="6cm">
+<column alignment="left" valignment="top" width="6cm">
 <row>
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 
 \series bold
 Error
@@ -877,6 +918,7 @@ Error
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 
 \series bold
 Correction
@@ -999,8 +1041,12 @@ hspace{1mm}
 
 \begin_layout Standard
 The common point of these cases is that the error was not a failure to produce an answer,
- but a plausible answer that did not match the physics,
+ 
+\emph on
+but a plausible answer that did not match the physics,
  the code or the data.
+
+\emph default
  The method that worked was to treat the assistants as fast collaborators whose statements are verified:
  asking for the reasoning,
  reading the code,
@@ -1009,7 +1055,9 @@ The common point of these cases is that the error was not a failure to produce a
  and asking again when a result looked wrong.
  This verification required enough understanding of the subject to notice a problem,
  which is a reason why the learning process and the use of AI cannot be separated.
- The conclusion for modern projects is that AI is an effective tool when it is monitored,
+ 
+\emph on
+The conclusion for modern projects is that AI is an effective tool when it is monitored,
  and that the responsibility for the correctness of the work remains with the author.
 \end_layout
 
@@ -1065,22 +1113,19 @@ name "sec:6.6 Limitations and future work"
 \end_layout
 
 \begin_layout Standard
-The work has several limits.
+The work has several limits!
  The hardware results come from single runs on one device,
  and each experiment uses only two qubits.
  The entanglement witness is not sufficient for every state,
- as experiment 5 showed.
+ as Experiment 5 showed.
  The generation of the deck is expensive on real hardware.
  The educational effect of the game has been described,
  but it has not been measured with learners.
- Finally,
- the comparison of computing power with CPUs and GPUs mentioned in the abstract was not developed,
- because experiments with two qubits are too small for a meaningful comparison.
 \end_layout
 
 \begin_layout Standard
-Several developments are possible.
- The deck generation could be redesigned to use fewer jobs.
+Several developments are possible,
+ the deck generation could be redesigned to use fewer jobs.
  State tomography could be added on hardware,
  to reconstruct the density matrix at the cost of more quantum time.
  Error mitigation techniques could be applied to reduce the effect of noise,
@@ -1109,7 +1154,7 @@ A small game was enough to bring a complex subject within reach,
  The work also showed that the new tools,
  from cloud quantum computers to AI assistants,
  are valuable when they are used with curiosity and with care.
- This is the main message that I wish to leave to the reader.
+ This is the main message that I wish to leave to the reader!
 \end_layout
 
 \begin_layout Standard

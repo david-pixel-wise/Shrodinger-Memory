@@ -866,6 +866,34 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+software layers
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -941,7 +969,7 @@ quantum_backend.py
  The graphical code recognizes this case and adapts the content of the window.
  The module also contains small helper functions,
  among them a random-angle generator based on quantum measurements,
- which assigns the entanglement angle used in experiment 2.
+ which assigns the entanglement angle used in Experiment 2.
 \end_layout
 
 \begin_layout Subsection
@@ -987,7 +1015,7 @@ name "sec:5.3.4 Game and interface layer"
 \end_layout
 
 \begin_layout Standard
-Each experiment is a separate script,
+The experiments has been written as a separate script,
  derived from the original memory game,
  and all five have the same structure.
  A function converts the measured bits of the deck circuit into cards.
@@ -1137,11 +1165,7 @@ A card is the outcome of a measurement on four qubits.
 bits_to_card
 \family default
  converts the four bits into a sign and an index,
- and the index selects one of eight emojis (
-\emph on
-Listing 1
-\emph default
-).
+ and the index selects one of eight emojis (Listing 1).
 \end_layout
 
 \begin_layout Standard
@@ -1266,11 +1290,7 @@ quantum_backend.py
 \family typewriter
 BACKEND_MODE
 \family default
- from the configuration file and dispatches internally (
-\emph on
-Listing 2
-\emph default
-).
+ from the configuration file and dispatches internally (Listing 2).
 \end_layout
 
 \begin_layout Standard
@@ -1471,11 +1491,7 @@ IBM_TOKEN = None
 Mapping of the observables on hardware.
  On a real processor the transpiler places the two qubits of the experiment on physical qubits of its choice,
  in a device that has more than one hundred qubits.
- For this reason each observable is remapped with the layout produced by the transpiler (
-\emph on
-Listing 3
-\emph default
-).
+ For this reason each observable is remapped with the layout produced by the transpiler (Listing 3).
  Without this step the expectation values would refer to different qubits from those of the circuit,
  and the Bloch vectors would be meaningless.
  All six single-qubit observables are sent in a single job,
@@ -1607,13 +1623,9 @@ show_bloch_pair
 \family default
 ,
  which builds the circuit for the matched pair.
- In experiment 3,
+ In Experiment 3,
  for instance,
- the Bell state is selected by two properties of the match (
-\emph on
-Listing 4
-\emph default
-).
+ the Bell state is selected by two properties of the match (Listing 4).
 \end_layout
 
 \begin_layout Standard
@@ -1622,7 +1634,7 @@ Listing 4
 Listing 4:
 
 \series default
- Circuit of experiment 3 (
+ Circuit of Experiment 3 (
 \family typewriter
 src/exp3_all_bell_states.py
 \family default
@@ -1771,11 +1783,7 @@ name "sec:5.3.5.3 Numerical robustness"
 One function deals with a numerical problem of the library.
  The concurrence function of Qiskit can return a value that is not a number for almost unentangled states,
  because rounding errors make the argument of a square root slightly negative.
- All concurrence calls go through the wrapper safe_concurrence (
-\emph on
-Listing 5
-\emph default
-),
+ All concurrence calls go through the wrapper safe_concurrence (Listing 5),
  which clips the result to the interval from 0 to 1.
 \end_layout
 
@@ -1903,11 +1911,7 @@ The result window is a Qt dialog that contains a
 \family typewriter
 Matplotlib
 \family default
- canvas (
-\emph on
-Listing 6
-\emph default
-).
+ canvas (Listing 6).
  The charts are therefore built as ordinary Matplotlib figures by the module 
 \family typewriter
 edu_viz.py

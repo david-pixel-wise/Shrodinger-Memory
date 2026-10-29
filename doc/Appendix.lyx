@@ -323,11 +323,662 @@ Overview
 \end_layout
 
 \begin_layout Standard
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+All the material produced for this thesis is freely available in a public repository on GitHub,
+ in line with the principles of free software described in the abstract.
+ The repository contains the source code of the experiments,
+ the files used to write this document,
+ the pictures used in the chapters and the screenshots obtained from the real quantum processor.
+ The version cited in this thesis is v0.1.3,
+ archived with the DOI [
+\bar under
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+target "https://doi.org/10.5281/zenodo.23676302"
+
+\end_inset
+
+
+\bar default
+\color inherit
+].
+ The links in this appendix point to that version,
+ so that they remain valid even if the repository is modified later.
 \end_layout
 
 \begin_layout Section
-The next section
+Links
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="2cm" color="default">
+<column alignment="center" valignment="top" width="4cm" color="default">
+<column alignment="center" valignment="top" width="8cm" color="default">
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Resource
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Content
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Link
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GitHub repository
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The whole project:
+ Python source code,
+ initialization script and deployment instructions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color blue
+\begin_inset CommandInset href
+LatexCommand href
+name "Shrodinger-Memory/tree/v0.1.3"
+target "https://github.com/david-pixel-wise/Shrodinger-Memory/tree/v0.1.3"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LyX folder (
+\family typewriter
+doc
+\family default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The LyX files of all the chapters and of the bibliography,
+ used to generate this PDF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color blue
+\begin_inset CommandInset href
+LatexCommand href
+name "Shrodinger-Memory/tree/v0.1.3/doc"
+target "https://github.com/david-pixel-wise/Shrodinger-Memory/tree/v0.1.3/doc"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Image folder (
+\family typewriter
+img
+\family default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The images used in the chapters,
+ such as circuits,
+ charts and illustrations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color blue
+\begin_inset CommandInset href
+LatexCommand href
+name "Shrodinger-Memory/tree/v0.1.3/img"
+target "https://github.com/david-pixel-wise/Shrodinger-Memory/tree/v0.1.3/img"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Picture folder (
+\family typewriter
+pic
+\family default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The screenshots captured during the runs on the IBM quantum processor,
+ one folder for each experiment
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\color blue
+\begin_inset CommandInset href
+LatexCommand href
+name "Shrodinger-Memory/tree/v0.1.3/pic"
+target "https://github.com/david-pixel-wise/Shrodinger-Memory/tree/v0.1.3/pic"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+Table A.1.
+ Online resources of the thesis (version v0.1.3).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The most recent state of the project,
+ which may be ahead of the cited version,
+ is available at 
+\bar under
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "https://github.com/david-pixel-wise/Shrodinger-Memory/"
+target "https://github.com/david-pixel-wise/Shrodinger-Memory/"
+literal "false"
+
+\end_inset
+
+
+\bar default
+\color inherit
+.
+\end_layout
+
+\begin_layout Section
+License
+\end_layout
+
+\begin_layout Standard
+The code and the documents in the repository are released under a permissive free software license (the MIT license),
+ whose text is in the file LICENSE of the repository.
+ This allows anyone to run,
+ study,
+ modify and redistribute the material,
+ in accordance with the four freedoms described in the abstract.
+\end_layout
+
+\begin_layout Section
+How to run the experiments
+\end_layout
+
+\begin_layout Standard
+The steps below summarize how to repeat the experiments.
+ The detailed instructions for Linux are in the file 
+\family typewriter
+txt/How-To-Deploy-Schrodinger-Memory.txt
+\family default
+ of the repository.
+\end_layout
+
+\begin_layout Enumerate
+Clone the repository from the link in Table A.1.
+\end_layout
+
+\begin_layout Enumerate
+Run the script 
+\family typewriter
+init.sh
+\family default
+,
+ which creates a virtual environment with Python 3.9 and installs the required packages (PyQt6,
+ Qiskit,
+ Qiskit Aer,
+ Matplotlib and the module 
+\family typewriter
+qiskit-ibm-runtime
+\family default
+).
+ Then activate the environment with the command 
+\family typewriter
+source .venv/bin/activate
+\family default
+.
+\end_layout
+
+\begin_layout Enumerate
+Open the file 
+\family typewriter
+src/config.py
+\family default
+ and set the value of 
+\family typewriter
+BACKEND_MODE
+\family default
+.
+ The value 
+\family typewriter
+"simulator"
+\family default
+ runs the game locally and needs no account.
+ The value 
+\family typewriter
+"ibm"
+\family default
+ runs it on a real IBM processor,
+ and it is the value used in the tagged release.
+\end_layout
+
+\begin_layout Enumerate
+For the real processor,
+ create an account on the IBM Quantum Platform and save the credentials once on your computer,
+ with the channel set to 
+\family typewriter
+ibm_quantum_platform
+\family default
+.
+ The access token is never stored in the repository.
+\end_layout
+
+\begin_layout Enumerate
+Run one of the five experiment files according with the correct file name,
+ for example 
+\family typewriter
+python src/exp1_no_entanglement_random_qubits.py
+\family default
+.
+\end_layout
+
+\begin_layout Section
+Dates of the hardware runs
+\end_layout
+
+\begin_layout Standard
+The screenshots in the picture folder were captured on the dates in Table A.2,
+ which gives the dates of the runs on the real processor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm" color="default">
+<column alignment="left" valignment="top" width="3cm" color="default">
+<column alignment="left" valignment="top" width="7cm" color="default">
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Experiment
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+Folder
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+Date
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+pic/exp1_ibm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+8 October 2026
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+pic/exp2_ibm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+10 October 2026 (one image on 14 October 2026)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+pic/exp3_ibm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+19 October 2026
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+pic/exp4_ibm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+19 October 2026
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+pic/exp5_ibm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+19 October 2026
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+Table A.2.
+ Dates of the screenshots of the runs on the IBM quantum processor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

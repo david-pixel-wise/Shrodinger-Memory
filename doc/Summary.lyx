@@ -453,7 +453,15 @@ Erwin Rudolf Josef Alexander Schrödinger,
 
 
 \series default
- was to image a cat that was in an uncertain state between life and death.
+ was to image a cat that was in an uncertain state between life and death
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shr35"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -464,113 +472,6 @@ Since I love cats,
 superposition
 \series default
  of quantum bits could be a good exercise to better learn how is moving the reality of quantum computing.
- Another point of interest for this thesis is the comparison of computing power with the most popular technologies based on 
-\series bold
-CPU
-\series default
-
-\begin_inset Nomenclature
-status collapsed
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\nospellcheck off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-CPU
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\nospellcheck default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-
-\begin_inset Argument post:1
-status collapsed
-
-\begin_layout Plain Layout
-Central processing unit,
- is the primary processor in a computer.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- and 
-\series bold
-GPU
-\series default
-
-\begin_inset Nomenclature
-status collapsed
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\nospellcheck off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-GPU
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\nospellcheck default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-
-\begin_inset Argument post:1
-status collapsed
-
-\begin_layout Plain Layout
-Graphics processing unit.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard

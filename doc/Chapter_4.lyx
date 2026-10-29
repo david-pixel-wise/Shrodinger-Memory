@@ -668,17 +668,31 @@ name "sec:4.3.1 Experiment 1: two independent qubits"
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-exp1_ibm_visualization1.png
-\family default
-:
- 
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \shape italic
 two independent qubits with QPU
-\shape default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -697,7 +711,7 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-The figure shows the result window of experiment 1 when the circuit is executed on a real IBM quantum processor instead of the ideal simulator.
+The figure shows the result window of Experiment 1 when the circuit is executed on a real IBM quantum processor instead of the ideal simulator.
  The title box reports the two prepared states,
  qubit A with angle 0.43 rad and qubit B with angle 2.00 rad,
  which are antipodal by construction.
@@ -757,7 +771,7 @@ The slight reduction is the direct signature of hardware noise,
 
 \begin_layout Standard
 In conclusion,
- the real processor reproduces the behavior of the simulator for experiment 1.
+ the real processor reproduces the behavior of the simulator for Experiment 1.
  The vectors lose only about 1% of their length,
  the probabilities are essentially unchanged,
  and the witness stays close to the separable bound.
@@ -790,17 +804,31 @@ name "sec:4.3.2 Experiment 2: partially entangled vectors"
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-exp2_ibm_visualization1.png
-\family default
-:
- 
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \emph on
 two partially entangled qubits with QPU
-\emph default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -819,7 +847,7 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-The figure shows the result window of experiment 2 when the circuit is executed on a real IBM quantum processor.
+The figure shows the result window of Experiment 2 when the circuit is executed on a real IBM quantum processor.
  The title box reports the rotation angle assigned to the matched emoji,
  θ = 1.08 rad,
  and the corresponding state before the sign encoding,
@@ -844,7 +872,7 @@ the measured value is a clear experimental indication that the two qubits are en
 \emph default
  The noise index is 3.8%,
  corresponding to an average distance of about 0.08 between the measured and ideal Bloch vectors.
- This is higher than the 1.7% obtained in experiment 1,
+ This is higher than the 1.7% obtained in Experiment 1,
  which is consistent with the presence of a two-qubit gate.
  Two-qubit gates are in general the main source of error in current processors.
 \end_layout
@@ -887,7 +915,7 @@ The joint probability chart shows P(01) = 0.71 and P(10) = 0.24,
 
 \begin_layout Standard
 In conclusion,
- the real processor preserves the main features of the partially entangled state of experiment 2.
+ the real processor preserves the main features of the partially entangled state of Experiment 2.
  These are the reduced Bloch vectors,
  the asymmetric probabilities and a witness well above the separable bound.
  The deviations are small and consistent with the noise index.
@@ -921,17 +949,31 @@ name "sec:4.3.3 Experiment 3: Bell states and density matrix"
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-exp3_ibm_visualization1.png
-\family default
-:
- 
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \emph on
 Bell state generator with QPU
-\emph default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1011,7 +1053,7 @@ Because the ideal vectors have zero length,
 \end_layout
 
 \begin_layout Standard
-The figure shows the result window of experiment 3 when the circuit is executed on a real IBM quantum processor.
+The figure shows the result window of Experiment 3 when the circuit is executed on a real IBM quantum processor.
  The title box reports the Bell state produced for the matched card,
  Ψ⁺ = (|01⟩ + |10⟩)/√2,
  followed by the entanglement witness and the noise index.
@@ -1031,7 +1073,7 @@ The measured witness is 2.90,
  The separable bound for this quantity is 1,
  so the measured value lies far above it and certifies the entanglement of the pair.
  The noise index is 3.7%,
- a value similar to the 3.8% obtained in experiment 2.
+ a value similar to the 3.8% obtained in Experiment 2.
  This indicates that the main contribution to the error comes from the entangling gate,
  and that it does not depend on the particular state being produced.
 \end_layout
@@ -1106,17 +1148,31 @@ name "sec:4.3.4 Experiment 4: progressive increase of entanglement"
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-exp4_ibm_visualization1.png
-\family default
-:
- 
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \emph on
 progressive entanglement with QPU
-\emph default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1135,7 +1191,7 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-The figure shows the result window of experiment 4 on a real IBM quantum processor after the third pair has been found.
+The figure shows the result window of Experiment 4 on a real IBM quantum processor after the third pair has been found.
  The title box reports the rotation angle θ = 0.59 rad,
  which in this experiment grows deterministically with the number of matches,
  and the corresponding state cos(0.29)|00⟩ + sin(0.29)|11⟩ before the sign encoding.
@@ -1154,9 +1210,9 @@ The measured witness is 1.97.
  corresponding to an average distance of about 0.13 between the measured and ideal Bloch vectors.
  
 \emph on
-This is the highest value among the experiments presented so far (1.7% in experiment 1,
- 3.8% in experiment 2,
- 3.7% in experiment 3).
+This is the highest value among the experiments presented so far (1.7% in Experiment 1,
+ 3.8% in Experiment 2,
+ 3.7% in Experiment 3).
  A possible explanation is a variation in the calibration of the device between the runs,
  but the data alone do not allow this to be established.
 \end_layout
@@ -1172,7 +1228,7 @@ The two Bloch spheres show vectors of length 0.86 and 0.84,
  The tilt is a transverse component caused by noise,
  and it is responsible for most of the noise index,
  since the lengths themselves are close to the ideal ones.
- Compared with experiment 2,
+ Compared with Experiment 2,
  where θ = 1.08 rad gave vectors of length 0.5,
  the longer vectors here are the visual counterpart of the smaller θ.
 \end_layout
@@ -1240,17 +1296,31 @@ name "sec:4.3.5 Experiment 5: maximally entangled state exhibiting"
 \end_layout
 
 \begin_layout Standard
-\align right
-[
-\family typewriter
-exp5_ibm_visualization1.png
-\family default
-:
- 
+\align center
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \emph on
 maximally entangled state qubits with QPU
-\emph default
-]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1269,7 +1339,7 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-The figure shows the result window of experiment 5 when the circuit is executed on a real IBM quantum processor.
+The figure shows the result window of Experiment 5 when the circuit is executed on a real IBM quantum processor.
  The title box reports the state produced for the matched card,
  (|00⟩ − |01⟩ + |10⟩ + |11⟩)/2,
  followed by the witness and the noise index.
@@ -1304,7 +1374,7 @@ The state is entangled only through its phases.
 The witness,
  defined as the sum of the absolute values of the three correlators,
  is 1.10.
- Unlike in experiments 2 to 4,
+ Unlike in Experiments 2 to 4,
  this quantity cannot be used here to certify entanglement.
  For this state the ideal value is 1.0,
  which coincides with the separable bound,
@@ -1323,12 +1393,12 @@ The evidence for entanglement comes instead from the single-qubit vectors.
  The near-zero length together with the strong ⟨YY⟩ correlation identifies a state that is highly entangled,
  even though the witness cannot show it.
  The noise index of 3.5% corresponds to this residual length of about 0.07,
- and is similar to the values of 3.7% and 3.8% found for experiments 3 and 2.
+ and is similar to the values of 3.7% and 3.8% found for Experiments 3 and 2.
 \end_layout
 
 \begin_layout Standard
 In conclusion,
- the real processor reproduces the phase-entangled state of experiment 5 with good accuracy.
+ the real processor reproduces the phase-entangled state of Experiment 5 with good accuracy.
  The correlators are within 0.10 of their ideal values,
  the vectors are almost at the centre of the spheres,
  and the sign structure is preserved.
