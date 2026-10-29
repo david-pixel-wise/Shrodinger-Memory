@@ -467,7 +467,7 @@ literal "false"
 \begin_layout Standard
 Since I love cats,
  and I don’t want to hurt any animal for this experiments;
- I have thought that the realization of a game to prove the 
+ I have thought that the creation of a game to prove the 
 \series bold
 superposition
 \series default
@@ -494,7 +494,7 @@ qubits
 
 \begin_layout Standard
 The development of this game give me also,
- the possibility to improve my programming skills with the creation of a source code that respect the vision about 
+ the possibility to improve my programming skills with the creation of a source code that respect my vision about 
 \emph on
 freedom in technology
 \emph default
@@ -614,7 +614,15 @@ Open-source software is computer software with publicly available source code,
 \end_inset
 
 ,
- because the technology that we are creating have to consider ethical and philosophical values that grant everyone the utilization,
+ because the technology that we are creating have to consider 
+\emph on
+ethical
+\emph default
+ and 
+\emph on
+philosophical
+\emph default
+ values that grant everyone the utilization,
  analysis and modification of the code realized with this experiments;
  like the 
 \emph on

@@ -338,7 +338,7 @@ name "sec:1.1 Overview"
 
 \begin_layout Standard
 The experiments that I have realized is using some fundamentals notions of math that must be understood to learn how the quantum computers are working.
- The first concept that we have to familiarize to is the 
+ The first concept that we have to familiarize with is the 
 \emph on
 quantum bit
 \emph default
@@ -556,7 +556,11 @@ Boolean logic is a type of algebra that deals with true and false values,
 The computers of current times are using bits elevated at base two,
  to make everything;
  from complex calculations to storing data.
- To make it possible we are using several number of bits to trying to describe the real world.
+ To make it possible we are using several number of bits to trying to describe the 
+\emph on
+real world
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -565,7 +569,7 @@ For instance,
 \begin_inset Formula $^{8}$
 \end_inset
 
- bits we can representing 256 values as better described in the table below:
+ bits we can represent 256 values as better described in the table below:
 \end_layout
 
 \begin_layout Standard
@@ -738,7 +742,7 @@ hspace{1mm}
 
 \begin_layout Standard
 This 256 combinations associated to colors could represent the shapes of gray of the old photos in black and white,
- with an oblivious limitation in term of the representation reality like we are commonly intended to see it.
+ with an oblivious limitation in term of the reality representation like we are commonly intended to see it.
  The 
 \series bold
 quantization
@@ -797,7 +801,7 @@ Quantization is the process of mapping input values from a large set (often a co
 \end_layout
 
 \begin_layout Standard
-Below you can see the same picture with different color depth:
+Below you can see the same pictures with different color depth:
 \end_layout
 
 \begin_layout Standard
@@ -989,7 +993,7 @@ Total Bit
 \begin_inset Formula $\times$
 \end_inset
 
-Color Quantization 
+ Color Quantization 
 \end_layout
 
 \begin_layout Standard
@@ -998,7 +1002,7 @@ Color Quantization
 \series bold
 Total Bit
 \series default
- =12 000 000 pixel 
+ = 12 000 000 pixel 
 \begin_inset Formula $\times$
 \end_inset
 
@@ -1022,7 +1026,7 @@ hspace{1mm}
 
 \begin_layout Standard
 The CPU architectures nowadays are processing data in words of 64 bits,
- so that a single word can represent 2⁶⁴ different values,
+ so a single word can represent 2⁶⁴ different values,
  and can store it in registers of up to 128 bits,
  which can represent up to 2¹²⁸ different values,
  for the common general purpose 
@@ -2049,6 +2053,8 @@ name "fig:100-repetitions-of"
 
 \end_inset
 
+
+\emph on
 100 repetitions of head tail
 \end_layout
 
@@ -2060,9 +2066,7 @@ name "fig:100-repetitions-of"
 \begin_layout Plain Layout
 
 \emph on
-Normal curve
-\emph default
- in head tail distribution
+Normal curve in head tail distribution
 \end_layout
 
 \end_inset
@@ -2802,8 +2806,8 @@ Star Trek is an American science fiction media franchise created by Gene Roddenb
 \end_inset
 
 ,
- where the crew of an interstellar ship uses,
- what's called a 
+ where the crew of an interstellar ship was using,
+ a so called 
 \series bold
 transporter
 \begin_inset Nomenclature
@@ -2862,7 +2866,7 @@ A transporter is a fictional teleportation machine used in the Star Trek univers
 \end_layout
 
 \begin_layout Standard
-Is too optimistic to think that in the next decade we could have instruments that can move matter almost instantaneously,
+It is too optimistic to think that in the next decade we could have instruments that can move matter almost instantaneously,
  but with the quantum technology we can do some steps forward at lead with telecommunications if we will be able to develop instruments that will use the entanglement state with a new generations of computers.
 \end_layout
 
@@ -3168,8 +3172,7 @@ To experiment with the entanglement of two qubits,
  took the course "
 \emph on
 Understanding Quantum Information & Computation With John Watrous.
-\emph default
-" 
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "qiskit:UnderstandingQuantum"
@@ -3178,6 +3181,8 @@ literal "false"
 \end_inset
 
 
+\emph default
+" 
 \end_layout
 
 \begin_layout Standard
@@ -3338,7 +3343,7 @@ literal "false"
 
 \end_inset
 
- for the physicist 
+ from the physicist 
 \series bold
 John Stewart Bell
 \series default
