@@ -880,6 +880,12 @@ status open
 \begin_layout Plain Layout
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:software-layers"
+
+\end_inset
+
 software layers
 \end_layout
 
@@ -1174,10 +1180,14 @@ bits_to_card
 Listing 1:
 
 \series default
- Conversion of a four-bit measurement into a card (
+ 
+\emph on
+Conversion of a four-bit measurement into a card (
 \family typewriter
+\emph default
 src/exp3_all_bell_states.py
 \family default
+\emph on
 ,
  function 
 \family typewriter
@@ -1299,16 +1309,22 @@ BACKEND_MODE
 Listing 2:
 
 \series default
- Backend selection (
+ 
+\emph on
+Backend selection (
 \family typewriter
+\emph default
 src/config.py
 \family default
+\emph on
 ,
  lines 27 and 32,
  and 
 \family typewriter
+\emph default
 src/quantum_backend.py
 \family default
+\emph on
 ,
  function 
 \family typewriter
@@ -1504,15 +1520,21 @@ Mapping of the observables on hardware.
 Listing 3:
 
 \series default
- Mapping of the observables onto the physical qubits (
+ 
+\emph on
+Mapping of the observables onto the physical qubits (
 \family typewriter
+\emph default
 src/quantum_backend.py
 \family default
+\emph on
 ,
  function 
 \family typewriter
+\emph default
 get_bloch_vectors
 \family default
+\emph on
 ,
  lines 143 to 155).
 \end_layout
@@ -1634,15 +1656,21 @@ show_bloch_pair
 Listing 4:
 
 \series default
- Circuit of Experiment 3 (
+ 
+\emph on
+Circuit of Experiment 3 (
 \family typewriter
+\emph default
 src/exp3_all_bell_states.py
 \family default
+\emph on
 ,
  method 
 \family typewriter
+\emph default
 show_bloch_pair
 \family default
+\emph on
 ,
  lines 269 to 276).
 \end_layout
@@ -1783,7 +1811,11 @@ name "sec:5.3.5.3 Numerical robustness"
 One function deals with a numerical problem of the library.
  The concurrence function of Qiskit can return a value that is not a number for almost unentangled states,
  because rounding errors make the argument of a square root slightly negative.
- All concurrence calls go through the wrapper safe_concurrence (Listing 5),
+ All concurrence calls go through the wrapper 
+\family typewriter
+safe_concurrence
+\family default
+ (Listing 5),
  which clips the result to the interval from 0 to 1.
 \end_layout
 
@@ -1793,15 +1825,21 @@ One function deals with a numerical problem of the library.
 Listing 5:
 
 \series default
- Protection against invalid concurrence values (
+ 
+\emph on
+Protection against invalid concurrence values (
 \family typewriter
+\emph default
 src/quantum_backend.py
 \family default
+\emph on
 ,
  function 
 \family typewriter
+\emph default
 safe_concurrence
 \family default
+\emph on
 ,
  lines 332 to 339).
 \end_layout
@@ -1912,7 +1950,11 @@ The result window is a Qt dialog that contains a
 Matplotlib
 \family default
  canvas (Listing 6).
- The charts are therefore built as ordinary Matplotlib figures by the module 
+ The charts are therefore built as ordinary 
+\family typewriter
+Matplotlib
+\family default
+ figures by the module 
 \family typewriter
 edu_viz.py
 \family default
@@ -1926,15 +1968,21 @@ edu_viz.py
 Listing 6:
 
 \series default
- Dialog that embeds a figure (
+ 
+\emph on
+Dialog that embeds a figure (
 \family typewriter
+\emph default
 src/exp2_bell_concurrence.py
 \family default
+\emph on
 ,
  class 
 \family typewriter
+\emph default
 BlochDialog
 \family default
+\emph on
 ,
  lines 73 to 82).
 \end_layout

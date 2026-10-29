@@ -546,9 +546,51 @@ Date of the graduation
 \end_layout
 
 \begin_layout Dedication
-Dedication,
- cite from a famous person,
- or whatever you like (optional)
+To my mother and my father,
+ for the most important lesson of life.
+
+\emph on
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+newline
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+newline
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+newline
+\end_layout
+
+\end_inset
+
+“La parte migliore di noi vive in eterno.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -3,11 +3,11 @@
 \begin_document
 \begin_header
 \save_transient_properties true
-\origin /systemlyxdir/templates/Theses/PhD_Thesis/
+\origin unavailable
 \textclass scrbook
 \options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage
 \use_default_options true
-\master Main_File.lyx
+\master /Applications/LyX.app/Contents/Resources/templates/Theses/PhD_Thesis/Main_File.lyx
 \maintain_unincluded_children no
 \language english
 \language_package default
@@ -142,9 +142,45 @@ adds table of contents entry
 \end_layout
 
 \begin_layout Standard
-Thank you,
- thank you,
- thank you
+Thanks to my family,
+ that shown me the path.
+\end_layout
+
+\begin_layout Standard
+Thanks to my love,
+ that never disappear.
+\end_layout
+
+\begin_layout Standard
+Thanks to friends,
+ that gave me the help to rise up.
+\end_layout
+
+\begin_layout Standard
+Thanks to colleagues,
+ for the wisdom.
+\end_layout
+
+\begin_layout Standard
+Thanks to all the people that believe in a better future.
+\end_layout
+
+\begin_layout Standard
+Thanks to G-d to be here.
+\end_layout
+
+\begin_layout Standard
+Thanks to the 
+\emph on
+Prof.
+ Luca Potì
+\emph default
+,
+ that helped me to complete the experiments.
+\end_layout
+
+\begin_layout Standard
+Thanks to you that have spent your time to read this thesis!
 \end_layout
 
 \end_body

@@ -660,6 +660,12 @@ status open
 \begin_layout Plain Layout
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:image-of-the"
+
+\end_inset
+
 image of the GUI common to all experiments
 \end_layout
 
@@ -1224,6 +1230,12 @@ status open
 \begin_layout Plain Layout
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:common-circuit-to"
+
+\end_inset
+
 common circuit to all the experiments
 \end_layout
 
@@ -1407,6 +1419,12 @@ status open
 \begin_layout Plain Layout
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:two-independent-ry"
+
+\end_inset
+
 two independent 
 \family typewriter
 ry
@@ -1530,6 +1548,12 @@ status open
 \begin_layout Plain Layout
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:partial-entanglement-ry-+"
+
+\end_inset
+
 partial-entanglement 
 \family typewriter
 ry + cx
@@ -1644,6 +1668,12 @@ status open
 
 \family typewriter
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:h-+-cx-"
+
+\end_inset
+
 h + cx
 \family default
 ,
@@ -1829,6 +1859,12 @@ status open
 \begin_layout Plain Layout
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:same-shape-as"
+
+\end_inset
+
 same shape as Experiment 2,
  but 
 \family typewriter
@@ -1949,6 +1985,12 @@ status open
 
 \family typewriter
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:h--h--cz-"
+
+\end_inset
+
 h
 \family default
 ,

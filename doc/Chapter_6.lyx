@@ -467,6 +467,8 @@ hspace{1mm}
 
 \begin_layout Plain Layout
 
+\series bold
+Experiment
 \end_layout
 
 \end_inset
@@ -1154,7 +1156,9 @@ A small game was enough to bring a complex subject within reach,
  The work also showed that the new tools,
  from cloud quantum computers to AI assistants,
  are valuable when they are used with curiosity and with care.
- This is the main message that I wish to leave to the reader!
+ 
+\emph on
+This is the main message that I wish to leave to the reader!
 \end_layout
 
 \begin_layout Standard

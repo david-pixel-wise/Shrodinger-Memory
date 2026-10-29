@@ -315,7 +315,7 @@ thepage
 \end_layout
 
 \begin_layout Chapter
-Title of the first appendix chapter
+Appendix
 \end_layout
 
 \begin_layout Section
@@ -343,8 +343,6 @@ target "https://doi.org/10.5281/zenodo.23676302"
 \bar default
 \color inherit
 ].
- The links in this appendix point to that version,
- so that they remain valid even if the repository is modified later.
 \end_layout
 
 \begin_layout Section
@@ -659,10 +657,26 @@ Run the script
 init.sh
 \family default
 ,
- which creates a virtual environment with Python 3.9 and installs the required packages (PyQt6,
- Qiskit,
- Qiskit Aer,
- Matplotlib and the module 
+ which creates a virtual environment with Python 3.9 and installs the required packages (
+\family typewriter
+PyQt6
+\family default
+,
+ 
+\family typewriter
+Qiskit
+\family default
+,
+ 
+\family typewriter
+Qiskit Aer
+\family default
+,
+ 
+\family typewriter
+Matplotlib
+\family default
+ and the module 
 \family typewriter
 qiskit-ibm-runtime
 \family default
@@ -718,12 +732,865 @@ python src/exp1_no_entanglement_random_qubits.py
 \end_layout
 
 \begin_layout Section
+Images and file names
+\end_layout
+
+\begin_layout Standard
+The Table A2 give the correspondences between the images and file names.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="26" columns="2">
+<features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
+<column alignment="center" valignment="top" color="default">
+<column alignment="center" valignment="top" color="default">
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Figure ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+File name
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 1.1
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:100-repetitions-of"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HeadTail_Plot1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 1.2
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HeadTail_Plot2.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 2.1
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:image-of-the"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+deck_visualization.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 2.2
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:common-circuit-to"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+deck_generation_circuit.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 2.3
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:two-independent-ry"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp1_ch2_circuit.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 2.4
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:partial-entanglement-ry-+"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp2_ch2_circuit.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 2.5
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:h-+-cx-"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp3_ch2_circuit.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 2.6
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:same-shape-as"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp4_ch2_circuit.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 2.7
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:h--h--cz-"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp5_ch2_circuit.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 3.1
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:graph-of-a"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ch3_complex_numbers_as_vectors.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 3.2
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:vectors-and-probability"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ch3_vector_length_and_probability.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 3.3
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:the-Bloch-sphere"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ch3_bloch_sphere_illustration.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 3.4
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:match-of-two"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp1_ch3_deck1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 3.5
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:two-independent-qubits"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp1_ch3_visualization1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 3.6
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:two-partially-entangled"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp2_ch3_visualization1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 3.7
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Bell-state-generator"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp3_ch3_visualization1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 3.8
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:progressive-entanglement-after"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp4_ch3_visualization1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 3.9
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:progressive-entanglement-after-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp4_ch3_visualization5.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 3.10
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:maximally-entangled-state"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp5_ch3_visualization1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 4.1
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:two-independent-qubits-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp1_ibm_visualization1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 4.2
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:two-partially-entangled-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp2_ibm_visualization1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 4.3
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Bell-state-generator-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp3_ibm_visualization1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 4.4
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:progressive-entanglement-with"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp4_ibm_visualization1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 4.5
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:maximally-entangled-state-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exp5_ibm_visualization1.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row color="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Figure 5.1
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:software-layers"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" color="default" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+architecture_diagram.png
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+Table A.2.
+ Figures of the thesis and the corresponding image files.
+\end_layout
+
+\begin_layout Section
 Dates of the hardware runs
 \end_layout
 
 \begin_layout Standard
-The screenshots in the picture folder were captured on the dates in Table A.2,
- which gives the dates of the runs on the real processor.
+The screenshots in the picture folder were captured on the dates in Table A.3.
 \end_layout
 
 \begin_layout Standard
@@ -846,7 +1713,12 @@ pic/exp2_ibm
 
 \begin_layout Plain Layout
 \align center
-10 October 2026 (one image on 14 October 2026)
+10 October 2026 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+(one image on 14 October 2026)
 \end_layout
 
 \end_inset
@@ -962,7 +1834,7 @@ pic/exp5_ibm
 \align center
 
 \emph on
-Table A.2.
+Table A.3.
  Dates of the screenshots of the runs on the IBM quantum processor.
 \end_layout
 

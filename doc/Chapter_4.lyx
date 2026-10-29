@@ -682,6 +682,12 @@ status open
 \begin_layout Plain Layout
 
 \shape italic
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:two-independent-qubits-1"
+
+\end_inset
+
 two independent qubits with QPU
 \end_layout
 
@@ -711,7 +717,19 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-The figure shows the result window of Experiment 1 when the circuit is executed on a real IBM quantum processor instead of the ideal simulator.
+The figure (Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:two-independent-qubits-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+) shows the result window of Experiment 1 when the circuit is executed on a real IBM quantum processor instead of the ideal simulator.
  The title box reports the two prepared states,
  qubit A with angle 0.43 rad and qubit B with angle 2.00 rad,
  which are antipodal by construction.
@@ -818,6 +836,12 @@ status open
 \begin_layout Plain Layout
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:two-partially-entangled-1"
+
+\end_inset
+
 two partially entangled qubits with QPU
 \end_layout
 
@@ -847,7 +871,19 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-The figure shows the result window of Experiment 2 when the circuit is executed on a real IBM quantum processor.
+The figure (Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:two-partially-entangled-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+) shows the result window of Experiment 2 when the circuit is executed on a real IBM quantum processor.
  The title box reports the rotation angle assigned to the matched emoji,
  θ = 1.08 rad,
  and the corresponding state before the sign encoding,
@@ -963,6 +999,12 @@ status open
 \begin_layout Plain Layout
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bell-state-generator-1"
+
+\end_inset
+
 Bell state generator with QPU
 \end_layout
 
@@ -992,16 +1034,36 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-Two points before the complete explanation of the image:
+Two points before the complete explanation of the image (Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Bell-state-generator-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+):
 \end_layout
 
 \begin_layout Itemize
 Bell state:
  this run is Ψ⁺,
- while the simulator figure I described earlier showed Ψ⁻ (see the picture in chapter 3.3.3 with name 
-\family typewriter
-exp3_ch3_visualization1.png
-\family default
+ while the simulator figure I described earlier showed Ψ⁻ (see the Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Bell-state-generator"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
 ).
  The first card’s sign and emoji number set the state;
  it varies between runs.
@@ -1053,7 +1115,19 @@ Because the ideal vectors have zero length,
 \end_layout
 
 \begin_layout Standard
-The figure shows the result window of Experiment 3 when the circuit is executed on a real IBM quantum processor.
+The figure (Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Bell-state-generator-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+) shows the result window of Experiment 3 when the circuit is executed on a real IBM quantum processor.
  The title box reports the Bell state produced for the matched card,
  Ψ⁺ = (|01⟩ + |10⟩)/√2,
  followed by the entanglement witness and the noise index.
@@ -1162,6 +1236,12 @@ status open
 \begin_layout Plain Layout
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:progressive-entanglement-with"
+
+\end_inset
+
 progressive entanglement with QPU
 \end_layout
 
@@ -1191,7 +1271,19 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-The figure shows the result window of Experiment 4 on a real IBM quantum processor after the third pair has been found.
+The figure (Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:progressive-entanglement-with"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+) shows the result window of Experiment 4 on a real IBM quantum processor after the third pair has been found.
  The title box reports the rotation angle θ = 0.59 rad,
  which in this experiment grows deterministically with the number of matches,
  and the corresponding state cos(0.29)|00⟩ + sin(0.29)|11⟩ before the sign encoding.
@@ -1310,6 +1402,12 @@ status open
 \begin_layout Plain Layout
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:maximally-entangled-state-1"
+
+\end_inset
+
 maximally entangled state qubits with QPU
 \end_layout
 
@@ -1339,7 +1437,19 @@ hspace{1mm}
 \end_layout
 
 \begin_layout Standard
-The figure shows the result window of Experiment 5 when the circuit is executed on a real IBM quantum processor.
+The figure (Figure 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:maximally-entangled-state-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+) shows the result window of Experiment 5 when the circuit is executed on a real IBM quantum processor.
  The title box reports the state produced for the matched card,
  (|00⟩ − |01⟩ + |10⟩ + |11⟩)/2,
  followed by the witness and the noise index.

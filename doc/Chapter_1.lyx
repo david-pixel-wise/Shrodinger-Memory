@@ -1086,6 +1086,21 @@ x86-64 (also known as AMD64,
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \emph on
 The fundamental data types are bytes,
@@ -1107,6 +1122,21 @@ LatexCommand cite
 after "Intel 64 and IA-32 Architectures Software Developer’s Manual"
 key "Intel64Arch"
 literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
 
 \end_inset
 
@@ -1478,6 +1508,21 @@ The Traveling Salesman Problem (TSP) is a classic algorithmic challenge in compu
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \emph on
 TSP is not limited to physical distances,
@@ -1518,10 +1563,40 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 With the qubit the new era of quantum computation will give to the human beings the ability to solve new challenges in the fields of:
  math,
  science,
  medicine and knowledge of the universe.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+hspace{1mm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1952,9 +2027,28 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "-1"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:100-repetitions-of"
+
+\end_inset
+
 100 repetitions of head tail
 \end_layout
 
@@ -3512,7 +3606,7 @@ tuple "range"
  we will see in details all the quantum circuits used in the source code,
  but for now the goal is to show how simply is to write quantum circuits with Qiskit.
  With exactly four lines of Python code we can translate the mathematical equation 
-\begin_inset Formula $\mid\psi^{+}\rangle$
+\begin_inset Formula $\mid\phi^{+}\rangle$
 \end_inset
 
  for our simulations:
@@ -3722,7 +3816,19 @@ entanglement bit
 \end_layout
 
 \begin_layout Standard
-In the next chapter we will see how all these concepts will be used to create an educational and interactive game in which the concept of fun is oriented towards learning through programming.
+In the next Chapter
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:2 Quantum entanglement and memory game"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "range"
+
+\end_inset
+
+ we will see how all these concepts will be used to create an educational and interactive game in which the concept of fun is oriented towards learning through programming.
 \end_layout
 
 \begin_layout Standard
